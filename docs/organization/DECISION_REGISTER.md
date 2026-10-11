@@ -3,7 +3,7 @@
 Document ID: ORG-DECISIONS-001  
 Version: 0.1.0-draft  
 Status: ACTIVE — initial register; decisions remain open unless stated otherwise  
-Created: 2026-10-10 (UTC date)  
+Created: 2026-10-10 (America/New_York local date; exact creation time not captured)  
 Prepared by: ChatGPT (GPT-6)  
 Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 
