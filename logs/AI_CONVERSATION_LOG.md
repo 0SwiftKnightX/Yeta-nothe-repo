@@ -400,3 +400,8 @@ The earlier component-comparison note correctly warned that the Startup project.
 - Final catalog review confirms 72 human-readable/license-notice manifest entries: 59 non-license Markdown/plain-text documents marked READ and 13 license/notice entries inventoried but reserved for the separate rights workstream. This supersedes earlier notes that described basic reading of some non-license documents as still pending.
 - Remaining work is exhaustive extraction and cross-checking, not initial source discovery: map each distinct historical event/requirement/decision/claim/test to ledger/destination IDs, resolve duplicates and conflicts, and inspect machine-readable per-asset manifests only if included in the declared scope.
 - Documentation-consolidation role and license-workstream boundary are recorded in `DOCUMENT_RESTRUCTURE_MAP.md`. The license draft and rights decisions were not modified.
+
+
+### Historical source event crosswalk created — 2026-10-11
+
+Created `docs/organization/SOURCE_EVENT_CROSSWALK.md` (commit `1ddc3cd10326b7c28ce54de31de555d81528c9e1`). It indexes source sections/entries across Startup GPT/Copilot worklogs, Startup conversation and consolidated records, Startup audit archive and Tessara recommendations, plus XrGpt README chronology, handoff, Vector log and Android Static Core research. Source paths/commits/blob SHAs are recorded. The crosswalk is navigation, not a claim that every entry has already been semantically extracted; every meaningful item still needs a ledger/destination ID or explicit context-only/duplicate disposition. Links were added to the repository README, organization index, restructure map, source catalog and requirements ledger.
