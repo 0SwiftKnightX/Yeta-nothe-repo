@@ -62,3 +62,18 @@ The GitHub create-file calls return commit identifiers. Each created file must b
 3. Search accessible repository history and prior records for the exact historical license text.
 4. Define OTECM acceptance criteria and implement the smallest useful schema plus validation tests.
 5. Research legal structure, license choices, and fundraising terms from current primary sources before making public or financial commitments.
+
+
+## Repository write and read-back verification
+
+All five documentation files were created on `main` through the connected GitHub integration, then fetched again successfully. The following are the create-operation commit SHAs and the read-back blob SHAs observed immediately afterward:
+
+| Path | Create commit SHA | Read-back blob SHA | Read-back result |
+|---|---|---|---|
+| `docs/organization/README.md` | `bd7d1ae41f255889376960b5757e2c3fe0a3ade8` | `f7e13a719c253e09146f106ef28f4fbbee36d9e1` | PASS — content fetched |
+| `docs/organization/OPERATING_CHARTER.md` | `e480102bfbd37815656f1209dfeb41a65483f624` | `cf73b559028dff4f94f37f48e554b202ef1bac47` | PASS — content fetched |
+| `docs/organization/FOUNDATION_BLUEPRINT.md` | `b95f3fad9a3b2b36ffeac81721191059d47f6c2f` | `2c6cac15e6d4b1da5584872e7bcf6b261ebbad27` | PASS — content fetched |
+| `docs/organization/DECISION_REGISTER.md` | `3f620255d39df2e0db2d32bd87ddb1e18b1bd7eb` | `6af71c9b2abb0a223461fb2ad04a36261376350d` | PASS — content fetched |
+| `logs/AI_CONVERSATION_LOG.md` | `88fbde495d9a138e7a368cee316063a77c2fb542` | `d72551e4939c4e1b3b6dce18215234ad31d4ff86` | PASS — content fetched |
+
+The fetch/read-back confirms that each path is present and readable through the GitHub integration. It does not independently validate every legal, strategic, or factual proposition in the documents. No automated lint, legal review, external partnership verification, fundraiser eligibility check, or OTECM software test was run in this session.
