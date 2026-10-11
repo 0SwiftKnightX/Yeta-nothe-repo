@@ -79,3 +79,22 @@ Complete ASSET-0002 and ASSET-0003 targeted notice/provenance checks, then inven
 - Startup's vendored XR Tools plugin manifest declares version 4.5.1. XrGpt's vendored plugin manifest also declares 4.5.1. This does not by itself establish that all vendored files are identical or that the two projects are fully compatible.
 - XrGpt's project.godot at commit 3a11c719224ed8619fd48f13071ff4423edab15f declares Godot feature 4.6 and GL Compatibility. Startup's project.godot at commit 6f56ad308fcf8d6f15d40a03beddfefdf8201f2a declares feature 4.7. This is a concrete compatibility review requirement before porting XrGpt code.
 - XrGpt's gameplay/items/procedural_pickable.gd at that immutable commit extends XRToolsPickable and connects pickup/drop/grab/release events to a catalog-backed item instance and inventory return. This is candidate code, not yet cleared for reuse. Record it as ASSET-0007 for future rights review; its parent repository LICENSE is Apache-2.0, but file-specific scope and third-party boundaries must still be confirmed.
+
+
+### ASSET-0007 follow-up: dependency-scope evidence — 2026-10-11
+
+**AI identity:** GPT-6. Read-only inspection at XrGpt commit `3a11c719224ed8619fd48f13071ff4423edab15f`. These are dependency references for rights review, not a grant of reuse permission.
+
+The procedural pickup wrapper depends on the following source files, whose individual provenance, copyright notices, contribution history, and scope under the repository's Apache-2.0 root license have not been independently audited here:
+
+| Path | Inspected blob SHA | Role |
+|---|---|---|
+| `gameplay/items/item_definition.gd` | `3acd1695069852a1f46668f1aea2508a08f64cb4` | Authored item definition Resource |
+| `gameplay/items/item_catalog.gd` | `a152f4eedb74d2da237ae2ce7e6b5f57fc5d92ac` | Central definition catalog |
+| `gameplay/items/item_instance.gd` | `97b84cf96ee57bbf3c4dbbb838cbd220d8241cce` | Runtime item identity/state |
+| `gameplay/items/item_procedural_factory.gd` | `c356e8fca656e6f851a26e92688ce1a51f32ac56` | Procedural geometry/collision creation |
+| `gameplay/items/item_runtime.gd` | `c4696b38e1ae8c4c01b87351a7dc07da307303d1` | Instance-to-world spawning and structural checks |
+| `gameplay/items/procedural_pickable.gd` | `32d00f0695b43bcba10925c09e477ab1ec49f28d` | XR pickup lifecycle and inventory-return bridge |
+| `gameplay/inventory/inventory_controller.gd` | `9dbd74bd053d3bda15add4e43fe9d4bc388f9ed2` | Inventory slots, ownership/quantity validation and events |
+
+**Rights status remains NOT CLEARED FOR COPYING.** The root license is relevant evidence, but this inventory does not yet prove that every file is solely authored by the repository owner, has no third-party portions, or carries no path-specific obligations. Preserve license and notice obligations if later reuse is authorized.
