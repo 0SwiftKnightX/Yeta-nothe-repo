@@ -328,3 +328,11 @@ The earlier component-comparison note correctly warned that the Startup project.
 - **Interpretation:** the implementation difference is now supported by the full returned tree, not merely a failed code search. This does not decide whether an inventory subsystem is required for Startup. It does not cover other branches or untracked local files.
 - **Decision checkpoint:** proposed DEC-019 records a requirements-first approach. Define the required item/inventory capabilities and acceptance criteria before any code port. XrGpt remains reference-only; no source code changed.
 - **Verification:** GitHub tree and file contents read successfully. No tests/build/import/export or Quest 3S runtime execution was performed.
+
+## 2026-10-11 — Draft XR inventory capability contract
+- **AI identity:** GPT-6.
+- **Created:** `docs/organization/XR_INVENTORY_CAPABILITY_CONTRACT.md` (commit `212cfe72d4b1561001ba933e91ac17bf9bdd2253`).
+- **Purpose:** Turn the Startup/XrGpt comparison into a staged, testable contract before implementation. Defines stable item instance identity, distinct definition IDs, one authoritative holder, safe/atomic transfer outcomes, world-representation synchronization, explicit failure behavior, and regression protection for Startup's current quest loop.
+- **Scope control:** Inventory UI, wrist UI, capacity/stack rules, equipment, persistence, multiplayer, crafting, and trading are deferred unless explicitly required. A minimal proposed acceptance slice covers definition/instance separation, physical pickup/release, in-memory transfer, duplicate-transfer rejection, and same-instance return.
+- **Change control:** The contract is DRAFT and is not implementation authorization. DEC-020 is proposed; GAP-029 tracks the unresolved scope decision. No code or assets were copied, and neither Startup nor XrGpt was modified.
+- **Verification:** New document created through GitHub. Related index/register/log updates are being recorded separately and must be read back before this record is treated as fully verified. No Godot build, automated tests, Android export, or Quest 3S runtime test was run.
