@@ -94,3 +94,21 @@ User answers are recorded as organizational direction, not legal approval or tec
 ### Targeted comparison status
 
 The XR Component Evidence Matrix now contains a source-level comparison of Startup's direct XRToolsPickable use and XrGpt's catalog-backed procedural pickup/inventory-return wrapper. This is a design comparison only. No code was copied, no source repository was modified, and no component is marked approved for reuse.
+
+
+## Follow-up gaps — 2026-10-11
+
+### GAP-027 — Dependency slice is larger than the pickup wrapper
+- **Priority:** P1
+- **Status:** OPEN
+- **Evidence:** XrGpt `procedural_pickable.gd` depends on `XRGptItemInstance`, `XRGptItemDefinition`, `XRGptItemCatalog`, and `XRGptInventoryController`. Runtime spawning additionally depends on `item_procedural_factory.gd` and `item_runtime.gd`, plus slot and interaction/placement paths.
+- **Impact:** Copying only the pickup wrapper is unlikely to provide the advertised inventory round trip and may introduce unresolved class or API dependencies.
+- **Next action:** Decide which user-visible capability Startup needs; inspect its current implementation and define a minimum migration boundary before any port.
+- **Source commit:** `3a11c719224ed8619fd48f13071ff4423edab15f` in `0SwiftKnightX/XrGpt`.
+
+### GAP-028 — Startup inventory implementation remains undetermined
+- **Priority:** P1
+- **Status:** UNKNOWN / OPEN
+- **Evidence:** Targeted GitHub search found inventory/catalog discussion in Startup's consolidated chat record, but did not establish the current implementation status or exhaustively enumerate relevant files.
+- **Impact:** We cannot yet conclude whether XrGpt's identity-preserving inventory bridge fills a real gap, duplicates existing work, or conflicts with Startup's architecture.
+- **Next action:** Inspect Startup's current tree and exact inventory-related scripts/scenes at a recorded commit; distinguish implemented code from plans and historical conversation records.
