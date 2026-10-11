@@ -336,3 +336,20 @@ The earlier component-comparison note correctly warned that the Startup project.
 - **Scope control:** Inventory UI, wrist UI, capacity/stack rules, equipment, persistence, multiplayer, crafting, and trading are deferred unless explicitly required. A minimal proposed acceptance slice covers definition/instance separation, physical pickup/release, in-memory transfer, duplicate-transfer rejection, and same-instance return.
 - **Change control:** The contract is DRAFT and is not implementation authorization. DEC-020 is proposed; GAP-029 tracks the unresolved scope decision. No code or assets were copied, and neither Startup nor XrGpt was modified.
 - **Verification:** New document created through GitHub. Related index/register/log updates are being recorded separately and must be read back before this record is treated as fully verified. No Godot build, automated tests, Android export, or Quest 3S runtime test was run.
+
+
+## 2026-10-11 — Source-document continuity consolidation
+
+**AI identity:** ChatGPT — GPT-6  
+**Scope:** Read-only inspection of source documentation in `0SwiftKnightX/Startup` and `0SwiftKnightX/XrGpt`; creation of new documentation records in `0SwiftKnightX/Yeta-nothe-repo`.  
+**Source snapshots:** Startup commit `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a` (recursive tree: 887 blobs, not truncated); XrGpt commit `3a11c719224ed8619fd48f13071ff4423edab15f` (recursive tree: 621 blobs, not truncated).  
+**Owner's clarified intent:** Existing repositories are reference sources. Study their information and intent, identify conflicting or obsolete structures, and produce new refined document versions in the organizational repository. Do not inherit old methods automatically, do not silently lose information, and do not modify either game repository. The license workstream remains separate.  
+**Created in Yeta-nothe-repo:**
+- `docs/organization/SOURCE_DOCUMENT_CATALOG.md` — initial pinned source register and review states.
+- `docs/organization/DOCUMENT_RESTRUCTURE_MAP.md` — proposed destination architecture and reconciliation method.
+- `docs/organization/REQUIREMENTS_PROVENANCE_LEDGER.md` — initial invariant extraction and conflict ledger.
+**Index updates:** Added the three records to `README.md` and `docs/organization/CONTINUITY_MAP.md`.  
+**Commits returned by GitHub:** catalog `7ecc81bdb0404f776cf18871b352fe4866dfd8b7`; restructure map `7af813b1d4be7a33fab82798aae49d9518db780d`; requirements ledger `92974f51fbaf795afacc46f23f20c9ee7e3ea538`. Index/map/log updates follow as separate commits.  
+**Readback:** New files were fetched from the repository after creation; blob SHAs are recorded in the verification follow-up. The three files are drafts/partial, not exhaustive.  
+**Limitations:** Source tree enumeration is complete for those pinned Git tree snapshots, but content extraction is partial. The source catalog marks partial/located states; no claim is made that every Markdown/text record has been fully read or every requirement captured. No code was copied. No changes were made to Startup or XrGpt. No license document was modified.  
+**Next action:** Continue full-text review and extraction; map every meaningful rule/claim/test to a ledger entry and destination, then reconcile conflicts and verify coverage before declaring consolidation complete.
