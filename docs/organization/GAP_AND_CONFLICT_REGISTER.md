@@ -1,0 +1,43 @@
+# Gap and Conflict Register
+
+Document ID: ORG-GAPS-001  
+Version: 0.1.0  
+Status: ACTIVE — initial register; items require targeted resolution  
+Created: 2026-10-10T22:58:00-04:00 (America/New_York)  
+Prepared by: ChatGPT (GPT-6)  
+Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
+
+## Operating rule
+This register replaces repeated broad foundation reviews with targeted follow-through. Each item has a concrete next action and an explicit evidence boundary. Once resolved, preserve the record and append the resolution; do not erase history.
+
+## Confirmed decisions and conflicts
+| ID | Priority | Finding | Evidence / impact | Next action / status |
+|---|---|---|---|---|
+| GAP-001 | P0 | Earlier docs treated umbrella role as unresolved. User now explicitly designated Yeta-nothe-repo as central organizational repository. | README and decision register contain stale uncertainty. | RESOLVED IN PRINCIPLE. Update decision register and continuity docs. Keep project code in source repositories unless separately approved. |
+| GAP-002 | P0 | “Everything in one repository” could mean one source of truth, not necessarily one giant code monorepo. | User wants central continuity while preserving prior repositories. Blind merge risks history loss, license conflicts, private-data exposure, and build collisions. | Adopt central documentation/provenance/indexing here; keep code in source repos until a specific migration is approved. |
+| GAP-003 | P0 | Historical conversations and project data are not demonstrably complete in GitHub. | GPT README describes an intended archive; current log is explicitly a session summary. | Inventory exports and logs; mark missing intervals; never claim complete coverage without evidence. |
+| GAP-004 | P0 | Desired permission tiers and paid authorization may conflict with calling all covered assets open source. | Open-source grants freedoms incompatible with a custom approval gate for those same rights. | Build an asset-class permission matrix covering code, non-code content, trademarks, proprietary materials, and third-party assets. Legal review before adoption. |
+| GAP-005 | P0 | Exact original “ORGANIZATION MASTER USE, ATTRIBUTION, AND RIGHTS LICENSE,” v0.1 dated 2026-10-08, not recovered. | Targeted GitHub search did not find exact wording in searched repositories. | Search other accessible repositories, history, exported chats, and Library files. If unrecovered, label any new draft as a new revision, not the original. |
+| GAP-006 | P1 | User names “Bastian Oleg” as lead XR-template developer; Startup README references BastiaanOlij/godot-xr-flynn-demo. | Similar spelling does not establish identity or ownership; targeted search did not confirm match. | Confirm exact profile/repository before provenance or ownership claims. |
+| GAP-007 | P1 | Startup, XrGpt, Personal-quest-development-, godot-xr-tools, ProjectMythos, and Mule-run-block-builder may contain related work but are distinct implementations. | Selective README reads show different project purposes and stacks. | Build per-repository feature maps and compare named modules only; no bulk merge. |
+| GAP-008 | P1 | XR repositories declare different Godot versions and potentially different XR Tools generations. | Startup targets Godot 4.7.2; ProjectMythos describes Godot 4.3+; other README compatibility tables differ. | Pin actual editor/plugin versions and test on target runtime before porting. |
+| GAP-009 | P1 | Startup local verifier status is not the same as physical Quest acceptance. | README says lobby/menu/playable scene and device acceptance remain open; repository audit reports a failed CI run and no current APK evidence in that audit. | Keep source/unit/runtime/device evidence separate. First game milestone: visible lit lobby/menu and interaction flow on Quest 3S. |
+| GAP-010 | P1 | OTECM artifacts are documented as present, but full schema validation and actual CI result were not verified in existing docs. | OTECM is marked PARTIAL. | Retrieve or run CI and validator; record exact run URL/commit. |
+| GAP-011 | P1 | Root MIT license may not describe intended licensing for every asset or future organizational material. | Custom permission framework is unresolved. | Inventory assets and third-party notices; avoid implying new rules override MIT or upstream licenses. |
+| GAP-012 | P1 | Consolidating data from GPT/plugins may expose private or access-controlled information in a public repo. | Umbrella repository is public; connected tools have different access scopes. | Publish only appropriate material; keep secrets and sensitive data out; use private storage only after approval. |
+| GAP-013 | P1 | One GitHub repository is not by itself a disaster-recovery plan. | Central index does not automatically contain all original content or history. | Define export schedule, hashes, restore test, and coverage for Git history, issues, releases, LFS, attachments, and external services. |
+| GAP-014 | P2 | “Organization” currently describes an initiative, not a proven legal entity. | Existing charter says legal identity, fundraising, partnership, and tax-exempt status are not established. | Preserve accurate public wording until legal formation/eligibility is evidenced. |
+| GAP-015 | P1 | Connected listing returned 27 repositories but cannot prove all historical/external work has been found. | Listing is account/access scoped; some appear to be upstream forks/mirrors. | Inventory these and search other accessible sources; record access limits rather than claiming global completeness. |
+| GAP-016 | P0 | Repeated foundation inspection is consuming time without sufficient implementation progress. | User explicitly asked that foundation inspection become a finished baseline task. | ADOPTED: no broad re-audit by default. Use targeted checks and change-triggered review. |
+
+## Highest-value next actions
+1. Maintain the continuity map and repository inventory as the landing page.
+2. Update the decision register to record the umbrella decision and supersede stale OPEN-001 wording.
+3. Resolve the license-history question through targeted repository/log/library searches.
+4. Inspect XR repositories by priority and build feature-level maps, starting with Startup and XrGpt.
+5. Inventory GPT and Prompt-base for historical records and reusable standards.
+6. Add actual CI/test evidence to OTECM.
+7. Establish a backup/restore plan before claiming all work is protected from loss.
+
+## Resolution format
+For each item, append date/time, status before and after, exact evidence/source, commit or URL, checks performed, remaining limitations, and whether user approval was required. A gap is not resolved merely because documentation mentions it.
