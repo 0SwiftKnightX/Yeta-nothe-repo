@@ -318,3 +318,13 @@ The earlier component-comparison note correctly warned that the Startup project.
 - **Compatibility and rights:** inspected project feature declarations differ (Startup 4.7; XrGpt 4.6); both inspected XR Tools manifests declare 4.5.1. Compatibility remains unverified. XrGpt's root Apache-2.0 license is evidence but file-level provenance/third-party boundaries remain unaudited. No code reuse approved.
 - **Verification:** GitHub source contents and blob SHAs were returned for the listed paths. No Godot import/build, automated tests, Android export, or Quest 3S runtime test was run in this task.
 - **Disposition / next action:** keep XrGpt reference-only. Inspect Startup's current tree and inventory-related implementation at a fixed commit; compare actual requirements and APIs before choosing any minimum migration. Preserve both source repositories.
+
+
+## 2026-10-11 — Startup tree-level inventory cross-check
+- **AI identity:** GPT-6.
+- **Repository/commit:** `0SwiftKnightX/Startup`, `main` resolved to `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a`; recursive Git tree response reported `truncated=false`.
+- **Inspected source:** `scenes/interaction_lab.tscn` blob `0f415266701454b38fd4c486911f2be4eb1c5f75`; `scripts/interaction_lab.gd` blob `0c84f821df9828b1f193f48c7dd5353b2cca4460`; `scripts/hero_state.gd` blob `226397eb06e043374cedf6fd4c5913b3026d1780`; `docs/INTERACTION_CONTRACTS.md` blob `afae89135c154521861af0851310d20699347a04`.
+- **Finding:** no general project-owned inventory controller, item instance, item definition, or item catalog file appears in the complete returned tree at this commit. The interaction lab's `SoulBlock` is a direct XR Tools pickable and its script manages a quest-specific selection/scan/transform/arena flow. The contracts document describes interaction expectations but is not an inventory implementation.
+- **Interpretation:** the implementation difference is now supported by the full returned tree, not merely a failed code search. This does not decide whether an inventory subsystem is required for Startup. It does not cover other branches or untracked local files.
+- **Decision checkpoint:** proposed DEC-019 records a requirements-first approach. Define the required item/inventory capabilities and acceptance criteria before any code port. XrGpt remains reference-only; no source code changed.
+- **Verification:** GitHub tree and file contents read successfully. No tests/build/import/export or Quest 3S runtime execution was performed.
