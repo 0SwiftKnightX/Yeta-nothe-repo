@@ -101,3 +101,34 @@ Additional status:
 - `docs/organization/FOUNDATION_BLUEPRINT.md` and `docs/organization/DECISION_REGISTER.md` were updated to reflect the OTECM MVP as PARTIAL, with their updates read back successfully. Update commits: `9799556de7de4fb9eba0e896d15a36f492fcbcfc` and `b4c8e2a0be0f77105ea34f9bf45d22e4c1f49c39`.
 
 The current implementation is a first repository-backed artifact, not yet a release-ready or independently audited tool. Next, verify actual CI execution and fix any failures before expanding the schema.
+
+
+## Primary-source research record
+
+Research timestamp: `2026-10-11T02:48:36.178Z` (UTC). Exa was used for source discovery and reading official pages; findings were recorded in `docs/organization/RESEARCH_MEMO_FUNDRAISING_LICENSING_GOVERNANCE.md`. The memo was read back after creation.
+
+Reviewed official sources:
+- GoFundMe Terms of Service (effective date shown: 2026-06-23): https://www.gofundme.com/c/terms
+- GoFundMe fundraiser type guidance (updated 2026-08-28): https://support.gofundme.com/hc/en-us/articles/203603984-Choosing-a-fundraiser-type
+- GoFundMe trustworthy fundraiser guidance (updated 2026-08-25): https://support.gofundme.com/hc/en-us/articles/115015836967-Guidelines-for-a-trustworthy-GoFundMe
+- Ohio Attorney General, Starting a Charity in Ohio: https://charitable.ohioago.gov/Charity-Registration/Starting-a-Charity-in-Ohio
+- Ohio Revised Code §1716.02: https://codes.ohio.gov/ohio-revised-code/section-1716.02
+- Open Source Initiative, Open Source Definition: https://opensource.org/osd
+- Open Source Initiative, FAQ: https://opensource.org/faq
+- SPDX License List: https://spdx.org/licenses/
+
+Key findings added to the memo:
+- GoFundMe distinguishes personal/organization fundraisers from nonprofit fundraisers; the reviewed official help page lists businesses as a possible personal/organization fundraiser cause. Platform terms make organizers responsible for accurate use-of-funds descriptions and applicable legal/tax compliance; transaction fees apply; donations are not automatically tax-deductible.
+- Ohio charitable registration obligations depend on the entity/activity and statutory exemptions; incorporation and federal tax exemption are separate.
+- Open-source licensing requires core freedoms such as redistribution and derived works. Preventing all forks/redistribution is incompatible with those freedoms; trademark and governance controls are separate.
+- These findings are preliminary planning evidence, not legal or tax advice. No fundraiser, entity, or license was launched/formed/adopted.
+
+Research-related repository commits:
+- Research memo: `6aab7d931f3993a8eb41c0d781d969c6fe39b90d`
+- Organization index updated to link the memo: `98ec77d8c444d23241e964c4fe379d5493b639bc`
+- Decision register updated with research status: `a16f3254428c017d15f3d67136c1239ef33a2e54`
+- The above paths were read back successfully through the GitHub integration.
+
+## Current validation boundary
+
+A structural sanity check on read-back JSON confirmed that the schema and sample parse as JSON, all top-level required fields exist, the sample statuses are in the declared enums, and all five internal JSON Schema references resolve. This is **not** a substitute for running a Draft 2020-12 validator or the Python unit tests. The GitHub combined-status query still returned no status checks for the workflow-creation commit at the latest check. CI execution remains UNKNOWN.
