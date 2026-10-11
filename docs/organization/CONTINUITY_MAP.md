@@ -71,6 +71,18 @@ The user identifies “Bastian Oleg” as the lead developer/source of XR enviro
 | Conversation archive initiative | 0SwiftKnightX/GPT | Audit export coverage and preservation status |
 | Shared evidence tooling | OTECM in this repository | Describe artifact and tested scope; do not imply truth automatically |
 
+
+
+### Documentation consolidation pass — 2026-10-11
+
+The following new destination records begin the source-to-destination continuity review:
+
+- [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md) — source snapshots, paths, blob identities, and review status.
+- [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md) — destination information architecture and conflict-resolution method.
+- [Requirements and Provenance Ledger](REQUIREMENTS_PROVENANCE_LEDGER.md) — initial extracted invariants and unresolved source review.
+
+These records are explicitly partial. The source trees were enumerated recursively at pinned commits, but not every text file has been read or every requirement extracted. Continue source review and coverage mapping; do not treat the initial ledger as exhaustive.
+
 ## Immediate continuity priorities
 1. Keep this map as the stable landing page for future sessions.
 2. Maintain repository inventory with purpose, relationship, license, evidence reviewed, status, and next action.
