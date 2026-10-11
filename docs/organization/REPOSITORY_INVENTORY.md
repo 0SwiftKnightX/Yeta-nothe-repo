@@ -70,3 +70,10 @@ Append newly discovered repositories rather than silently removing historical en
 - [Document Control Standard](DOCUMENT_CONTROL_STANDARD.md) — defines stable document IDs, AI identity, honest timestamps, evidence chronology, and navigation.
 - [Draft License Framework](DRAFT_LICENSE_FRAMEWORK.md) — new draft created because the user directed that historical recovery is not a prerequisite. Not approved for legal use.
 - [Decision Questionnaire](DECISION_QUESTIONNAIRE.md) — structured yes/no, single-choice, select-all, and extended-response questions; answers remain pending unless explicitly pre-marked as established user direction.
+
+ 
+## Addendum — Questionnaire follow-through artifacts — 2026-10-11
+
+- [Asset and Rights Inventory](ASSET_RIGHTS_INVENTORY.md) — initial rights/provenance rows for Yeta-nothe-repo, Startup, XrGpt, generated creature assets, and upstream XR references. This is partial and does not clear assets for copying.
+- [XR Component Evidence Matrix](XR_COMPONENT_EVIDENCE_MATRIX.md) — initial date comparison and evidence gaps for Startup, XrGpt, and upstream XR references. It does not approve any component for reuse.
+- User direction: compare XR candidates per component; retain older, better-tested alternatives; centralize docs/references; require project-specific approval for code migrations.
