@@ -302,3 +302,8 @@ All records are initial/partial. No source files were copied, no other project r
 ### Correction and provenance note
 
 The Startup project.godot blob SHA was not captured in this action's output, so this log does not invent it. The reuse-policy blob SHA is recorded separately above. The matrix links the exact source path and commit; the next update should capture the project.godot blob SHA cleanly if it is needed as a distinct artifact identifier.
+
+
+### Provenance correction — project configuration blob SHA — 2026-10-11
+
+The earlier component-comparison note correctly warned that the Startup project.godot blob SHA had not been captured, but included the reuse-policy SHA in the same bullet as a warning example. To eliminate ambiguity: Startup project.godot at commit 6f56ad308fcf8d6f15d40a03beddfefdf8201f2a was fetched and its actual blob SHA is **7d46ae73e8868c1b539ec1ee685c5bbe50c4056e**. The reuse-policy file remains **7f8e957a6167c2d34e4a0e8f4f5f8d9c80ad1e76**. The two hashes identify different files.
