@@ -77,3 +77,27 @@ All five documentation files were created on `main` through the connected GitHub
 | `logs/AI_CONVERSATION_LOG.md` | `88fbde495d9a138e7a368cee316063a77c2fb542` | `d72551e4939c4e1b3b6dce18215234ad31d4ff86` | PASS — content fetched |
 
 The fetch/read-back confirms that each path is present and readable through the GitHub integration. It does not independently validate every legal, strategic, or factual proposition in the documents. No automated lint, legal review, external partnership verification, fundraiser eligibility check, or OTECM software test was run in this session.
+
+
+## OTECM MVP implementation record
+
+Work timestamp: `2026-10-11T02:47:31.064Z` (UTC; GitHub commits below provide repository history). The following paths were created and read back successfully:
+
+| Path | Create commit SHA | Read-back blob SHA | Result |
+|---|---|---|---|
+| `schemas/otecm.schema.json` | `a488e50124de7436c831413d869bc9876957e9b6` | `132f052f28144064919e1780f61178ae4c41d792` | PASS — content fetched |
+| `examples/otecm/sample-record.json` | `3f89fbdc67e8ca16da87d8a6741b00591a49f6f5` | `6304695047b23d05984a894f4d783b0cad3205e9` | PASS — content fetched |
+| `docs/organization/OTECM_SPECIFICATION.md` | `1e4aab0ef254b57e8dfae71be832b51c9ddaade4` | `cc4e2291420c1131cdf9be505274b5d4783a6cc8` | PASS — content fetched |
+| `tools/otecm/validate.py` | `6e984e62297dd775912cace1e20af6ef2f1a668b` | `de11f3197947e8b4b11170e6f8f33e75cf64a6f3` | PASS — content fetched |
+| `tests/test_otecm.py` | `3a2c21788037cb4f491b1197168b38932e27e6c5` | `21e27a34b5f4586fbbd6b209ad6a7b05c69459c1` | PASS — content fetched |
+| `.github/workflows/otecm-validation.yml` | `13241dac965721252a38c7088531da76433d7dc1` | `65b61d879a94f17def670a58ed678085ab07f132` | PASS — content fetched |
+
+Additional status:
+- The schema and sample were parsed as JSON in the creation process before writing them to GitHub.
+- The workflow was added to the repository. A GitHub combined-status query for its creation commit returned no status checks at query time. Therefore, **the JSON Schema validator and unit tests are not yet claimed to have passed in CI**.
+- The schema follows JSON Schema Draft 2020-12: https://json-schema.org/specification
+- License metadata guidance references the official SPDX License List: https://spdx.org/licenses/
+- The example is explicitly synthetic and uses UNKNOWN / NOT_RUN values; it does not assert compatibility of a real project.
+- `docs/organization/FOUNDATION_BLUEPRINT.md` and `docs/organization/DECISION_REGISTER.md` were updated to reflect the OTECM MVP as PARTIAL, with their updates read back successfully. Update commits: `9799556de7de4fb9eba0e896d15a36f492fcbcfc` and `b4c8e2a0be0f77105ea34f9bf45d22e4c1f49c39`.
+
+The current implementation is a first repository-backed artifact, not yet a release-ready or independently audited tool. Next, verify actual CI execution and fix any failures before expanding the schema.
