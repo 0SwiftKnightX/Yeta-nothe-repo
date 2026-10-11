@@ -80,6 +80,8 @@ The following new destination records begin the source-to-destination continuity
 - [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md) — source snapshots, paths, blob identities, and review status.
 - [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md) — destination information architecture and conflict-resolution method.
 - [Requirements and Provenance Ledger](REQUIREMENTS_PROVENANCE_LEDGER.md) — initial extracted invariants and unresolved source review.
+- [Domain Requirements Extraction](DOMAIN_REQUIREMENTS_EXTRACTION.md) — detailed game/XR requirement preservation.
+- [AI-Native Computing Requirements](AI_NATIVE_COMPUTING_REQUIREMENTS.md) — separate concept extraction from historical AI architecture records.
 
 These records are explicitly partial. The source trees were enumerated recursively at pinned commits, but not every text file has been read or every requirement extracted. Continue source review and coverage mapping; do not treat the initial ledger as exhaustive.
 
