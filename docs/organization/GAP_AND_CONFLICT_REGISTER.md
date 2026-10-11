@@ -112,3 +112,7 @@ The XR Component Evidence Matrix now contains a source-level comparison of Start
 - **Evidence:** Targeted GitHub search found inventory/catalog discussion in Startup's consolidated chat record, but did not establish the current implementation status or exhaustively enumerate relevant files.
 - **Impact:** We cannot yet conclude whether XrGpt's identity-preserving inventory bridge fills a real gap, duplicates existing work, or conflicts with Startup's architecture.
 - **Next action:** Inspect Startup's current tree and exact inventory-related scripts/scenes at a recorded commit; distinguish implemented code from plans and historical conversation records.
+
+
+### GAP-028 evidence refinement — 2026-10-11
+The prior targeted code search was followed by a recursive Git tree request for Startup `main`. It returned commit `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a`, `truncated=false`, matching the previously inspected commit. No project-owned general inventory controller, item-instance, item-definition, or item-catalog implementation was present in the returned tree. The interaction lab uses a single XR Tools pickable SoulBlock and quest-specific HeroState transitions. This makes a reusable inventory/catalog subsystem **not present in the inspected Startup tree**, while the need for that subsystem remains a product decision. This refinement does not assert that every possible historical branch or untracked local file was inspected.
