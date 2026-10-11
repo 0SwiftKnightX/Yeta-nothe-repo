@@ -60,3 +60,14 @@ Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 - Recorded the user's multi-select preference: when multiple independent options are presented, support selecting several or all options.
 - Selectively inspected README files for Startup, XrGpt, ProjectMythos, godot-xr-tools, Personal-quest-development-, Mule-run-block-builder, Forge, Prompt-base, and GPT. This is not a full source, history, license, or test audit.
 - Targeted GitHub searches did not recover the historical license draft or establish that “Bastian Oleg” and “BastiaanOlij” are the same identity. These remain open.
+
+
+## Addendum — 2026-10-10
+
+| ID | Decision | Status | Notes |
+|---|---|---|---|
+| DEC-009 | Do not require recovery of a historical license draft; create a new draft framework. | CONFIRMED 2026-10-10 | New draft is docs/organization/DRAFT_LICENSE_FRAMEWORK.md. This does not approve it for legal use or resolve ownership/jurisdiction. |
+| DEC-010 | Establish a document control standard for identity, chronology, AI identity, evidence, and navigation. | ACTIVE STANDARD 2026-10-10 | See docs/organization/DOCUMENT_CONTROL_STANDARD.md. Apply to new high-value documents and normalize older documents progressively without overwriting originals. |
+| DEC-011 | Use a structured questionnaire with yes/no, single-choice, select-all, and extended-response formats. | CONFIRMED WORKFLOW PREFERENCE 2026-10-10 | See docs/organization/DECISION_QUESTIONNAIRE.md. Leave unresolved choices open; do not treat a blank as approval. |
+| DEC-012 | For XR reuse, compare exact source dates/commits and prioritize the newest relevant real XR code that passes provenance, license, and compatibility checks. | PROPOSED — USER CONFIRMATION PENDING | Do not choose by date alone; retain evidence of older better-tested candidates. |
+| DEC-013 | Keep existing repositories intact; no blind bulk merge. | CONFIRMED 2026-10-10 | The umbrella centralizes continuity and selected verified artifacts. Code migration is a separate project-specific decision. |
