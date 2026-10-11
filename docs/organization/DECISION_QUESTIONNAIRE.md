@@ -175,3 +175,25 @@ Write any missing rule, conflict, exception, or scenario. Leave blank if none.
 3. Update only affected policies, standards, and workstreams.
 4. Add new gaps rather than silently resolving contradictions.
 5. Continue reversible work while answers are pending, unless that work depends on the answer.
+
+
+## Answer record addendum — 2026-10-11 (America/New_York)
+
+**Answer state:** Q2–Q5 from the user's submitted answer packet are recorded below. Q1 and other questions not explicitly answered in that packet retain their existing recorded/default status; no blank is treated as approval. This addendum supersedes the earlier “answers pending” evidence note for the answered items only.
+
+### Submitted answers
+
+- **Licensing models — select all:** genuine open-source code under standard licenses; permission-tiered source-available code; separately licensed game content and creative assets; separate trademark and branding permissions; paid authorization for additional rights controlled by the organization; free community and evaluation permissions; dual licensing where appropriate; and unsure—decide after the asset inventory.
+- **XR reuse evidence — select all:** exact source repository and file path; commit SHA or immutable release; source date compared with today's date; verified license and reuse rights; Godot and XR dependency versions; automated test/build evidence; Quest 3S runtime verification; and retain older, better-tested alternatives for comparison.
+- **Source recency:** compare and decide per component.
+- **Repository architecture:** central documentation plus verified references and project-specific migration approvals.
+- **Extended response:** recency and architecture need hybrid answers; assign functions appropriately to components and asset classes.
+
+### Interpretation and safeguards
+
+1. Treat the licensing selections as a portfolio to evaluate, not a decision that every model applies to every asset.
+2. Asset-to-license assignment remains undecided until an asset/rights inventory is completed.
+3. No questionnaire response adopts the draft license, confirms ownership, overrides upstream terms, or constitutes legal approval.
+4. Newest XR source is not automatically preferred; compare evidence per component and retain older tested candidates.
+5. Central documentation/reference does not authorize bulk migration or modification of existing project repositories.
+6. See `DECISION_REGISTER.md` for decision IDs and `GAP_AND_CONFLICT_REGISTER.md` for legal/technical conflicts and next actions.
