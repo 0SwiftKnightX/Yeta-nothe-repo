@@ -80,3 +80,17 @@ User answers are recorded as organizational direction, not legal approval or tec
 2. Build the per-component XR source evidence matrix without changing Startup or other source repositories.
 3. Resolve license, ownership, compatibility, and testing conflicts before migration or public permission claims.
 4. Keep all unresolved items open; do not infer legal adoption from questionnaire answers.
+
+
+## Addendum — targeted XR/license inspection — 2026-10-11
+
+| ID | Priority | Finding / conflict | Evidence / impact | Next action / status |
+|---|---|---|---|---|
+| GAP-023 | P0 | **Startup has no root LICENSE file according to its own reuse policy.** | Startup's ai/REFERENCE_AND_REUSE_RULES.md says not to infer a project license and not to copy material unless the applicable license or permission allows it. Its note about upstream MIT licenses is dated 2026-09-27 and does not replace current revision-specific checks. | OPEN — decide Startup's own licensing posture and inspect existing code/assets provenance. Do not assume the repository's public visibility grants permission to third parties. |
+| GAP-024 | P1 | **Godot feature target differs between Startup and XrGpt.** | At the inspected commits, Startup project.godot declares feature 4.7 while XrGpt declares feature 4.6 / GL Compatibility. Both plugin manifests declare Godot XR Tools 4.5.1. Matching plugin version does not remove the engine-version mismatch. | OPEN — treat every port as a component-level compatibility task; run Godot 4.7.2 import/source validation and Quest 3S tests after any approved port. |
+| GAP-025 | P1 | **XrGpt procedural-pickup bridge may solve a different problem than Startup's current pickable scene.** | XrGpt's procedural_pickable.gd preserves catalog-backed item identity through pickup and inventory return; Startup's inspected interaction scene attaches XRToolsPickable directly to a test rigid body. | OPEN — first decide whether Startup requires procedural item/catalog/inventory return. If not, retain the simpler implementation; do not port complexity without an acceptance requirement. |
+| GAP-026 | P1 | **Parent repository license does not automatically clear every bundled file.** | XrGpt root LICENSE is Apache-2.0, but vendored XR Tools, generated creative assets, and any other third-party content need their own scope/notice checks. | OPEN — inspect NOTICE/file headers and relevant source history before copying a specific file or asset. |
+
+### Targeted comparison status
+
+The XR Component Evidence Matrix now contains a source-level comparison of Startup's direct XRToolsPickable use and XrGpt's catalog-backed procedural pickup/inventory-return wrapper. This is a design comparison only. No code was copied, no source repository was modified, and no component is marked approved for reuse.
