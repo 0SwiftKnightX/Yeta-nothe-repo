@@ -64,3 +64,9 @@ Prepared by: ChatGPT (GPT-6)
 
 ## Update protocol
 Append newly discovered repositories rather than silently removing historical entries. Record date, source, default branch, visibility, relationship (owned/fork/mirror/template/reference), license, inspected paths, commit/blob IDs where available, confidence, next action, and access limitations. Update the continuity map when a repository's role or canonical destination changes.
+
+## Organization-level artifacts added 2026-10-10
+
+- [Document Control Standard](DOCUMENT_CONTROL_STANDARD.md) — defines stable document IDs, AI identity, honest timestamps, evidence chronology, and navigation.
+- [Draft License Framework](DRAFT_LICENSE_FRAMEWORK.md) — new draft created because the user directed that historical recovery is not a prerequisite. Not approved for legal use.
+- [Decision Questionnaire](DECISION_QUESTIONNAIRE.md) — structured yes/no, single-choice, select-all, and extended-response questions; answers remain pending unless explicitly pre-marked as established user direction.
