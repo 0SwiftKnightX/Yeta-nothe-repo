@@ -139,3 +139,8 @@ Primary source: [XrGpt production architecture](https://github.com/0SwiftKnightX
 - **Gate 10 — Cross-play/network:** shared XR/Flat simulation contracts, authority/ownership, network-safe player/vehicle/inventory/combat/progression state, session lifecycle and reconciliation/replication tests. “Runs in VR and Flat” alone is not cross-play.
 
 The source proposes an automated one-hour execution window as an automation target, not a promise that a complete production game can be safely built in one hour. A bounded vertical slice and validation gates are acceptable; file creation alone does not complete a system.
+
+
+## 13. Cross-project boundary safeguard
+
+The requirements in this document come from separate source project histories. Startup's narrow first-slice prototype requirements, XrGpt's historical production architecture, and the broader user-authored game ideas must remain individually traceable. Similar features can be compared, but do not assume one project supersedes another or that a historical roadmap is the current roadmap for The Living Continuum. The canonical game blueprint should receive only owner-confirmed applicable requirements; otherwise retain them here as reference requirements or future options.
