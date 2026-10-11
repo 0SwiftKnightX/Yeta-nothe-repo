@@ -95,3 +95,11 @@ These records are explicitly partial. The source trees were enumerated recursive
 
 ## Evidence boundary
 Repository metadata and README content were read through the connected GitHub integration on 2026-10-10. The inventory lists repositories visible to that integration at that time; it may not include inaccessible repositories, other owners' repositories, external services, private account data, or unexported ChatGPT conversations. No whole-repository clone, hash comparison, full history audit, license audit, or physical Quest test was performed in this mapping pass.
+
+### Additional standards and workstreams — 2026-10-11
+
+- [Android Static Core Requirements](ANDROID_STATIC_CORE_REQUIREMENTS.md)
+- [AI Work Protocol](AI_WORK_PROTOCOL.md)
+- [Handoff and Session Continuity Standard](HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md)
+- [Archive and Conversation Provenance Standard](ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md)
+- [Verification and Evidence Standard](VERIFICATION_EVIDENCE_STANDARD.md)
