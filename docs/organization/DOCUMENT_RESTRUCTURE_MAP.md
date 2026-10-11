@@ -146,3 +146,8 @@ All five are drafts or concept extractions. They preserve the source intent whil
 ## Project-boundary clarification — 2026-10-11
 
 The source requirements extracted so far span different project identities and maturity levels. Startup is a Quest-first prototype with a deliberately narrow first slice; XrGpt is a separate XR foundation and has a separate historical production architecture contract; the Android Static Core and AI-native computing concepts are also distinct workstreams. Similar terms (inventory, vehicle, world, AI, XR) do not prove that requirements belong to the same product. Preserve source attribution in the ledger and extraction documents. Do not move a source requirement into `docs/PROJECT_BLUEPRINT.md` as a canonical Living Continuum requirement until its applicability is confirmed by the owner or an existing explicit decision.
+
+
+## Workstream ownership boundary — 2026-10-11
+
+For this effort, GPT-6 is coordinating source-document discovery, extraction, reconciliation, destination mapping, continuity standards and coverage verification in Yeta-nothe-repo. The separate license workstream is assigned to another AI per the owner's direction. This work may preserve licensing-related source references and flag conflicts, but it must not edit, approve, supersede or publish the license draft or adopt a source repository's historical license-tier proposal as policy. The owner remains the authority for scope and cross-workstream decisions.
