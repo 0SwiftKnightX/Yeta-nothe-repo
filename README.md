@@ -6,6 +6,9 @@ Current documentation source of truth for the work being developed in this repos
 
 - [Continuity Map](docs/organization/CONTINUITY_MAP.md) — central map of repositories, project relationships, and work routing.
 - [Repository Inventory](docs/organization/REPOSITORY_INVENTORY.md) — point-in-time inventory of repositories visible through the connected GitHub integration.
+- [Source Document Catalog](docs/organization/SOURCE_DOCUMENT_CATALOG.md) — pinned source-file inventory, blob SHAs, review states, and coverage limitations.
+- [Document Restructure Map](docs/organization/DOCUMENT_RESTRUCTURE_MAP.md) — proposed destination architecture for consolidated documentation.
+- [Requirements and Provenance Ledger](docs/organization/REQUIREMENTS_PROVENANCE_LEDGER.md) — extracted invariants and source-traceable requirements; currently partial.
 - [Gap and Conflict Register](docs/organization/GAP_AND_CONFLICT_REGISTER.md) — targeted open gaps, superseded assumptions, and next actions.
 - [Document Control Standard](docs/organization/DOCUMENT_CONTROL_STANDARD.md) — document IDs, AI identity, timestamps, evidence dates, and next-document links.
 - [Draft License Framework](docs/organization/DRAFT_LICENSE_FRAMEWORK.md) — new permission-tier and asset-class licensing draft; not yet approved.
