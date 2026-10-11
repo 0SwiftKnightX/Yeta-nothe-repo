@@ -49,3 +49,34 @@ For each item, append date/time, status before and after, exact evidence/source,
 - **Decision collection gap:** created [Decision Questionnaire](DECISION_QUESTIONNAIRE.md) with Yes/No/Unsure, choose-one, select-all, and extended-response questions. Existing defaults are marked only where already directed by the user; all other answers remain pending.
 - **XR recency rule proposed:** capture exact repository, commit/release, dates, license, engine/plugin versions, tests, and target-device evidence. Prefer newest relevant code only when provenance, license, and compatibility gates pass. This rule is proposed for user confirmation.
 - **No blind merge:** “consolidation” means central documentation and provenance first. Code migration requires project-specific compatibility, license, and history checks.
+
+
+## Addendum — Questionnaire answers and conflict flags — 2026-10-11 (America/New_York)
+
+User answers are recorded as organizational direction, not legal approval or technical verification. Earlier entries are preserved.
+
+### New or clarified gaps
+
+| ID | Priority | Finding / conflict | Why it matters | Next action / status |
+|---|---|---|---|---|
+| GAP-017 | P0 | **Open-source freedoms vs. permission tiers:** the proposed portfolio includes both genuine open-source code and approval-gated/source-available assets. | A custom approval gate or paid permission requirement cannot be applied to rights already granted by the chosen open-source license. Calling one approval-gated package “open source” would be misleading. | OPEN — classify each asset and repository; choose a recognized license for open-source code and separate terms for controlled assets. Legal review required. |
+| GAP-018 | P0 | **Paid rights and dual licensing depend on actual authority:** the user wants paid additional rights where controlled and dual licensing where appropriate. | The organization must own or have authority to license the relevant rights; third-party dependencies and contributor rights may limit options. Dual licensing may require contributor permissions/agreements and compatible upstream terms. | OPEN — asset/rights inventory, ownership/provenance evidence, dependency-license review, contributor policy, and legal review before offering terms. |
+| GAP-019 | P1 | **Hybrid repository architecture needs per-project boundaries:** central docs and verified references are desired, while code migrations require project-specific approval. | A reference, submodule, copied file, fork, and full history migration have different maintenance, license, provenance, and backup implications. | OPEN — document source-of-truth path, immutable source reference, migration approver, preservation/rollback method, and acceptance checks for each proposed migration. No bulk migration authorized. |
+| GAP-020 | P1 | **XR source recency must be component-specific:** user selected compare-and-decide per component and preserve older, better-tested alternatives. | The newest commit can be less tested, incompatible with Godot/XR dependency versions, or unsuitable for Quest 3S. A blanket recency rule hides these trade-offs. | OPEN — build a candidate matrix per component with source path, immutable SHA/release, relevant date, license, engine/dependency versions, automated test/build results, device evidence, and reason selected/rejected. |
+| GAP-021 | P1 | **Evidence layers can disagree:** automated tests/builds and Quest 3S runtime verification are separate evidence requirements. | A passing source test or desktop build does not establish standalone-device runtime acceptance; lack of device access must not be represented as failure or success. | OPEN — track source/static checks, automated tests, Android export/build, install/launch, and physical Quest 3S behavior as separate statuses; mark unavailable evidence UNKNOWN / NOT RUN. |
+| GAP-022 | P1 | **“Unsure—decide after asset inventory” remains an explicit constraint within the selected licensing portfolio.** | The selection of several licensing models does not decide which model applies to any specific asset, nor establish ownership. | OPEN — inventory code, dependencies, art, music, narrative, data, documentation, trademarks, and contributions; assign rights only with evidence. |
+
+### Questionnaire resolution record
+
+- Q1 remains as previously documented: Yeta-nothe-repo is the organizational documentation/provenance/continuity hub; existing repositories remain intact unless a specific migration is approved.
+- The XR evidence selection is recorded as: exact source repo/path; immutable commit/release; source date compared with current date; license/reuse rights; Godot/XR versions; automated test/build evidence; Quest 3S runtime evidence; retain older better-tested alternatives.
+- Recency: compare and decide per component, not “newest always.”
+- Architecture: central documentation and verified references plus project-specific migration approvals.
+- Licensing: a portfolio of distinct models is intended, but the assignment of rights is pending asset inventory. Genuine open-source code must remain governed by the freedoms of its selected standard license.
+
+### Immediate execution order
+
+1. Create the asset inventory/rights matrix and mark unknown ownership explicitly.
+2. Build the per-component XR source evidence matrix without changing Startup or other source repositories.
+3. Resolve license, ownership, compatibility, and testing conflicts before migration or public permission claims.
+4. Keep all unresolved items open; do not infer legal adoption from questionnaire answers.
