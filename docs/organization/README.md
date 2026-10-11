@@ -37,3 +37,6 @@ This directory records the proposed open-technology organization and its operati
 ## Repository rule
 
 Project documents, decision records, and AI logs belong in this GitHub repository. If a future task genuinely needs a separate repository or environment, record the reason, owner, destination, migration plan, integrity checks, and explicit approval here before moving work. Do not silently fork the source of truth.
+
+- [Asset and Rights Inventory](ASSET_RIGHTS_INVENTORY.md) — initial asset-class and provenance inventory; rights assignments remain open until evidence is collected.
+- [XR Component Evidence Matrix](XR_COMPONENT_EVIDENCE_MATRIX.md) — compares XR candidates per component using immutable source references, dates, license, compatibility, tests, and Quest 3S evidence.
