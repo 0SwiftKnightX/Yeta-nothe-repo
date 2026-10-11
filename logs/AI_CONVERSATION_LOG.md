@@ -227,3 +227,31 @@ Each created/updated file must be read back after the write and resulting commit
 ### Read-back verification addendum — 2026-10-10
 
 The following nine paths were fetched again after writes. The expected key content was present and the returned blob SHAs were recorded: `docs/organization/DOCUMENT_CONTROL_STANDARD.md` (`789cc7f3aebaefba1c56f2e051f78f06aef6c6e0`); `docs/organization/DRAFT_LICENSE_FRAMEWORK.md` (`db7b6b424123d5f9da85972339702c25e5173b7c`); `docs/organization/DECISION_QUESTIONNAIRE.md` (`80aca96c1b3b82ba2e31b5062652864011bad096`); `README.md` (`e3c1e7a084520e4eb8432476eb2dfd36b7beb2a7`); `docs/organization/README.md` (`e4d6e05f1b802979f603316f81369fa89313260a`); `docs/organization/REPOSITORY_INVENTORY.md` (`52ebde81bfdb29092c29ea11ce48fb703fd3bbd4`); `docs/organization/GAP_AND_CONFLICT_REGISTER.md` (`044f342fe56c6ab9a6c4c003680ba0f69f25d3d8`); `docs/organization/DECISION_REGISTER.md` (`d7cfda227099ea0bb0199713940dc96264a3c742`); `logs/AI_CONVERSATION_LOG.md` (`6054c72c99ff187aa57229aa2f740279040091b3`, before this verification addendum). Read-back verification confirms these expected contents were present; it does not verify legal validity, complete historical coverage, runtime behavior, or external backups.
+
+
+## Continuation record — questionnaire answers recorded — 2026-10-11 (America/New_York)
+
+### User-submitted decisions
+
+- Licensing portfolio: genuine open-source code under standard licenses; permission-tiered source-available code; separately licensed game content/creative assets; separate trademark/branding permissions; paid authorization only for additional rights controlled by the organization; free community/evaluation permissions; dual licensing where appropriate; and defer asset-specific assignment until an inventory exists.
+- XR evidence: exact source repository/path; immutable commit/release; source date compared with current date; verified license/reuse rights; Godot and XR dependency versions; automated test/build evidence; Quest 3S runtime verification; and retaining older, better-tested candidates.
+- Source recency: compare and decide per component.
+- Repository architecture: central documentation and verified references with project-specific migration approvals.
+- Clarification: the licensing and architecture/recency answers should be hybrid systems whose functions are assigned to the appropriate asset classes and components.
+
+### Repository updates
+
+- Appended DEC-014 through DEC-017 to `docs/organization/DECISION_REGISTER.md`; preserved earlier decisions and their status.
+- Appended GAP-017 through GAP-022 to `docs/organization/GAP_AND_CONFLICT_REGISTER.md`, including open-source/permission-tier conflict, licensing authority/dual licensing, migration boundaries, component-level XR recency, separate technical evidence layers, and the pending asset inventory.
+- Appended the submitted answer record and safeguards to `docs/organization/DECISION_QUESTIONNAIRE.md`.
+- The records distinguish user direction from legal approval and technical verification. The draft license remains unapproved; no other project repository was modified and no code was migrated.
+
+### Verification boundary
+
+The GitHub update operations returned commit/blob identifiers. Read-back verification is still required before marking these appended records verified. No legal review, asset ownership audit, XR source selection, or Quest 3S runtime test was performed as part of recording these answers.
+
+### Next actions
+
+1. Read back the three updated decision documents and this log.
+2. Create an asset inventory/rights matrix before assigning licenses.
+3. Build the per-component XR candidate/evidence matrix without modifying source projects.
