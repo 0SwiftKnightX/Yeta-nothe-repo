@@ -151,3 +151,8 @@ The source requirements extracted so far span different project identities and m
 ## Workstream ownership boundary — 2026-10-11
 
 For this effort, GPT-6 is coordinating source-document discovery, extraction, reconciliation, destination mapping, continuity standards and coverage verification in Yeta-nothe-repo. The separate license workstream is assigned to another AI per the owner's direction. This work may preserve licensing-related source references and flag conflicts, but it must not edit, approve, supersede or publish the license draft or adopt a source repository's historical license-tier proposal as policy. The owner remains the authority for scope and cross-workstream decisions.
+
+
+## Historical event indexing — 2026-10-11
+
+[Historical Source Event Crosswalk](SOURCE_EVENT_CROSSWALK.md) now indexes the pinned Startup worklogs, conversation records and audit archive, plus the XrGpt README chronology, dated handoff, Vector concept log and Android Static Core research document. It indexes source entries/sections without pretending that index creation equals requirement extraction. The next pass must assign each meaningful entry a destination/ledger ID or a documented duplicate/context-only disposition.
