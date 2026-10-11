@@ -187,3 +187,38 @@ Each created/updated file must be read back after the write and resulting commit
 3. Build the XR feature continuity matrix from Startup and XrGpt source files and verify exact reference sources/versions.
 4. Search available logs and exports for the exact historical license text; preserve original text if recovered.
 5. Inspect GPT and Prompt-base contents to determine actual historical record coverage.
+
+
+## Continuation record — 2026-10-10 (America/New_York; exact time not independently obtained)
+
+### User direction
+
+- Historical license recovery is not a prerequisite. Draft a new licensing framework instead.
+- Continue using Yeta-nothe-repo as the organizational umbrella; preserve existing repositories and do not blindly merge code.
+- XR reuse should prioritize the newest relevant real XR work, with explicit source dates/commits and compatibility evidence. Newer alone does not prove better or compatible.
+- Important documents need stable identifiers, version, honest timestamps/time zone, AI product/model identity, session log, predecessor and next-document links, supersession relationships, evidence dates, and verification status.
+- User prefers simple test-like decisions: Yes/No, multiple choice, select all, and extended response. “Select all” should be available when options can coexist.
+
+### Actions performed
+
+- Created docs/organization/DOCUMENT_CONTROL_STANDARD.md (document identity, chronology, evidence, navigation, and additive change rules).
+- Created docs/organization/DRAFT_LICENSE_FRAMEWORK.md (new asset-class and permission-tier licensing draft, clearly marked not approved for legal use).
+- Created docs/organization/DECISION_QUESTIONNAIRE.md (15 questions covering repository boundary, licensing, upstream rights, XR evidence/recency, chronology, AI identity, repository architecture, conversation logs, audit cadence, child-facing safety, and multi-select workflow).
+- Updated root README and organization index to link these artifacts.
+- Updated repository inventory with the new organization-level artifacts.
+- Updated GAP-005 to reflect the user's decision that historical recovery is not a prerequisite; unresolved legal ownership, scope, and approval questions remain open.
+- Added DEC-009 through DEC-013 for license drafting, document control, questionnaire workflow, XR reuse criteria (proposed), and no blind bulk merge.
+
+### Evidence and limitations
+
+- GitHub file searches for license/permission wording and document metadata terms returned no matching code-search results in this repository; this does not prove no prior content exists elsewhere.
+- New license is a conceptual draft only. It does not itself grant permissions and has not been legally reviewed.
+- Exact wall-clock time was not independently retrieved during this action, so the log records date and explicitly does not invent a timestamp.
+- The new files and updates still require read-back verification after writes. No other repository was modified and no code was migrated.
+
+### Next actions
+
+1. Read back all newly created and updated documents and record resulting content SHAs.
+2. Present the questionnaire in a concise interactive form, with multi-select options and an extended-response field.
+3. After answers, update decisions and gaps additively.
+4. Start a targeted XR source/commit/compatibility matrix for Startup and the relevant reference projects.
