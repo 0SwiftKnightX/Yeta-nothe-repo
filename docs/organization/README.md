@@ -47,6 +47,7 @@ Project documents, decision records, and AI logs belong in this GitHub repositor
 ## Source review and consolidation
 
 - [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md) — pinned source manifest for Startup and XrGpt; includes review states and coverage limits.
+- [Historical Source Event Crosswalk](SOURCE_EVENT_CROSSWALK.md) — index of dated worklog entries and sections for entry-by-entry extraction.
 - [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md) — proposed destination architecture and source conflict-resolution method.
 - [Requirements and Provenance Ledger](REQUIREMENTS_PROVENANCE_LEDGER.md) — cross-cutting extracted requirements and open conflicts.
 - [Domain Requirements Extraction](DOMAIN_REQUIREMENTS_EXTRACTION.md) — game/XR, construction, vehicle, avatar, inventory and world intent.
