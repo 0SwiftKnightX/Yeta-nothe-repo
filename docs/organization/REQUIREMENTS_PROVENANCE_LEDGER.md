@@ -106,3 +106,8 @@ Detailed game, XR, construction, vehicle, avatar, inventory, world, AI-native co
 |---|---|---|---|
 | REQ-SCOPE-004 | Similar concepts across repositories do not prove the same product scope, implementation authority, roadmap priority, or migration target. Keep Startup, XrGpt, The Living Continuum, AI-native computing and Android Static Core distinct until the owner confirms a relationship. | Source project bibles, XrGpt production architecture and Android Static Core research, current destination blueprint | EXTRACTED / MAPPED |
 | REQ-SCOPE-005 | Preserve every source requirement in a traceable source-specific record even when it is not adopted into the current canonical blueprint. | Current owner direction and document restructure map | EXTRACTED / MAPPED |
+
+
+## 10. Historical event extraction index
+
+The [Historical Source Event Crosswalk](SOURCE_EVENT_CROSSWALK.md) is the working queue for entry-by-entry extraction from the Startup and XrGpt logs/handoffs/research records. An indexed row is not considered extracted until its material claims, requirements, decisions, corrections and tests have ledger IDs or an explicit context-only/duplicate disposition.
