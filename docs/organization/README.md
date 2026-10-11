@@ -14,6 +14,7 @@ This directory records the proposed open-technology organization and its operati
 - [Foundation Blueprint](FOUNDATION_BLUEPRINT.md) — mission, proposed scope, roadmap, constraints, and open questions.
 - [Operating Charter](OPERATING_CHARTER.md) — evidence standards, change control, tool use, verification, and migration rules.
 - [Decision Register](DECISION_REGISTER.md) — decisions, assumptions, unresolved questions, and evidence.
+- [Research Memo](RESEARCH_MEMO_FUNDRAISING_LICENSING_GOVERNANCE.md) — primary-source findings on GoFundMe, Ohio charity rules, open-source licensing, and governance.
 - [AI Conversation Log](../../logs/AI_CONVERSATION_LOG.md) — dated record of this session and provenance limitations.
 
 ## Status vocabulary
