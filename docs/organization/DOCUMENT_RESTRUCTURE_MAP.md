@@ -123,3 +123,8 @@ This map governs documentation work in Yeta-nothe-repo. It does not:
 4. Create the Requirements/Provenance Ledger and extract one row per material requirement/decision/claim/test.
 5. Add only evidence-supported conflicts to the existing Gap and Conflict Register, with source links.
 6. Update the repository index and AI log after the catalog/map/ledger have been read back and checked.
+
+
+## Addendum — domain extraction records (2026-10-11)
+
+Two source-specific companion documents were added: [DOMAIN_REQUIREMENTS_EXTRACTION.md](DOMAIN_REQUIREMENTS_EXTRACTION.md) preserves detailed game/XR requirements, and [AI_NATIVE_COMPUTING_REQUIREMENTS.md](AI_NATIVE_COMPUTING_REQUIREMENTS.md) preserves the distinct AI-native computing concept. Both are partial extractions and explicitly distinguish design intent from implementation.
