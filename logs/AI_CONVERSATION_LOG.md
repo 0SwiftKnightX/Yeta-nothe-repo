@@ -405,3 +405,10 @@ The earlier component-comparison note correctly warned that the Startup project.
 ### Historical source event crosswalk created — 2026-10-11
 
 Created `docs/organization/SOURCE_EVENT_CROSSWALK.md` (commit `1ddc3cd10326b7c28ce54de31de555d81528c9e1`). It indexes source sections/entries across Startup GPT/Copilot worklogs, Startup conversation and consolidated records, Startup audit archive and Tessara recommendations, plus XrGpt README chronology, handoff, Vector log and Android Static Core research. Source paths/commits/blob SHAs are recorded. The crosswalk is navigation, not a claim that every entry has already been semantically extracted; every meaningful item still needs a ledger/destination ID or explicit context-only/duplicate disposition. Links were added to the repository README, organization index, restructure map, source catalog and requirements ledger.
+
+
+### Final crosswalk/index verification — 2026-10-11
+
+- The Historical Source Event Crosswalk readback contains 201 indexed entry/section rows across ten pinned source records (source blob `84db1a730287ad42e2dc3bb33a37f7a1382372dc`). This is an index count only; each row's semantic extraction remains pending until mapped to a requirement/decision/test or a documented disposition.
+- Rechecked relative Markdown links across 16 key destination documents after the crosswalk/index updates: zero broken local Markdown links were found. Current Yeta tree: commit `3601205868a49126a8b5483aa2dccf8852dee7cc`, 37 blobs, not truncated.
+- Rechecked source refs: Startup main remains `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a`; XrGpt main remains `3a11c719224ed8619fd48f13071ff4423edab15f`. Both are unchanged from the inspected snapshots.
