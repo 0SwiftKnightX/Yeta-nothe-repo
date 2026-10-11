@@ -222,3 +222,8 @@ Each created/updated file must be read back after the write and resulting commit
 2. Present the questionnaire in a concise interactive form, with multi-select options and an extended-response field.
 3. After answers, update decisions and gaps additively.
 4. Start a targeted XR source/commit/compatibility matrix for Startup and the relevant reference projects.
+
+
+### Read-back verification addendum — 2026-10-10
+
+The following nine paths were fetched again after writes. The expected key content was present and the returned blob SHAs were recorded: `docs/organization/DOCUMENT_CONTROL_STANDARD.md` (`789cc7f3aebaefba1c56f2e051f78f06aef6c6e0`); `docs/organization/DRAFT_LICENSE_FRAMEWORK.md` (`db7b6b424123d5f9da85972339702c25e5173b7c`); `docs/organization/DECISION_QUESTIONNAIRE.md` (`80aca96c1b3b82ba2e31b5062652864011bad096`); `README.md` (`e3c1e7a084520e4eb8432476eb2dfd36b7beb2a7`); `docs/organization/README.md` (`e4d6e05f1b802979f603316f81369fa89313260a`); `docs/organization/REPOSITORY_INVENTORY.md` (`52ebde81bfdb29092c29ea11ce48fb703fd3bbd4`); `docs/organization/GAP_AND_CONFLICT_REGISTER.md` (`044f342fe56c6ab9a6c4c003680ba0f69f25d3d8`); `docs/organization/DECISION_REGISTER.md` (`d7cfda227099ea0bb0199713940dc96264a3c742`); `logs/AI_CONVERSATION_LOG.md` (`6054c72c99ff187aa57229aa2f740279040091b3`, before this verification addendum). Read-back verification confirms these expected contents were present; it does not verify legal validity, complete historical coverage, runtime behavior, or external backups.
