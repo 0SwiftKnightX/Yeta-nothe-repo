@@ -255,3 +255,25 @@ The GitHub update operations returned commit/blob identifiers. Read-back verific
 1. Read back the three updated decision documents and this log.
 2. Create an asset inventory/rights matrix before assigning licenses.
 3. Build the per-component XR candidate/evidence matrix without modifying source projects.
+
+ 
+## Follow-through record — initial rights and XR evidence matrices — 2026-10-11 (America/New_York)
+
+### Targeted source evidence fetched
+
+- Startup README fetched from https://github.com/0SwiftKnightX/Startup/blob/main/README.md (blob SHA: 05b42ea8b9fdc557577c705f2149ce3e8c3414ea). It declares Godot 4.7.2-stable, OpenXR and Quest 3S; reports local verifier checks and exploratory Quest input, while lobby/menu/playable scene and physical acceptance remain open. These statements were not rerun during this follow-through.
+- Startup root path LICENSE fetch returned 404. This is not proof that no license or notice exists elsewhere.
+- XrGpt README fetched from https://github.com/0SwiftKnightX/XrGpt/blob/main/README.md (blob SHA: abe008f1f388f2d9cb090daac1c4e9aeecec6be2). It contains extensive dated work logs, including historical notes that runtime/parser/Quest checks remained unverified for some steps.
+- XrGpt root LICENSE fetched; its text is Apache License 2.0 (blob SHA: 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64). The scope of this license over individual bundled assets/add-ons still needs inspection.
+- GitHub commit search returned Startup commit 6f56ad308fcf8d6f15d40a03beddfefdf8201f2a at 2026-09-27T17:39:59Z and XrGpt commit 3a11c719224ed8619fd48f13071ff4423edab15f at 2026-09-28T21:49:52Z. This is a comparison of the returned commits only, not a complete independent history audit.
+- Startup README names GodotVR/godot-xr-tools, GodotVR/godot-xr-template, BastiaanOlij/godot-xr-flynn-demo, and Malcolmnixon/godot-xr-tools-demo as references. No exact upstream revision/license was verified for those candidates in this pass.
+
+### New artifacts created
+
+- docs/organization/ASSET_RIGHTS_INVENTORY.md — initial asset/rights inventory, explicit unknowns, and licensing conflict flags.
+- docs/organization/XR_COMPONENT_EVIDENCE_MATRIX.md — initial candidate matrix and source-date comparison. No candidate was approved for copying.
+- Updated docs/organization/README.md and docs/organization/REPOSITORY_INVENTORY.md with links to both artifacts.
+
+### Evidence boundary and next action
+
+All records are initial/partial. No source files were copied, no other project repository was modified, and no legal review, full dependency/license scan, automated test run, Android build, or Quest 3S runtime test was performed. Next, inspect Startup's reuse policy and actual project/plugin configuration, then compare one named component against XrGpt at an immutable commit.
