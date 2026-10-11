@@ -71,3 +71,32 @@ Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 | DEC-011 | Use a structured questionnaire with yes/no, single-choice, select-all, and extended-response formats. | CONFIRMED WORKFLOW PREFERENCE 2026-10-10 | See docs/organization/DECISION_QUESTIONNAIRE.md. Leave unresolved choices open; do not treat a blank as approval. |
 | DEC-012 | For XR reuse, compare exact source dates/commits and prioritize the newest relevant real XR code that passes provenance, license, and compatibility checks. | PROPOSED — USER CONFIRMATION PENDING | Do not choose by date alone; retain evidence of older better-tested candidates. |
 | DEC-013 | Keep existing repositories intact; no blind bulk merge. | CONFIRMED 2026-10-10 | The umbrella centralizes continuity and selected verified artifacts. Code migration is a separate project-specific decision. |
+
+
+## Addendum — Questionnaire answers recorded 2026-10-11 (America/New_York)
+
+Source: user-submitted answers to `docs/organization/DECISION_QUESTIONNAIRE.md` in the ChatGPT session. These are organizational design decisions and direction, **not legal approval**, adoption of a license, or proof of technical compatibility.
+
+| ID | Decision / direction | Status | Evidence / constraints |
+|---|---|---|---|
+| DEC-014 | Evaluate and support a hybrid asset-rights model: genuine open-source code under standard licenses; separately controlled/source-available code with permission tiers; separately licensed creative/game assets; separate trademark/branding permissions; free community/evaluation permissions; paid additional rights only where controlled by the organization; and dual licensing where appropriate. Preserve “unsure—decide after asset inventory” as a requirement to assign rights by asset class after inventory. | USER-DIRECTED DESIGN; LEGAL REVIEW REQUIRED | Questionnaire Q3 response received 2026-10-11. Do not impose approval gates on freedoms granted by a genuine open-source license. Do not assume ownership or authority over third-party materials. The draft license framework remains unapproved. |
+| DEC-015 | Select XR reuse sources per component by comparing recency, provenance, license, engine/dependency compatibility, automated test/build evidence, and Quest 3S runtime evidence; retain older, better-tested alternatives for comparison. | USER-CONFIRMED APPROACH; TECHNICAL EVIDENCE PENDING | Questionnaire Q2 and Q3 responses received 2026-10-11. No universal “newest always wins” rule. A component-level evidence matrix must state unknowns and unresolved trade-offs. |
+| DEC-016 | Use centralized organizational documentation and verified source references, with project-specific approval before code migration. | USER-CONFIRMED ARCHITECTURE DIRECTION | Questionnaire Q4 response received 2026-10-11. This is a hybrid documentation/provenance architecture, not authorization for bulk code copying or migration. |
+| DEC-017 | Assign the functions of the hybrid licensing and repository model to the appropriate asset classes, repositories, and project components rather than forcing one rule to govern everything. | USER CLARIFICATION; IMPLEMENTATION PENDING | Questionnaire Q5 extended response received 2026-10-11. Build an asset-permission matrix and component-level source decision records; preserve conflicting constraints visibly. |
+
+### Questionnaire answer ledger — 2026-10-11
+
+- **Q1:** No new answer supplied; retain the previously documented Yes default (central organizational documentation/provenance/continuity home; source repositories remain intact absent approved migration).
+- **Q2:** Selected all eight stated XR evidence requirements: exact repository/path; commit SHA or immutable release; source date compared with current date; verified license/reuse rights; Godot/XR dependency versions; automated test/build evidence; Quest 3S runtime verification; older better-tested alternatives retained for comparison.
+- **Q3:** Selected all: genuine open-source code under standard licenses; permission-tiered source-available code; separately licensed game content/creative assets; separate trademark/branding permissions; paid authorization for additional rights controlled by the organization; free community/evaluation permissions; dual licensing where appropriate; and “unsure—decide after the asset inventory.” Treat these as a portfolio of models to classify by asset, not as one license applied indiscriminately.
+- **Q3 recency choice:** Compare and decide per component.
+- **Q4 architecture choice:** Central documentation plus verified references and project-specific migration approvals.
+- **Q5 extended response:** The recency and architecture choices require hybrid answers; assign the relevant functions appropriately across components and asset classes.
+- Q2/Q3 numbering here follows the submitted response packet; the questionnaire's section labels are Q5/Q6 for XR evidence and recency, and Q10 for repository architecture. The response's meaning was preserved without renumbering earlier questions.
+
+### Required follow-through
+
+1. Create an asset inventory and rights matrix before choosing final licenses or permission tiers.
+2. Keep the draft license explicitly DRAFT / NOT APPROVED until ownership, jurisdiction, compatibility, and legal review are resolved.
+3. Build a per-component XR evidence matrix; no source is accepted solely because it is newer.
+4. Keep code in existing repositories unless a project-specific migration is approved.
