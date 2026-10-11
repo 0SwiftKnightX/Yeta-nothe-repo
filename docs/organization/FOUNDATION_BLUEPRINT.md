@@ -74,7 +74,7 @@ Historical note: conversation context records a draft title, **“ORGANIZATION M
 
 ## 6. First concrete deliverable: Open Technology Evidence & Compatibility Manifest (OTECM)
 
-Status: PLANNED — template proposal, not yet implemented as a working tool.
+Status: PARTIAL — schema, sample, CLI validator, tests, and CI workflow committed; CI execution result not yet verified.
 
 Each record should include:
 - Stable project/artifact ID and canonical repository URL.
@@ -95,6 +95,7 @@ Potential outputs: JSON Schema, example JSON/YAML records, Markdown report templ
 ## 7. Initial roadmap
 
 ### Stage 0 — Repository and evidence baseline
+- Status: PARTIAL. Repository metadata, root README, MIT license, and game blueprint were inspected; organization documents and session log were committed.
 - Inspect current repository contents, history, licenses, workflows, and access.
 - Separate the organization documents from the existing game blueprint.
 - Record known prior work versus summaries and unverified assumptions.
@@ -107,9 +108,9 @@ Potential outputs: JSON Schema, example JSON/YAML records, Markdown report templ
 - Define first contributor and security workflows.
 
 ### Stage 2 — First useful open-source artifact
-- Specify OTECM record schema and validation rules.
-- Create examples and tests.
-- Publish only after reviewing licenses, instructions, and reproducibility.
+- Status: PARTIAL. A Draft 2020-12 JSON Schema, synthetic sample, CLI validator, unit tests, specification, and GitHub Actions workflow have been committed. JSON syntax was parsed before writes and all paths were read back. Automated schema validation and CI execution remain unverified.
+- Run the validator and tests in CI and fix any failures.
+- Review licenses, instructions, reproducibility, and dependency pinning before calling the artifact release-ready.
 - Record test results and known limitations.
 
 ### Stage 3 — Community and education
