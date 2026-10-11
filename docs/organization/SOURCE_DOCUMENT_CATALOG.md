@@ -215,7 +215,7 @@ The following manifest was generated from the complete recursive Git trees above
 
 | Path | Blob SHA | Bytes | Review state |
 |---|---|---:|---|
-| `.github/README.md` | `2def981901ef04c3ef0ff0fc19852e2baf2a909d` | 457 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `.github/README.md` | `2def981901ef04c3ef0ff0fc19852e2baf2a909d` | 457 | READ |
 | `CHANGELOG.md` | `79cb02a37829836773762b6cf5d67f6b37aee150` | 4655 | READ |
 | `Project Bible/Handoffs/Project Startup Handoff - 2026-09-27 - 1339 - XR Starting Project and Environment Baseline.md` | `35d4022d95e7c875cb0a6c55e7aae3399b27868b` | 7046 | READ |
 | `Project Bible/Handoffs/Project Startup Handoff - 2026-09-27 - Project Bible Handoff System Baseline.md` | `8fc26076a6040bd7ba28c5ac2217412ebed6635f` | 2626 | READ |
@@ -225,11 +225,11 @@ The following manifest was generated from the complete recursive Git trees above
 | `README.md` | `05b42ea8b9fdc557577c705f2149ce3e8c3414ea` | 8810 | READ |
 | `Startup Logs/AI logs/Conversation Logs/Startup_AI_Conversation_Log.txt` | `41fe33d376e746138498f3a332afb61ff125f27c` | 18261 | READ |
 | `TESSARA_RECOMMENDATIONS.txt` | `0f54ca0bc35af51a03cf4325fc7dd573277cede8` | 8247 | READ |
-| `addons/README.md` | `adfee6654aa51965e23fab714f57b04ba02a5c82` | 521 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `addons/README.md` | `adfee6654aa51965e23fab714f57b04ba02a5c82` | 521 | READ |
 | `addons/godot-xr-tools/editor/icons/LICENSE` | `1625c1793607996fcfc46420e8aa2f3d2b7efd1e` | 7047 | LOCATED — rights review separate |
-| `addons/godot-xr-tools/hands/About.md` | `91fe6a5d284323fb3648a985eb405471da65a861` | 824 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `addons/godot-xr-tools/hands/About.md` | `91fe6a5d284323fb3648a985eb405471da65a861` | 824 | READ |
 | `addons/godot-xr-tools/hands/License.md` | `baa7dabd7c3bf93d065e9aa03b05ed3653342b34` | 7275 | LOCATED — rights review separate |
-| `addons/godotopenxrvendors/GodotOpenXRVendors_CHANGES.md` | `112d3fe05284c88ece005601682eaa62151f356b` | 11077 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `addons/godotopenxrvendors/GodotOpenXRVendors_CHANGES.md` | `112d3fe05284c88ece005601682eaa62151f356b` | 11077 | READ |
 | `addons/godotopenxrvendors/androidxr/LICENSE` | `6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1` | 11359 | LOCATED — rights review separate |
 | `addons/godotopenxrvendors/khronos/LICENSE` | `6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1` | 11359 | LOCATED — rights review separate |
 | `addons/godotopenxrvendors/magicleap/LICENSE` | `6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1` | 11359 | LOCATED — rights review separate |
@@ -237,21 +237,21 @@ The following manifest was generated from the complete recursive Git trees above
 | `addons/godotopenxrvendors/meta/LICENSE-SDK` | `c2c569e962c79f124d63f853e859940f7eea4e8f` | 221 | LOCATED — rights review separate |
 | `addons/godotopenxrvendors/pico/LICENSE` | `6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1` | 11359 | LOCATED — rights review separate |
 | `addons/sentry/LICENSE.md` | `908c02ece459878ecb67d9693d8058e953c2432a` | 1063 | LOCATED — rights review separate |
-| `addons/sentry/README.md` | `53fa4e0a8e4b2b6ec0cb9242e36525d92f2edf01` | 1149 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `addons/sentry/README.md` | `53fa4e0a8e4b2b6ec0cb9242e36525d92f2edf01` | 1149 | READ |
 | `ai/AI_RULES.md` | `0ed011a59b47270e97632e0c3d52a5e025fde0d5` | 2974 | READ |
 | `ai/COPILOT_WORKLOG.md` | `1388e6b004caa32e1da1e04dbbfcd260e6789a0d` | 10325 | READ |
 | `ai/GEMINI_WORKLOG.md` | `79a272ee46a868e591ec7763e5bdd303e7c9d013` | 295 | READ |
-| `ai/GPT workflow.md` | `5cfaa124e48eb7820a957dc622c278b3257b7581` | 12401 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `ai/GPT workflow.md` | `5cfaa124e48eb7820a957dc622c278b3257b7581` | 12401 | READ |
 | `ai/GPT_WORKLOG.md` | `77339f593eb3d2c712b77bf194aa6fc3abd7ce5c` | 4823 | READ |
 | `ai/README.md` | `f610738b187259e8575b28933458da8d1300c162` | 464 | READ |
 | `ai/REFERENCE_AND_REUSE_RULES.md` | `7f8e957a6167c2d34e4a0e8f4f5f8d9c80ad1e76` | 2580 | READ |
-| `ai/STARTUP_FROM_ZERO_SETUP_PROMPT.md` | `ecdf2875559029e4583c8580246b8661e9793dd8` | 9436 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `ai/STARTUP_FROM_ZERO_SETUP_PROMPT.md` | `ecdf2875559029e4583c8580246b8661e9793dd8` | 9436 | READ |
 | `ai/XR_GAME_SYSTEM_CONSOLIDATED_CHAT_RECORD.txt` | `60ca5d203ebcbe21c0447cfdab1e165327e16565` | 27117 | READ |
-| `build/README.md` | `b408552d8114a3c1482084f2060eda02ea5eaab6` | 261 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `docs/ARCHITECTURE.md` | `1d2585a5e9cf03858e57b99aecab50b6d4b56c15` | 3271 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `build/README.md` | `b408552d8114a3c1482084f2060eda02ea5eaab6` | 261 | READ |
+| `docs/ARCHITECTURE.md` | `1d2585a5e9cf03858e57b99aecab50b6d4b56c15` | 3271 | READ |
 | `docs/ASSET_PIPELINE.md` | `6c43f297d0a5a5a0045d753b04ef7276418233e1` | 924 | READ |
 | `docs/AUDIT_ARCHIVE.md` | `668e1958c5c87004d6329acb4356d64d110fed77` | 5023 | READ |
-| `docs/FIRST_SLICE_ARCHITECTURE.md` | `68111faf21022de95f3256866f1789bcfbdb707f` | 7601 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `docs/FIRST_SLICE_ARCHITECTURE.md` | `68111faf21022de95f3256866f1789bcfbdb707f` | 7601 | READ |
 | `docs/HISTORICAL_GPT_LOG.md` | `6884a3afd5be59ebf72bf28b048f37cc8bc22939` | 760 | READ |
 | `docs/IMPLEMENTATION_CHECKLIST.md` | `8509f7ec9640798e2b50f19db2d33a3d372524a9` | 8875 | READ |
 | `docs/INDEX.md` | `c128b5fb1066a6d5817bf3055c6ecc3f6e08445b` | 2083 | READ |
@@ -263,12 +263,12 @@ The following manifest was generated from the complete recursive Git trees above
 | `docs/REPOSITORY_AUDIT.md` | `ac271ecff960304993caea65bc85a2daaa33ee36` | 4119 | READ |
 | `docs/TEST_PLAN.md` | `174fdd0d9ba21681a93f7d6c773f480bd554287b` | 1696 | READ |
 | `docs/VALIDATION.md` | `bc9bee6052be6271510898ab6be5eba98b267e8a` | 3122 | READ |
-| `scenes/README.md` | `620e938740d4f818d194860175502e2bc0bf2c86` | 638 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `scripts/README.md` | `2658d8ae19594050f3b1377974332e99f14f0d02` | 902 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `tools/README.md` | `8c936655f92ac138e88eee154894a820a862361c` | 387 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `tools/verify/README.md` | `aa7e96933931f6cd6fc5dc3e0641c8e2d7a2b8d4` | 1818 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `tools/verify/runtime/README.md` | `1c7acb590ff226dac2b87b556ab5a3a3d6c45c10` | 390 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `tools/verify/verifiers/README.md` | `236d9ff4665c458c1023c1017beb3dfa707a5c1c` | 521 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `scenes/README.md` | `620e938740d4f818d194860175502e2bc0bf2c86` | 638 | READ |
+| `scripts/README.md` | `2658d8ae19594050f3b1377974332e99f14f0d02` | 902 | READ |
+| `tools/README.md` | `8c936655f92ac138e88eee154894a820a862361c` | 387 | READ |
+| `tools/verify/README.md` | `aa7e96933931f6cd6fc5dc3e0641c8e2d7a2b8d4` | 1818 | READ |
+| `tools/verify/runtime/README.md` | `1c7acb590ff226dac2b87b556ab5a3a3d6c45c10` | 390 | READ |
+| `tools/verify/verifiers/README.md` | `236d9ff4665c458c1023c1017beb3dfa707a5c1c` | 521 | READ |
 
 ### XrGpt
 
@@ -282,7 +282,7 @@ The following manifest was generated from the complete recursive Git trees above
 | `XRGPT handoff 2026-09-28 17-48:00.md` | `451029114591ce8bed5f40c50569fd85f882ca27` | 39993 | READ |
 | `addons/godot-xr-tools/LICENSE` | `f8f1c828e1f378fa279cb2d739d704114045a501` | 1092 | LOCATED — rights review separate |
 | `addons/godot-xr-tools/editor/icons/LICENSE` | `1625c1793607996fcfc46420e8aa2f3d2b7efd1e` | 7047 | LOCATED — rights review separate |
-| `addons/godot-xr-tools/hands/About.md` | `91fe6a5d284323fb3648a985eb405471da65a861` | 824 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `addons/godot-xr-tools/hands/About.md` | `91fe6a5d284323fb3648a985eb405471da65a861` | 824 | READ |
 | `addons/godot-xr-tools/hands/License.md` | `baa7dabd7c3bf93d065e9aa03b05ed3653342b34` | 7275 | LOCATED — rights review separate |
 | `admin/vector_conversation_log.txt` | `03774ceeb15e6fc0d6a699945b8a7ac72275c0c8` | 21941 | READ |
 | `coordination/AGENTS.md` | `e0abb00b43bc3b9f40a4cd3d2ac6a5086f9ac9ad` | 1729 | READ |
@@ -292,3 +292,8 @@ The following manifest was generated from the complete recursive Git trees above
 | `docs/PRODUCTION_GAME_ARCHITECTURE.md` | `6e4932062191c418695ed18059ccbbc7808c1710` | 8110 | READ |
 | `gameplay/world/README.md` | `2e3ea08cd4949dafefc71a3c3fd5913877d8aca9` | 1304 | METADATA ONLY / CONTENT REVIEW PENDING |
 | `generated_visual_assets/enemies_monsters_creatures/README.md` | `6e797826f0bb59779c6e7a869a40e574367d2079` | 524 | METADATA ONLY / CONTENT REVIEW PENDING |
+
+
+## 11. Manifest review-state correction — 2026-10-11
+
+After the initial manifest was generated, the following source files were read in full: Startup README; `ai/GPT workflow.md`; `ai/STARTUP_FROM_ZERO_SETUP_PROMPT.md`; `docs/ARCHITECTURE.md`; `docs/FIRST_SLICE_ARCHITECTURE.md`; `.github/README.md`; `addons/README.md`; `addons/godot-xr-tools/hands/About.md`; `addons/godotopenxrvendors/GodotOpenXRVendors_CHANGES.md`; `addons/sentry/README.md`; `build/README.md`; `scenes/README.md`; `scripts/README.md`; `tools/README.md`; `tools/verify/README.md`; `tools/verify/runtime/README.md`; `tools/verify/verifiers/README.md`; and the full XrGpt Android Static Core research document, root README, dated handoff, production architecture, vector conversation log, coordination files, SECURITY.md and THIRD_PARTY_NOTICES.md. Their manifest rows now reflect READ. License text and notices requiring rights-specific review are not marked cleared merely because their paths are inventoried.
