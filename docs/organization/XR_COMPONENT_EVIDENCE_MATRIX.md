@@ -79,3 +79,26 @@ Next: inspect Startup reuse rules, project configuration, add-on versions and wo
 ### Current disposition
 
 **Use XrGpt as a design/reference candidate only; no code-copy or migration decision is made.** The potentially useful design is its explicit bridge between XR pickable lifecycle and authoritative inventory identity. First decide whether Startup actually needs procedural inventory return; then define acceptance criteria, check ownership/Apache obligations and exact dependency scope, port only the minimum required concept/code if authorized, and run Startup source checks, Godot import/build, and Quest 3S feature tests. No source repository was changed.
+
+
+## Follow-up source-chain inspection — 2026-10-11
+
+**AI identity:** GPT-6. **Scope:** read-only source inspection at immutable XrGpt commit `3a11c719224ed8619fd48f13071ff4423edab15f`; no changes to Startup or XrGpt.
+
+The procedural pickup wrapper is not a standalone feature. Its observed dependencies form this chain:
+
+1. [`gameplay/items/item_definition.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/item_definition.gd) — blob `3acd1695069852a1f46668f1aea2508a08f64cb4`; authored Resource definition, stable item ID, display/category/rarity, stack limit, ownership/trade flags, capabilities, optional attachment profile.
+2. [`gameplay/items/item_catalog.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/item_catalog.gd) — blob `a152f4eedb74d2da237ae2ce7e6b5f57fc5d92ac`; central static catalog currently preloads five definitions and exposes lookup/validation.
+3. [`gameplay/items/item_instance.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/item_instance.gd) — blob `97b84cf96ee57bbf3c4dbbb838cbd220d8241cce`; mutable runtime identity, definition ID, owner, quantity, durability, capabilities, and attachment identity.
+4. [`gameplay/items/item_procedural_factory.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/item_procedural_factory.gd) — blob `c356e8fca656e6f851a26e92688ce1a51f32ac56`; builds physical item variants from catalog definitions and attaches the procedural-pickable script.
+5. [`gameplay/items/item_runtime.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/item_runtime.gd) — blob `c4696b38e1ae8c4c01b87351a7dc07da307303d1`; resolves the instance through the catalog, spawns via the factory, checks rigid body/pickable/visual/collision and same-instance identity, then optionally adds the node to a supplied parent.
+6. [`gameplay/items/procedural_pickable.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/procedural_pickable.gd) — blob `32d00f0695b43bcba10925c09e477ab1ec49f28d`; bridges XR Tools pickup/drop/grab/release signals and can return the existing instance to inventory.
+7. [`gameplay/inventory/inventory_controller.gd`](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/inventory/inventory_controller.gd) — blob `9dbd74bd053d3bda15add4e43fe9d4bc388f9ed2`; checks catalog membership, local ownership and quantity bounds; registers instances into available slots and emits add/remove/return signals.
+
+### What this comparison establishes
+
+- XrGpt's differentiating capability is the **identity-preserving round trip** between an inventory-owned item instance and its procedural physical representation, not simply XR grabbing.
+- A port would involve a dependency slice across definitions, catalog, instances, factory/runtime, inventory slots/controller, and input/placement flow. Copying only `procedural_pickable.gd` would leave unresolved class/API dependencies.
+- Startup's reuse policy explicitly requires source-license and notice review, provenance, version compatibility, and post-integration verification. The targeted Startup search surfaced inventory/catalog concepts in its consolidated chat record, but did **not** establish whether a complete current inventory implementation exists. This search was not exhaustive.
+- The inspected XrGpt project declares Godot feature 4.6, while the inspected Startup project declares feature 4.7. Both inspected XR Tools manifests say 4.5.1. This is not proof of compatibility.
+- **Disposition:** design reference only; no code or assets cleared for copying. Before implementation, define whether Startup needs instance identity, inventory return, ownership checks, or only simple pick/drop. Then inspect Startup's current inventory-related files and CI before selecting a minimum migration slice.
