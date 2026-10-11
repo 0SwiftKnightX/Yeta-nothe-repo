@@ -132,3 +132,16 @@ Research-related repository commits:
 ## Current validation boundary
 
 A structural sanity check on read-back JSON confirmed that the schema and sample parse as JSON, all top-level required fields exist, the sample statuses are in the declared enums, and all five internal JSON Schema references resolve. This is **not** a substitute for running a Draft 2020-12 validator or the Python unit tests. The GitHub combined-status query still returned no status checks for the workflow-creation commit at the latest check. CI execution remains UNKNOWN.
+
+
+## Repository index and metadata cleanup
+
+Update timestamp: `2026-10-11T02:49:17.470Z` (UTC).
+- Root `README.md` was replaced with a workstream index separating the game blueprint, organization initiative, and OTECM MVP. Commit: `4b2af1e611f4822c1dfa73a7e4e7685bb492e054`. Read-back passed.
+- Date labels in the initial organization docs and session log were corrected from “UTC date” to “America/New_York local date; exact creation/start time not captured.” This avoids misrepresenting the local session date as UTC. The correction commits are recorded in GitHub history: README index `0357a9c91e0ddfd34d086206306e85d77d947e5f`, charter `79a6b546ecc912447e3902f94cf5b254985b355d`, foundation blueprint `f85aa53f6a5799305464bcc2d3c740afe19b6e21`, decision register `a64e52cc464e3d0b043be8d1dc5ff38e7479c563`, and this log's metadata correction `d5e58ffdb81130e78378daea7d391e5584fde9d4`. Each update was read back successfully.
+- The decision register's initial-inspection note was corrected to distinguish the log's original absence from its later creation. Commit: `b687107ff4b3bc27837ee0f9fae1f85f8ff6f3e0`; read-back passed.
+- A repository-wide landing page now points to the major documents and explicitly says the project is PARTIAL while CI execution is unverified.
+
+## Current checkpoint
+
+At this checkpoint, the repository contains the foundation docs, research memo, OTECM schema/sample/validator/tests/workflow, root index, and this log. All files created or updated in this session were fetched back through GitHub and their key content was checked. JSON/schema structural sanity checks passed. **The full Python validator, unit tests, and GitHub Actions result remain unverified.** The next engineering task is to obtain an actual CI result and fix any failures, then improve dependency pinning and release criteria.
