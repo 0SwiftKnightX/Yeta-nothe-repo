@@ -121,3 +121,21 @@ Preserved principles:
 ## 11. Destination and authority
 
 This is a newly authored requirements extraction record in Yeta-nothe-repo. It preserves source intent without adopting source implementation methods. It is not a license document, legal conclusion, code migration, implementation authorization, or verification report. Startup and XrGpt remain unchanged.
+
+
+## 12. Additional requirements from the XrGpt production architecture contract
+
+Primary source: [XrGpt production architecture](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/docs/PRODUCTION_GAME_ARCHITECTURE.md), blob `6e4932062191c418695ed18059ccbbc7808c1710`. This source is a project-specific Godot 4.6.1 implementation contract, not automatically applicable to Startup or the new game blueprint.
+
+- **Gate 1 — Player locomotion:** CharacterBody3D gameplay body; room-scale XR origin/tracking-offset architecture; gravity/floor detection; smooth movement and snap/smooth turn; flat mouse/keyboard fallback via shared actions; mount/dismount without corrupting XR-origin transforms; local VR versus remote/flat avatar visibility policy.
+- **Gate 2 — Equipment/interaction:** retain authoritative inventory/equipment contracts; attachment sockets remain authoritative; world parts use the XR Tools lifecycle; interaction filters/collision layers are explicit; no duplicate item definitions or instances.
+- **Gate 3 — Vehicle engineering:** deterministic part graph; 1 m grid socket model; 1×1×1 and 2×1×1 structural parts; wheel contact/suspension; seat/steering; engine/throttle/brake; mass/inertia recalculation; versioned blueprint serialization; deterministic assembly/disassembly. The contract explicitly rejects arbitrary reparenting of independent RigidBody3D nodes as a sufficient physical-assembly model. A physical ownership model must be chosen and validated.
+- **Gate 4 — Garage loop:** garage/build pad, part browser/terminal, build/edit/save/load/summon flow, exit to normal play, vehicle ownership/persistence hooks.
+- **Gate 5 — HUD/navigation:** Hero Module-compatible spatial UI, health/energy/status, bounded-cost minimap, waypoint registry, safe fast travel, respawn/fail state. Fast travel is a gameplay service, not HUD-owned logic.
+- **Gate 6 — Visual pipeline:** Quest-compatible cel shading/outlines, measured XR performance budget, WorldEnvironment tuning, bounded flash-step effects; desktop volumetrics/post-processing cannot be enabled blindly on Quest.
+- **Gate 7 — Tower defense:** objective, enemy health/damage, deterministic path-following waves, turret targeting, projectile/damage interface, wave lifecycle and defeat/completion. Targeting should use path progress or explicit target priority rather than raw world Z.
+- **Gate 8 — Character/skills:** data-driven customization, appearance configuration, skill graph and prerequisite validation, persistent-state integration.
+- **Gate 9 — Persistence:** versioned saves for inventory/equipment, blueprints, character, skills, waypoints and world progression; existing blueprint versioning must be explicitly migrated.
+- **Gate 10 — Cross-play/network:** shared XR/Flat simulation contracts, authority/ownership, network-safe player/vehicle/inventory/combat/progression state, session lifecycle and reconciliation/replication tests. “Runs in VR and Flat” alone is not cross-play.
+
+The source proposes an automated one-hour execution window as an automation target, not a promise that a complete production game can be safely built in one hour. A bounded vertical slice and validation gates are acceptable; file creation alone does not complete a system.
