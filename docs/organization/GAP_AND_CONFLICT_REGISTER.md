@@ -123,3 +123,65 @@ The prior targeted code search was followed by a recursive Git tree request for 
 - **Evidence:** Draft `docs/organization/XR_INVENTORY_CAPABILITY_CONTRACT.md` separates a minimal identity/transfer stage from inventory UI, capacity, persistence, equipment, multiplayer, and other deferred systems.
 - **Impact:** Implementing the entire XrGpt dependency slice without a scoped requirement risks unnecessary architecture, engine-version incompatibility, and expanded rights review.
 - **Next action:** Select the smallest required first-stage behavior and approve explicit acceptance criteria before any code modification. No code reuse or implementation is authorized by this gap entry.
+
+
+## Addendum — documentation consolidation and source-coverage findings — 2026-10-11
+
+These entries concern the documentation-restructuring work. They do not authorize source-code migration and do not modify the separate license workstream.
+
+### GAP-030 — Source-project rules were being treated as destination failure gates
+
+- **Priority:** P1
+- **Status:** RESOLVED IN PROCESS — destination method drafted; owner review/adoption remains open
+- **Evidence:** Owner clarified that Startup and XrGpt rules are reference material whose intent should be studied and restructured into Yeta-nothe-repo, not automatically enforced as the destination's original procedure.
+- **Impact:** Mechanical inheritance could preserve outdated folder layouts, over-broad execution gates, and project-specific methods rather than the useful intent.
+- **Disposition:** Preserve intent, applicability, provenance and conflicts; redesign the destination method. Continue uncontested reversible documentation work while material questions remain open.
+- **Destination:** `DOCUMENT_RESTRUCTURE_MAP.md`, `AI_WORK_PROTOCOL.md`, `HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md`, and `VERIFICATION_EVIDENCE_STANDARD.md`.
+
+### GAP-031 — Human-readable source coverage is not complete
+
+- **Priority:** P1
+- **Status:** OPEN
+- **Evidence:** Pinned recursive trees enumerate 47 Startup and 15 XrGpt Markdown/plain-text/recognized license-notice files. Some have been fully read; other rows remain metadata-only or reserved for rights-specific review. The complete manifest is in `SOURCE_DOCUMENT_CATALOG.md`.
+- **Impact:** Requirements can be lost if the destination is declared complete before every relevant source record is reviewed and mapped.
+- **Next action:** Continue reading all remaining human-readable sources; extract every meaningful requirement/claim/decision/test and map it to a ledger ID or a documented disposition.
+
+### GAP-032 — Startup implementation checklist contains internal duplication and structure anomalies
+
+- **Priority:** P1
+- **Status:** OPEN — source defect recorded; source repository unchanged
+- **Evidence:** At the pinned Startup commit, `docs/IMPLEMENTATION_CHECKLIST.md` repeats multiple checked tasks in later sections, has apparently misplaced items under headings such as “Scan station” and “Comfort locomotion,” and has checked items alongside explicit unchecked tasks and acceptance blockers.
+- **Impact:** Mechanical migration of checkboxes could falsely imply completion or misassign requirements to the wrong feature.
+- **Next action:** Extract checklist statements as individual requirements, preserve their source locations and checkbox states, compare them with `NEXT_IMPLEMENTATION_PLAN.md` and `VALIDATION.md`, and normalize the destination grouping without modifying the original checklist.
+
+### GAP-033 — XrGpt history documents a false-positive regression result
+
+- **Priority:** P1
+- **Status:** OPEN — process invariant extracted
+- **Evidence:** XrGpt README records a prior case where PASS_1/PASS_2/PASS_3 markers appeared although a script parse/instantiation error prevented the intended audit from running correctly.
+- **Impact:** Presence of pass-marker text is insufficient if the test process also emitted fatal errors or failed to instantiate the system under test.
+- **Next action:** Preserve the invariant in `VERIFICATION_EVIDENCE_STANDARD.md`: required parser/runtime failures must fail the overall check; success claims must be bound to actual executed assertions, exit status, commit and workflow run.
+
+### GAP-034 — Three distinct workstreams must remain distinct
+
+- **Priority:** P1
+- **Status:** RESOLVED AS DOCUMENTATION ROUTING; detailed roadmaps remain open
+- **Evidence:** Historical sources contain (a) The Living Continuum game, (b) an AI-native cognitive/computing system concept, and (c) an Android Static Core/company-engine research project.
+- **Impact:** Mixing these into one blueprint would lose project boundaries and create false dependencies.
+- **Disposition:** Route game requirements to `docs/PROJECT_BLUEPRINT.md` and domain extraction; AI-native cognition to `AI_NATIVE_COMPUTING_REQUIREMENTS.md`; Android Static Core to `ANDROID_STATIC_CORE_REQUIREMENTS.md`. Integration between them is not assumed.
+
+### GAP-035 — Historical tool workflow claims require freshness review
+
+- **Priority:** P2
+- **Status:** OPEN — revalidate at point of use
+- **Evidence:** Startup `ai/GPT workflow.md` contains detailed Meta VR CLI/MCP setup and command instructions; other historical records include tool/plugin lists and distribution/licensing claims.
+- **Impact:** A historical recommendation may become stale or be inaccessible in the current Android-only environment.
+- **Next action:** Preserve original claim and date, then verify current official documentation, actual connection/authorization and environment constraints before treating the workflow as operational.
+
+### GAP-036 — Historical Android Static Core license tiers are not adopted policy
+
+- **Priority:** P1
+- **Status:** ROUTED TO LICENSE WORKSTREAM — no license decision made here
+- **Evidence:** XrGpt `Android Static Core Research Doc.md` proposes a Tier A/Tier B candidate classification, including a Termux reference-only recommendation under that document's then-current strategy.
+- **Impact:** Copying that proposal into the organization's current licensing policy could conflict with the separately active license workstream and current owner decisions.
+- **Disposition:** Preserve the research proposal in `ANDROID_STATIC_CORE_REQUIREMENTS.md` as historical context only. Do not edit or adopt the active license draft through this continuity task.
