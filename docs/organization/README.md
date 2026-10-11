@@ -48,6 +48,8 @@ Project documents, decision records, and AI logs belong in this GitHub repositor
 
 - [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md) — pinned source manifest for Startup and XrGpt; includes review states and coverage limits.
 - [Historical Source Event Crosswalk](SOURCE_EVENT_CROSSWALK.md) — index of dated worklog entries and sections for entry-by-entry extraction.
+- [Entry-by-Entry Startup Worklog Extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) — event-level extraction of both pinned Startup worklogs, including conflicting historical claims and verification limits.
+- [Preliminary Reference Repository Triage](REFERENCE_REPOSITORY_TRIAGE.md) — read-only prioritization of additional repositories; no migration or code reuse authorized.
 - [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md) — proposed destination architecture and source conflict-resolution method.
 - [Requirements and Provenance Ledger](REQUIREMENTS_PROVENANCE_LEDGER.md) — cross-cutting extracted requirements and open conflicts.
 - [Domain Requirements Extraction](DOMAIN_REQUIREMENTS_EXTRACTION.md) — game/XR, construction, vehicle, avatar, inventory and world intent.
