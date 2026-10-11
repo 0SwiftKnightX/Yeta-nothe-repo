@@ -182,3 +182,26 @@ The following full-text reviews were completed after the initial catalog was cre
 - [ ] Review the full XrGpt README as a chronological sequence and map every unique design requirement, correction, and verification claim to ledger IDs. The README has been read, but exhaustive entry-by-entry extraction is still pending.
 - [ ] Review the XrGpt Android static-core research document and any remaining Markdown/text files and per-asset manifests.
 - [ ] Include root and path-specific license/notice files in the separate asset-rights cross-reference without treating their presence as clearance.
+
+
+## 8. Additional full-text review — Android Static Core research
+
+| Source | Current review state | Findings and destination |
+|---|---|---|
+| [XrGpt Android Static Core Research Doc.md](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/Android%20Static%20Core%20Research%20Doc.md) — blob `331e8e092207d502abb589ae661aecd3177af077` | READ | Research-first Android company-engine/Static Core; modular Gradle source integration; research hub; lazy initialization and latency measurement; broad candidate pool; license/dependency audit; debug/stable seed distinction; independent recovery copy; tooling; phased research gates. Destination: [ANDROID_STATIC_CORE_REQUIREMENTS.md](ANDROID_STATIC_CORE_REQUIREMENTS.md). Historical Tier A/Tier B license strategy is recorded as a proposal only and is not adopted policy. |
+
+The source's tool list and license-tier proposal are historical research, not proof of current plugin connections, current license status, or the organization's adopted license. The separate license workstream remains independent.
+
+## 9. New destination artifacts created from this review
+
+These files are newly authored in Yeta-nothe-repo, not copied versions of source documents:
+
+- [AI_WORK_PROTOCOL.md](AI_WORK_PROTOCOL.md) — draft shared agent workflow.
+- [HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md](HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md) — draft handoff format and lifecycle.
+- [ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md](ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md) — draft archive coverage and historical-integrity rules.
+- [VERIFICATION_EVIDENCE_STANDARD.md](VERIFICATION_EVIDENCE_STANDARD.md) — draft evidence levels and failure handling.
+- [DOMAIN_REQUIREMENTS_EXTRACTION.md](DOMAIN_REQUIREMENTS_EXTRACTION.md) — partial game/XR requirement extraction.
+- [AI_NATIVE_COMPUTING_REQUIREMENTS.md](AI_NATIVE_COMPUTING_REQUIREMENTS.md) — separate concept extraction.
+- [ANDROID_STATIC_CORE_REQUIREMENTS.md](ANDROID_STATIC_CORE_REQUIREMENTS.md) — separate Android research/static-core extraction.
+
+These are not yet fully cross-checked against every source document. Their status labels are intentional and must not be upgraded until coverage checks are completed.
