@@ -7,10 +7,13 @@ Created: 2026-10-10 (America/New_York local date; exact creation time not captur
 Prepared by: ChatGPT (GPT-6), from conversation context available in this session  
 Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 
-This directory records the proposed open-technology organization and its operating rules. It is deliberately separate from the game project blueprint at [../PROJECT_BLUEPRINT.md](../PROJECT_BLUEPRINT.md). The repository currently contains game-planning material; adding this directory does not convert the game into an organization, establish a legal entity, or imply that any platform or partnership exists.
+This directory records the proposed open-technology organization and its operating rules. It is deliberately separate from the game project blueprint at [../PROJECT_BLUEPRINT.md](../PROJECT_BLUEPRINT.md). The repository is the confirmed organizational umbrella for documentation and continuity. This does not establish a legal entity or imply that any platform or partnership exists. Project code remains in its existing repository unless a separate migration is approved.
 
 ## Source-of-truth documents
 
+- [Continuity Map](CONTINUITY_MAP.md) — central relationship map and work routing across repositories.
+- [Repository Inventory](REPOSITORY_INVENTORY.md) — current account-scoped repository inventory and next actions.
+- [Gap and Conflict Register](GAP_AND_CONFLICT_REGISTER.md) — targeted gap resolution without repeated broad foundation reviews.
 - [Foundation Blueprint](FOUNDATION_BLUEPRINT.md) — mission, proposed scope, roadmap, constraints, and open questions.
 - [Operating Charter](OPERATING_CHARTER.md) — evidence standards, change control, tool use, verification, and migration rules.
 - [Decision Register](DECISION_REGISTER.md) — decisions, assumptions, unresolved questions, and evidence.
