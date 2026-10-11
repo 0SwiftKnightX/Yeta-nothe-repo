@@ -6,7 +6,7 @@ Status: PARTIAL — initial extracted invariants only; not an exhaustive require
 Created At: 2026-10-11 (exact clock time not recorded for this file operation)  
 Prepared By: ChatGPT — GPT-6  
 Canonical Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo  
-Sources: [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md) and [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md)
+Sources: [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md), [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md), and [Domain Requirements Extraction](DOMAIN_REQUIREMENTS_EXTRACTION.md)
 
 ## 1. Purpose
 
@@ -75,3 +75,8 @@ The initial rows below are extracted from selected source content reviewed in th
 ## 6. Current limits
 
 This ledger is not a legal opinion, license approval, implementation authorization, or proof that either game project works. It records documentation requirements and evidence expectations. Technical details and license claims remain scoped to their sources and require their own validation.
+
+
+## 7. Domain-specific extraction companion
+
+Detailed game, XR, construction, vehicle, avatar, inventory, world, AI-native computing and verification requirements extracted from selected historical records are maintained in [DOMAIN_REQUIREMENTS_EXTRACTION.md](DOMAIN_REQUIREMENTS_EXTRACTION.md). That companion is partial and preserves unresolved semantics rather than guessing. The general invariant ledger above remains the cross-cutting continuity register.
