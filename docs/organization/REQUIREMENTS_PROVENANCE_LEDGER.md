@@ -98,3 +98,11 @@ Detailed game, XR, construction, vehicle, avatar, inventory, world, AI-native co
 | REQ-AI-003 | AI-native computing must separate externally curated library, model, and assistant-generated memory; a document addition should normally expand searchable knowledge rather than imply model retraining. | XrGpt vector conversation log | AI-native architecture; EXTRACTED |
 | REQ-AI-004 | Capability state must distinguish available, unavailable, restricted, permission-required, low-resource and dormant rather than claiming universal device support. | XrGpt vector conversation log | Capability registry; EXTRACTED |
 | REQ-AI-005 | Multi-core messages require source/destination, message type, payload, context, priority, confidence, time, authority, expected response, timeout, failure handling and memory/connection effects. | XrGpt vector conversation log | Future message schema; EXTRACTED |
+
+
+## 9. Project identity and applicability invariant
+
+| ID | Requirement | Source | Status |
+|---|---|---|---|
+| REQ-SCOPE-004 | Similar concepts across repositories do not prove the same product scope, implementation authority, roadmap priority, or migration target. Keep Startup, XrGpt, The Living Continuum, AI-native computing and Android Static Core distinct until the owner confirms a relationship. | Source project bibles, XrGpt production architecture and Android Static Core research, current destination blueprint | EXTRACTED / MAPPED |
+| REQ-SCOPE-005 | Preserve every source requirement in a traceable source-specific record even when it is not adopted into the current canonical blueprint. | Current owner direction and document restructure map | EXTRACTED / MAPPED |
