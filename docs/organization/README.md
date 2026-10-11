@@ -42,3 +42,22 @@ Project documents, decision records, and AI logs belong in this GitHub repositor
 - [XR Component Evidence Matrix](XR_COMPONENT_EVIDENCE_MATRIX.md) — compares XR candidates per component using immutable source references, dates, license, compatibility, tests, and Quest 3S evidence.
 
 - [XR Inventory Capability Contract](XR_INVENTORY_CAPABILITY_CONTRACT.md) — proposed staged requirements and acceptance invariants for item identity, physical pickup/drop, inventory transfer, and future persistence; draft only, not implementation authorization.
+
+
+## Source review and consolidation
+
+- [Source Document Catalog](SOURCE_DOCUMENT_CATALOG.md) — pinned source manifest for Startup and XrGpt; includes review states and coverage limits.
+- [Document Restructure Map](DOCUMENT_RESTRUCTURE_MAP.md) — proposed destination architecture and source conflict-resolution method.
+- [Requirements and Provenance Ledger](REQUIREMENTS_PROVENANCE_LEDGER.md) — cross-cutting extracted requirements and open conflicts.
+- [Domain Requirements Extraction](DOMAIN_REQUIREMENTS_EXTRACTION.md) — game/XR, construction, vehicle, avatar, inventory and world intent.
+- [AI-Native Computing Requirements](AI_NATIVE_COMPUTING_REQUIREMENTS.md) — separate conceptual computing/cognition requirements; not implemented.
+- [Android Static Core Requirements](ANDROID_STATIC_CORE_REQUIREMENTS.md) — research-first Android company-engine/static seed concept; not implemented.
+
+## Proposed process standards — drafts
+
+- [AI Work Protocol](AI_WORK_PROTOCOL.md) — scoped AI work, identity, evidence and change-preservation rules.
+- [Handoff and Session Continuity Standard](HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md) — future handoff fields, entry procedure and version lifecycle.
+- [Archive and Conversation Provenance Standard](ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md) — transcript vs summary, chronology, source coverage and migration provenance.
+- [Verification and Evidence Standard](VERIFICATION_EVIDENCE_STANDARD.md) — shared evidence levels, failure handling and target-device acceptance.
+
+These new standards are drafts and do not automatically replace project-local rules until reviewed and adopted. The source repositories remain unchanged.
