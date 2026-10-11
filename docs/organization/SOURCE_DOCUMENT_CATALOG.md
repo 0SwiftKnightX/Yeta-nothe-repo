@@ -290,10 +290,15 @@ The following manifest was generated from the complete recursive Git trees above
 | `coordination/HANDOFFS.md` | `0b5640196071e22d8cacad99152ad1e9e76f0238` | 841 | READ |
 | `coordination/LOG.md` | `ae55bd1f21a35f9e06071ec7e28a3c006de8e868` | 1374 | READ |
 | `docs/PRODUCTION_GAME_ARCHITECTURE.md` | `6e4932062191c418695ed18059ccbbc7808c1710` | 8110 | READ |
-| `gameplay/world/README.md` | `2e3ea08cd4949dafefc71a3c3fd5913877d8aca9` | 1304 | METADATA ONLY / CONTENT REVIEW PENDING |
-| `generated_visual_assets/enemies_monsters_creatures/README.md` | `6e797826f0bb59779c6e7a869a40e574367d2079` | 524 | METADATA ONLY / CONTENT REVIEW PENDING |
+| `gameplay/world/README.md` | `2e3ea08cd4949dafefc71a3c3fd5913877d8aca9` | 1304 | READ |
+| `generated_visual_assets/enemies_monsters_creatures/README.md` | `6e797826f0bb59779c6e7a869a40e574367d2079` | 524 | READ |
 
 
 ## 11. Manifest review-state correction — 2026-10-11
 
 After the initial manifest was generated, the following source files were read in full: Startup README; `ai/GPT workflow.md`; `ai/STARTUP_FROM_ZERO_SETUP_PROMPT.md`; `docs/ARCHITECTURE.md`; `docs/FIRST_SLICE_ARCHITECTURE.md`; `.github/README.md`; `addons/README.md`; `addons/godot-xr-tools/hands/About.md`; `addons/godotopenxrvendors/GodotOpenXRVendors_CHANGES.md`; `addons/sentry/README.md`; `build/README.md`; `scenes/README.md`; `scripts/README.md`; `tools/README.md`; `tools/verify/README.md`; `tools/verify/runtime/README.md`; `tools/verify/verifiers/README.md`; and the full XrGpt Android Static Core research document, root README, dated handoff, production architecture, vector conversation log, coordination files, SECURITY.md and THIRD_PARTY_NOTICES.md. Their manifest rows now reflect READ. License text and notices requiring rights-specific review are not marked cleared merely because their paths are inventoried.
+
+
+## 12. Further review-state correction — 2026-10-11
+
+The full contents of Startup `docs/AUDIT_ARCHIVE.md`, `TESSARA_RECOMMENDATIONS.txt`, and XrGpt `gameplay/world/README.md`, `generated_visual_assets/enemies_monsters_creatures/README.md`, and all four XrGpt coordination records were reviewed. The records reinforce: recommendation is not approval; architecture must make ownership/dependencies/failure handling/testability/persistence explicit; world foundation containers do not imply terrain/biome/weather/persistence/creature/vehicle/quest/multiplayer implementation; generated creature assets are low-poly blockouts, not production-final assets; and the coordination layer is operational while the XrGpt root README remains its historical log per that project's own rule.
