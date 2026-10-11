@@ -100,3 +100,10 @@ Source: user-submitted answers to `docs/organization/DECISION_QUESTIONNAIRE.md` 
 2. Keep the draft license explicitly DRAFT / NOT APPROVED until ownership, jurisdiction, compatibility, and legal review are resolved.
 3. Build a per-component XR evidence matrix; no source is accepted solely because it is newer.
 4. Keep code in existing repositories unless a project-specific migration is approved.
+
+
+## Addendum — targeted XR candidate evaluation — 2026-10-11
+
+| ID | Decision / direction | Status | Evidence / constraints |
+|---|---|---|---|
+| DEC-018 | Start XR reuse evaluation with a component-level comparison of Startup's pickable interaction and XrGpt's procedural pickup/inventory-identity bridge; keep the latter as a reference candidate only until requirements, rights, compatibility, and tests are resolved. | TARGETED WORKSTREAM SELECTED; NO REUSE APPROVED | Exact files inspected at immutable commits and recorded in XR_COMPONENT_EVIDENCE_MATRIX.md. Startup targets Godot feature 4.7 while XrGpt targets 4.6; both inspected XR Tools plugin manifests declare 4.5.1. No source repository was changed. |
