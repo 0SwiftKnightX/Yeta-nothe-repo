@@ -16,12 +16,15 @@ Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 | DEC-003 | Do not claim implementation, testing, partnership, fundraising, or legal formation without evidence. | ADOPTED AS OPERATING RULE | Evidence-first requirement. |
 | DEC-004 | Use relevant tools and plugins according to task fit; do not invoke every tool without a purpose. | ADOPTED AS OPERATING RULE | Tool use must materially improve the outcome and be recorded accurately. |
 | DEC-005 | Start the Open Technology Evidence & Compatibility Manifest (OTECM) as the first tangible open-source artifact. | PARTIAL | Schema, synthetic sample, CLI validator, tests, specification, and CI workflow committed; automated validation result not yet verified. |
+| DEC-006 | Yeta-nothe-repo is the central organizational umbrella and documentation source of truth for continuity across prior and future work. | CONFIRMED 2026-10-10 | User explicitly confirmed this repository consolidates organizational documentation, project relationships, histories, and work records. Existing repositories remain intact; code migration requires a separate decision. |
+| DEC-007 | Stop repeating broad foundation inspections unless a specific gap, change, or verification need justifies one. | CONFIRMED 2026-10-10 | User directed that foundation inspection become a finished baseline task so work can progress from planning to concrete outputs. |
+| DEC-008 | Use selectable multi-option decisions where several independent project/repository/workstream choices can be accepted together. | CONFIRMED AS WORKFLOW PREFERENCE 2026-10-10 | User explicitly values selecting multiple options, including selecting every option. Future decision prompts should support multi-select and “select all” rather than forcing a single choice. |
 
 ## Open decisions
 
 | ID | Question | Current status | Required evidence / next action |
 |---|---|---|---|
-| OPEN-001 | Is this repository intended as a long-term umbrella for both the game and organization, or only as the current documentation home? | UNKNOWN | Confirm intended repository boundary before restructuring or moving game files. |
+| OPEN-001 | Is this repository intended as a long-term umbrella for both the game and organization, or only as the current documentation home? | SUPERSEDED / RESOLVED | User confirmed on 2026-10-10 that this is the central organizational umbrella. See DEC-006 and CONTINUITY_MAP.md. Project code remains in its original repository unless a separate migration is approved. |
 | OPEN-002 | What legal structure should govern assets, funds, and decision-making? | UNKNOWN — PRIMARY-SOURCE BASELINE REVIEWED | Compare company, nonprofit, cooperative/member governance, fiscal sponsorship, and hybrid options with current primary sources and professional review; no structure selected. See research memo. |
 | OPEN-003 | What does “the organization owns/governs itself” mean operationally? | NEEDS DEFINITION | Specify board/member rights, founder/operator powers, succession, asset control, and financial controls. |
 | OPEN-004 | What exact historical text exists for “ORGANIZATION MASTER USE, ATTRIBUTION, AND RIGHTS LICENSE,” v0.1 dated 2026-10-08? | NOT RECOVERED IN THIS INSPECTION | Search repository/history and accessible prior records; do not reconstruct it as though original. |
@@ -47,3 +50,13 @@ Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 ## Change log
 
 - 2026-10-10 — v0.1.0-draft — Initial decision register created after repository metadata and selected files were inspected.
+
+
+## Addendum — 2026-10-10T22:58:00-04:00
+
+- Confirmed the central organizational umbrella role of this repository; prior uncertainty in OPEN-001 is superseded, not deleted.
+- Established CONTINUITY_MAP.md, REPOSITORY_INVENTORY.md, and GAP_AND_CONFLICT_REGISTER.md as the continuity and execution layer.
+- Set process rule: broad foundation inspection is complete as a baseline; further checks must be targeted and action-producing.
+- Recorded the user's multi-select preference: when multiple independent options are presented, support selecting several or all options.
+- Selectively inspected README files for Startup, XrGpt, ProjectMythos, godot-xr-tools, Personal-quest-development-, Mule-run-block-builder, Forge, Prompt-base, and GPT. This is not a full source, history, license, or test audit.
+- Targeted GitHub searches did not recover the historical license draft or establish that “Bastian Oleg” and “BastiaanOlij” are the same identity. These remain open.
