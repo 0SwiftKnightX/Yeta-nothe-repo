@@ -1,0 +1,72 @@
+# Asset and Rights Inventory
+
+Document ID: ORG-ASSET-RIGHTS-001
+Version: 0.1.0-draft
+Status: PARTIAL — initial inventory framework; asset-level rights not yet established
+Created: 2026-10-11 (America/New_York; exact time not independently captured)
+Prepared by: ChatGPT — GPT-6
+Session record: logs/AI_CONVERSATION_LOG.md
+Canonical repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
+Predecessors: docs/organization/DRAFT_LICENSE_FRAMEWORK.md; docs/organization/DECISION_REGISTER.md; docs/organization/GAP_AND_CONFLICT_REGISTER.md
+Next document: docs/organization/XR_COMPONENT_EVIDENCE_MATRIX.md
+Supersedes: None
+Verification status: Initial rows based on exact files previously or currently fetched; not a full asset audit
+
+## Purpose and governing rule
+
+This inventory determines which rights and license model may apply to each identifiable asset. It does not itself grant rights, prove ownership, or approve the draft license.
+
+Classify rights separately for software source, dependencies, game content, 3D models, textures, audio, narrative, datasets, documentation, trademarks/branding, and contributions. A repository-wide LICENSE may not cover every bundled or generated asset; inspect file-level notices, upstream licenses, provenance, and contribution history before deciding.
+
+**Do not assign a final license to an asset when ownership, source, or upstream terms are unknown.** Use UNKNOWN and keep the item open. Preserve existing license obligations. Genuine open-source code must not be subjected to extra approval gates that contradict its chosen license.
+
+## Status vocabulary
+
+- **OBSERVED** — exact repository/file or license was fetched.
+- **PARTIAL** — some provenance/rights evidence exists, but scope or ownership is incomplete.
+- **UNKNOWN** — not inspected or evidence is insufficient.
+- **CONFLICTED** — sources or proposed terms may conflict.
+- **CLEARED FOR PROPOSED USE** — specific use has documented rights evidence; this is not a legal opinion.
+- **NOT CLEARED** — do not copy, redistribute, relicense, or commercialize until resolved.
+
+## Initial inventory
+
+| Asset ID | Asset / scope | Canonical source | Observed license / provenance | Proposed rights class | Status | Next action |
+|---|---|---|---|---|---|---|
+| ASSET-0001 | Yeta-nothe-repo organizational documentation and OTECM artifacts | https://github.com/0SwiftKnightX/Yeta-nothe-repo | Root LICENSE was observed in the earlier repository inspection as MIT, copyright 2026 0SwiftKnightX. Exact scope across all contributed/bundled files has not been audited. | Code and documentation must be separated by actual file provenance; do not assume all third-party content is owned by the repository owner. | PARTIAL | Inspect root LICENSE, notices, dependency files, generated artifacts, and file-level headers; preserve upstream licenses. |
+| ASSET-0002 | Startup XR game source and scenes | https://github.com/0SwiftKnightX/Startup | README fetched 2026-10-11; exact root path LICENSE returned 404. This only establishes no file was returned at that exact path, not that no licensing notice exists elsewhere. README points to a Reference and Code Reuse Rules document. | UNKNOWN pending exact license/notice and per-asset provenance review. | UNKNOWN / NOT CLEARED FOR COPYING | Fetch ai/REFERENCE_AND_REUSE_RULES.md, search exact license paths/notices, inspect repository tree and upstream dependencies. Do not infer permission from public visibility. |
+| ASSET-0003 | XrGpt XR source and included materials | https://github.com/0SwiftKnightX/XrGpt | Root LICENSE fetched; Apache License 2.0 text. README contains dated GPT work logs. Repository-level license does not automatically establish rights for every bundled third-party asset. | Potential Apache-2.0-covered source, subject to scope, notices, and third-party exclusions. | PARTIAL | Inspect NOTICE files, file headers, addon/vendor directories, generated assets, commit provenance, and asset-specific licenses before selecting files. |
+| ASSET-0004 | XrGpt generated creature assets (Goblin, Orc, Troll) | XrGpt commits 29f975f527135c6dcb5c2955221a0425c50a53c8 and 09c35efba8dacf299e143258c693573ebc7495dc | Commit search reports generated visual assets and later editable Blender source files on 2026-09-28; asset-specific rights/authoring inputs have not been inspected. | Game/creative asset; ownership and any source-model/prompt/reference dependencies UNKNOWN. | UNKNOWN / NOT CLEARED FOR RELICENSING | Inspect asset manifests, source files, generator provenance, third-party inputs, and applicable notices. |
+| ASSET-0005 | Godot XR Tools and other upstream XR references used by Startup | References include GodotVR/godot-xr-tools, GodotVR/godot-xr-template, BastiaanOlij/godot-xr-flynn-demo, and Malcolmnixon/godot-xr-tools-demo as named in Startup README | These are references, not proof of copied code. Exact candidate commit/release and license have not yet been verified in this inventory. | Third-party/upstream; retain upstream identity and license. | UNKNOWN / NO COPY AUTHORIZED BY THIS RECORD | For each proposed component, inspect exact upstream repository, immutable revision, license, notices, compatibility, and actual copied-code diff. |
+| ASSET-0006 | Game trademarks, project names, logos, characters, narrative, and brand identity | Multiple repositories / future asset registry | Ownership and intended permission scope not yet inventoried. | Separate trademark/branding and creative-content permissions may apply. | UNKNOWN | Create named asset records, authorship/source, first publication, ownership/assignment evidence, and desired use permissions. |
+
+## Required fields for every new asset row
+
+- Stable Asset ID (never reuse).
+- Asset name, type, and exact path(s).
+- Canonical repository and owner/author where known.
+- Source URL, immutable commit/release, and relevant date.
+- Authoring method and upstream inputs (including third-party model/audio/image sources when applicable).
+- Applicable license(s), exact license-file path, copyright/NOTICE attribution, and SPDX identifier only when verified.
+- Ownership/authority evidence and any contributor/assignment agreement.
+- Intended uses: modification, redistribution, commercial use, sublicensing, derivative works, and brand use.
+- Dependency and compatibility constraints where software is involved.
+- Status, confidence, verification date/method, unresolved conflicts, and approver for any restricted permission.
+- Link to the corresponding decision and evidence record.
+
+## Legal and policy conflict flags
+
+1. **Open-source vs. controlled permission tiers:** do not apply a custom approval gate to freedoms already granted by an open-source license.
+2. **Paid rights:** charge only for additional services or rights the organization actually controls; do not charge for a restriction it has no authority to impose.
+3. **Dual licensing:** requires sufficient rights to offer each licensing option and may require contributor permissions or agreements.
+4. **Third-party assets:** repository ownership, public visibility, or a commit by an account is not alone conclusive proof of copyright ownership.
+5. **AI-generated assets:** do not assume a particular legal status; record generation inputs, human edits, source materials, and applicable platform terms.
+6. **Child-facing game:** age-safety, privacy, moderation, and platform rules are separate from copyright licensing.
+
+## Change control
+
+Append new rows and status changes; do not delete prior entries. For each resolution, record the evidence URL/commit, date, reviewer, exact scope cleared, limitations, and any superseding decision. No asset is marked CLEARED FOR PROPOSED USE merely because a license file exists somewhere in the repository.
+
+## Next action
+
+Complete ASSET-0002 and ASSET-0003 targeted notice/provenance checks, then inventory the actual creative assets before selecting asset-specific terms. This is a scoped first pass, not a complete audit.
