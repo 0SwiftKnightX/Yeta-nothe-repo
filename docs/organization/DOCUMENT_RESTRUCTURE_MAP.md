@@ -31,7 +31,7 @@ Do not assume that one source file maps to one destination file. A single histor
 | Destination path | Purpose / contents | Primary source families | Status |
 |---|---|---|---|
 | `README.md` | Concise repository entry point; links, workstreams, current state and high-value next actions | Existing org README and all navigation sources | Existing; update links additively when appropriate |
-| `docs/PROJECT_BLUEPRINT.md` | The Living Continuum game concept and game-specific requirements only | Startup Project Bible, consolidated game record, game-related AI logs, XrGpt production architecture where relevant | Existing; keep separate from org governance |
+| `docs/PROJECT_BLUEPRINT.md` | The Living Continuum game concept and only requirements explicitly confirmed to belong to that game | Owner-confirmed Living Continuum scope; source project documents remain separate references until applicability is confirmed | Existing; do not silently merge Startup and XrGpt product scopes |
 | `docs/organization/FOUNDATION_BLUEPRINT.md` | Organization mission, pillars, strategy and roadmap | User's organization discussions and related prior records | Existing; license-specific clauses are handled by license workstream |
 | `docs/organization/OPERATING_CHARTER.md` | Organizational operating principles, roles, authority, escalation and scope | AI rules, agent protocols, organizational decisions | Existing draft; review conflicts before activation |
 | `docs/organization/DOCUMENT_CONTROL_STANDARD.md` | Canonical IDs, versioning, timestamps, provenance, source/target links and status | Startup handoff versions, XrGpt README signing rules, current document control standard | Existing; refine after comparison |
@@ -141,3 +141,8 @@ New draft destination standards now separate four shared concerns that were prev
 - [ANDROID_STATIC_CORE_REQUIREMENTS.md](ANDROID_STATIC_CORE_REQUIREMENTS.md) — keeps the Android Static Core concept distinct from both game repositories and the AI-native cognition concept.
 
 All five are drafts or concept extractions. They preserve the source intent while changing the destination method; they do not automatically supersede the original project-local rules.
+
+
+## Project-boundary clarification — 2026-10-11
+
+The source requirements extracted so far span different project identities and maturity levels. Startup is a Quest-first prototype with a deliberately narrow first slice; XrGpt is a separate XR foundation and has a separate historical production architecture contract; the Android Static Core and AI-native computing concepts are also distinct workstreams. Similar terms (inventory, vehicle, world, AI, XR) do not prove that requirements belong to the same product. Preserve source attribution in the ledger and extraction documents. Do not move a source requirement into `docs/PROJECT_BLUEPRINT.md` as a canonical Living Continuum requirement until its applicability is confirmed by the owner or an existing explicit decision.
