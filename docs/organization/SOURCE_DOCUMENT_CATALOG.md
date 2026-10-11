@@ -307,3 +307,8 @@ The full contents of Startup `docs/AUDIT_ARCHIVE.md`, `TESSARA_RECOMMENDATIONS.t
 ## 13. Source-read completion correction — 2026-10-11
 
 The complete non-license human-readable documentation review is now finished for the pinned Startup and XrGpt snapshots: all 59 non-license Markdown/plain-text documents in the 72-entry manifest are marked READ. Thirteen license/notice records are inventoried but intentionally not reviewed for clearance here because the separate license/rights workstream is handling them. Remaining work is not basic document discovery or reading; it is exhaustive entry-by-entry extraction, source-to-destination mapping, conflict disposition, and coverage verification. Machine-readable asset manifests and code are outside this text-document reading count and need their own scoped review if they become relevant.
+
+
+## 14. Historical event index
+
+[Historical Source Event Crosswalk](SOURCE_EVENT_CROSSWALK.md) indexes 210+ dated/section-level entries across the selected source logs, handoffs, audit records and research documents. The generated count is a navigation aid, not a semantic completeness claim. The consolidated Startup chat record is indexed as a single whole-file record because it does not expose reliably separable message headings in this snapshot; its content has been read and its requirements are extracted in part in the domain requirements document. Full entry-to-requirement mapping remains pending.
