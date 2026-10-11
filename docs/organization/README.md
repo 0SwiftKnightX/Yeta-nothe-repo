@@ -14,6 +14,9 @@ This directory records the proposed open-technology organization and its operati
 - [Continuity Map](CONTINUITY_MAP.md) — central relationship map and work routing across repositories.
 - [Repository Inventory](REPOSITORY_INVENTORY.md) — current account-scoped repository inventory and next actions.
 - [Gap and Conflict Register](GAP_AND_CONFLICT_REGISTER.md) — targeted gap resolution without repeated broad foundation reviews.
+- [Document Control Standard](DOCUMENT_CONTROL_STANDARD.md) — stable IDs, timestamps, AI identity, provenance, evidence, and navigation rules.
+- [Draft License Framework](DRAFT_LICENSE_FRAMEWORK.md) — proposed permission tiers and asset-class rules; draft only.
+- [Decision Questionnaire](DECISION_QUESTIONNAIRE.md) — selectable governance questions with unanswered items left open.
 - [Foundation Blueprint](FOUNDATION_BLUEPRINT.md) — mission, proposed scope, roadmap, constraints, and open questions.
 - [Operating Charter](OPERATING_CHARTER.md) — evidence standards, change control, tool use, verification, and migration rules.
 - [Decision Register](DECISION_REGISTER.md) — decisions, assumptions, unresolved questions, and evidence.
