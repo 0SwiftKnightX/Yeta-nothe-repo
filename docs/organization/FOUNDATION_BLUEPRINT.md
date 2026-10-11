@@ -3,7 +3,7 @@
 Document ID: ORG-BLUEPRINT-001  
 Version: 0.1.0-draft  
 Status: PLANNED — vision and architecture only  
-Created: 2026-10-10 (UTC date)  
+Created: 2026-10-10 (America/New_York local date; exact creation time not captured)  
 Prepared by: ChatGPT (GPT-6), from conversation context available in this session  
 Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 
