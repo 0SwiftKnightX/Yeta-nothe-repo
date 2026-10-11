@@ -353,3 +353,12 @@ The earlier component-comparison note correctly warned that the Startup project.
 **Readback:** New files were fetched from the repository after creation; blob SHAs are recorded in the verification follow-up. The three files are drafts/partial, not exhaustive.  
 **Limitations:** Source tree enumeration is complete for those pinned Git tree snapshots, but content extraction is partial. The source catalog marks partial/located states; no claim is made that every Markdown/text record has been fully read or every requirement captured. No code was copied. No changes were made to Startup or XrGpt. No license document was modified.  
 **Next action:** Continue full-text review and extraction; map every meaningful rule/claim/test to a ledger entry and destination, then reconcile conflicts and verify coverage before declaring consolidation complete.
+
+
+### Addendum — domain requirements and AI-native concept extraction
+
+- Created `docs/organization/DOMAIN_REQUIREMENTS_EXTRACTION.md` (commit `b274dfe9b601c97281c510f3a702bc040f748002`) to preserve the game/construction/vehicle/avatar/inventory/world requirements from the Startup consolidated record and XrGpt handoff. The extraction explicitly keeps unresolved terms and historical/deferred scope visible.
+- Read the full Startup `Startup_AI_Conversation_Log.txt`, full `XR_GAME_SYSTEM_CONSOLIDATED_CHAT_RECORD.txt`, full XrGpt `admin/vector_conversation_log.txt`, and the sectioned 2026-09-28 XrGpt handoff during this pass. The vector record labels its architecture NOT IMPLEMENTED and concept-only.
+- Created `docs/organization/AI_NATIVE_COMPUTING_REQUIREMENTS.md` (commit `98213e759e8179cba1d275ac94ca4553b5065ce5`) as a separate AI-native computing workstream, retaining the 39 conceptual areas, authority/STOP semantics, memory/library/model distinction, capability/resource awareness, message contract, task states and open feasibility questions.
+- Updated the README, continuity map and restructure map to route these records.
+- **Boundary:** source trees are pinned and intact; this remains partial content extraction. The XrGpt root README and some other source records still require full review. Startup and XrGpt were not modified; no license document was changed; no game code was copied.
