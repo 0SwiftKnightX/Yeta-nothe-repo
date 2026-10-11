@@ -16,6 +16,7 @@ Current documentation source of truth for the work being developed in this repos
 - [Handoff and Session Continuity Standard](docs/organization/HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md) — proposed context-transfer record format.
 - [Archive and Conversation Provenance Standard](docs/organization/ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md) — transcript/summary coverage, chronology and historical integrity.
 - [Verification and Evidence Standard](docs/organization/VERIFICATION_EVIDENCE_STANDARD.md) — shared evidence levels and failure-reporting rules.
+- [Android Static Core Requirements](docs/organization/ANDROID_STATIC_CORE_REQUIREMENTS.md) — preserved research-first Android foundation concept.
 - [Gap and Conflict Register](docs/organization/GAP_AND_CONFLICT_REGISTER.md) — targeted open gaps, superseded assumptions, and next actions.
 - [Document Control Standard](docs/organization/DOCUMENT_CONTROL_STANDARD.md) — document IDs, AI identity, timestamps, evidence dates, and next-document links.
 - [Draft License Framework](docs/organization/DRAFT_LICENSE_FRAMEWORK.md) — new permission-tier and asset-class licensing draft; not yet approved.
