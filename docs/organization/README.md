@@ -40,3 +40,5 @@ Project documents, decision records, and AI logs belong in this GitHub repositor
 
 - [Asset and Rights Inventory](ASSET_RIGHTS_INVENTORY.md) — initial asset-class and provenance inventory; rights assignments remain open until evidence is collected.
 - [XR Component Evidence Matrix](XR_COMPONENT_EVIDENCE_MATRIX.md) — compares XR candidates per component using immutable source references, dates, license, compatibility, tests, and Quest 3S evidence.
+
+- [XR Inventory Capability Contract](XR_INVENTORY_CAPABILITY_CONTRACT.md) — proposed staged requirements and acceptance invariants for item identity, physical pickup/drop, inventory transfer, and future persistence; draft only, not implementation authorization.
