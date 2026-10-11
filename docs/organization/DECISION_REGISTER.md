@@ -15,6 +15,7 @@ Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 | DEC-002 | Keep organization documents in `docs/organization/` and AI session logs in `logs/` to avoid conflating them with the existing game blueprint. | ADOPTED FOR DOCUMENTATION | Repository inspection found `docs/PROJECT_BLUEPRINT.md` for “The Living Continuum.” |
 | DEC-003 | Do not claim implementation, testing, partnership, fundraising, or legal formation without evidence. | ADOPTED AS OPERATING RULE | Evidence-first requirement. |
 | DEC-004 | Use relevant tools and plugins according to task fit; do not invoke every tool without a purpose. | ADOPTED AS OPERATING RULE | Tool use must materially improve the outcome and be recorded accurately. |
+| DEC-005 | Start the Open Technology Evidence & Compatibility Manifest (OTECM) as the first tangible open-source artifact. | PARTIAL | Schema, synthetic sample, CLI validator, tests, specification, and CI workflow committed; automated validation result not yet verified. |
 
 ## Open decisions
 
@@ -28,7 +29,7 @@ Repository: https://github.com/0SwiftKnightX/Yeta-nothe-repo
 | OPEN-006 | Should the working descriptive label “Open Technology Initiative” become a public name? | NOT APPROVED | Name/domain/trademark and namespace checks. |
 | OPEN-007 | What exact recipient, budget, and use-of-funds split would a fundraiser state? | UNKNOWN | Itemized budget, recipient details, platform terms, tax/legal review. |
 | OPEN-008 | Is a GoFundMe campaign eligible and suitable for the proposed mix of personal stability and project expenses? | NOT VERIFIED | Check current official platform terms and campaign type before publication. |
-| OPEN-009 | What should be the first shippable open-source artifact? | PROPOSED: OTECM | Define schema, acceptance criteria, tests, and minimal working example. |
+| OPEN-009 | What should be the first shippable open-source artifact? | SELECTED FOR MVP: OTECM; release readiness pending | Run schema validation and tests, review dependencies and license metadata, and record CI evidence. |
 | OPEN-010 | Which future tools, agents, or repositories should receive delegated work? | NOT DECIDED | Delegate only when a concrete capability or access boundary requires it; document migration first. |
 
 ## Verified repository observations (2026-10-10)
