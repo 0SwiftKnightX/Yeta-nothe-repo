@@ -1,0 +1,480 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/0SwiftKnightX/Yeta-nothe-repo/blob/main/schemas/otecm.schema.json",
+  "title": "Open Technology Evidence & Compatibility Manifest (OTECM) Record",
+  "description": "A versioned record of a project's provenance, compatibility scope, license metadata, and verification evidence. Unknown information must remain explicit.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "created_at",
+    "updated_at",
+    "project",
+    "status",
+    "scope",
+    "evidence",
+    "verification",
+    "licensing",
+    "security",
+    "provenance",
+    "known_limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^OTECM-[A-Z0-9][A-Z0-9-]{2,63}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "canonical_url",
+        "description",
+        "maintainers",
+        "source_ref"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonical_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maintainers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "artifact_type": {
+          "type": "string",
+          "enum": [
+            "application",
+            "library",
+            "plugin",
+            "dataset",
+            "model",
+            "documentation",
+            "hardware",
+            "workflow",
+            "other",
+            "unknown"
+          ]
+        },
+        "source_ref": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "ref",
+            "commit"
+          ],
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "commit",
+                "tag",
+                "branch",
+                "release",
+                "archive",
+                "unknown"
+              ]
+            },
+            "ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "commit": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "$ref": "#/$defs/status"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_environments",
+        "tested_features",
+        "not_tested_features"
+      ],
+      "properties": {
+        "target_environments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/environment"
+          }
+        },
+        "tested_features": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "not_tested_features": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sources",
+        "summary"
+      ],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidenceSource"
+          }
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "verification": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/verification"
+      }
+    },
+    "licensing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "declared_license",
+        "license_expression",
+        "third_party_notices_url"
+      ],
+      "properties": {
+        "declared_license": {
+          "type": "string",
+          "minLength": 1
+        },
+        "license_expression": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Use a valid SPDX license expression when known; otherwise use NOASSERTION or UNKNOWN."
+        },
+        "third_party_notices_url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contact",
+        "disclosure_policy_url",
+        "data_privacy_notes"
+      ],
+      "properties": {
+        "contact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disclosure_policy_url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "data_privacy_notes": {
+          "type": "string"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_by",
+        "source_notes",
+        "reviewer",
+        "change_summary",
+        "previous_record_id"
+      ],
+      "properties": {
+        "created_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_notes": {
+          "type": "string"
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "change_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "previous_record_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^OTECM-[A-Z0-9][A-Z0-9-]{2,63}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "IMPLEMENTED",
+        "PARTIAL",
+        "MISSING",
+        "UNKNOWN",
+        "BROKEN",
+        "DUPLICATED",
+        "PLANNED",
+        "NOT_TESTED"
+      ]
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "platform",
+        "version",
+        "architecture",
+        "device",
+        "runtime",
+        "runtime_version"
+      ],
+      "properties": {
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "architecture": {
+          "type": "string",
+          "minLength": 1
+        },
+        "device": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime": {
+          "type": "string",
+          "minLength": 1
+        },
+        "runtime_version": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "evidenceSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "url",
+        "retrieved_at",
+        "supports_claims",
+        "trust_level"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "official_documentation",
+            "source_code",
+            "standard",
+            "test_result",
+            "build_log",
+            "issue_or_pr",
+            "release_note",
+            "third_party_analysis",
+            "user_report",
+            "other"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "supports_claims": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "trust_level": {
+          "type": "string",
+          "enum": [
+            "primary",
+            "secondary",
+            "user_report",
+            "unassessed"
+          ]
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "category",
+        "status",
+        "executed_at",
+        "procedure",
+        "expected",
+        "observed",
+        "environment",
+        "evidence_urls"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "source_inspection",
+            "static_check",
+            "unit_test",
+            "integration_test",
+            "end_to_end_test",
+            "build",
+            "deployment",
+            "device_acceptance",
+            "performance",
+            "security",
+            "accessibility",
+            "other"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN",
+            "UNKNOWN"
+          ]
+        },
+        "executed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "procedure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected": {
+          "type": "string"
+        },
+        "observed": {
+          "type": "string"
+        },
+        "environment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/environment"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}
