@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "record_id": "OTECM-EXAMPLE-0001",
+  "created_at": "2026-10-11T02:46:33.306Z",
+  "updated_at": "2026-10-11T02:46:33.306Z",
+  "project": {
+    "id": "EXAMPLE-PROJECT",
+    "name": "Illustrative project record",
+    "canonical_url": "https://example.org/project",
+    "description": "Synthetic example for demonstrating the manifest format; not a record of a real project.",
+    "maintainers": [
+      "Example maintainer"
+    ],
+    "artifact_type": "unknown",
+    "source_ref": {
+      "kind": "unknown",
+      "ref": "UNKNOWN",
+      "commit": "UNKNOWN"
+    }
+  },
+  "status": "UNKNOWN",
+  "scope": {
+    "target_environments": [],
+    "tested_features": [],
+    "not_tested_features": [
+      "All compatibility, build, runtime, security, and performance behavior"
+    ]
+  },
+  "evidence": {
+    "sources": [],
+    "summary": "No evidence supplied. This is an illustrative record only."
+  },
+  "verification": [
+    {
+      "id": "VERIFY-EXAMPLE-001",
+      "category": "other",
+      "status": "NOT_RUN",
+      "executed_at": null,
+      "procedure": "No test run; illustrative record only.",
+      "expected": "Not applicable.",
+      "observed": "Not run.",
+      "environment": null,
+      "evidence_urls": []
+    }
+  ],
+  "licensing": {
+    "declared_license": "NOASSERTION",
+    "license_expression": "NOASSERTION",
+    "third_party_notices_url": null
+  },
+  "security": {
+    "contact": "UNKNOWN",
+    "disclosure_policy_url": null,
+    "data_privacy_notes": "Not assessed; this is an illustrative record."
+  },
+  "provenance": {
+    "created_by": "ChatGPT (GPT-6)",
+    "source_notes": "Synthetic sample created to demonstrate OTECM fields. Do not treat as evidence about a real project.",
+    "reviewer": "NOT REVIEWED",
+    "change_summary": "Initial illustrative sample.",
+    "previous_record_id": null
+  },
+  "known_limitations": [
+    "No project, dependency, licensing, or compatibility facts are asserted.",
+    "Schema format validation must be run with a Draft 2020-12-compatible validator."
+  ]
+}
