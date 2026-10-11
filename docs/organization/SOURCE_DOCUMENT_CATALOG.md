@@ -138,3 +138,47 @@ The XrGpt tree also includes other Markdown/text documentation and per-asset man
 ## 8. Authority and boundary
 
 This catalog is a new organizational analysis artifact. It does not supersede any source file, change the meaning of its original project, authorize code migration, resolve license ownership, or claim that a feature works. Startup and XrGpt remain unchanged.
+
+
+## 7. Review progress update — 2026-10-11
+
+The following full-text reviews were completed after the initial catalog was created. These review updates supersede the earlier per-row “partial/located” states where they conflict.
+
+| Source | Current review state | Additional extracted findings |
+|---|---|---|
+| Startup `Project Bible/Project Bible.md` | READ | Quest-first project intent, Godot 4.7.2 target, comfort/performance principles, separate Bible/handoff/log roles, open decisions |
+| Startup handoff template v1.0 | READ | Full entry audit, AI environment audit, authorization handshake, evidence labels, change governance, version preservation and completion criteria |
+| Startup handoff template v1.1 | READ | Additive identity/timestamp/provenance refinement; v1.0 remains preserved |
+| Startup `ai/AI_RULES.md` | READ | Scoped agent conduct, validation honesty, logging, identity and reuse provenance |
+| Startup `docs/VALIDATION.md` | READ | Current evidence matrix; exploratory Quest observation is not acceptance; explicit repair gate |
+| Startup `docs/TEST_PLAN.md` | READ | Four evidence levels: documentation/static, Godot project, desktop XR, physical Quest 3S |
+| Startup `docs/REPOSITORY_AUDIT.md` | READ | Snapshot state, 12 automated checks reported historically, observed dark/unusable lobby, Quest acceptance still open |
+| Startup `docs/ASSET_PIPELINE.md` | READ | Asset separation, simple collision, Quest performance, future manifests/layout |
+| Startup `docs/HISTORICAL_GPT_LOG.md` | READ | Explicitly says no historical GPT entries had been migrated in that snapshot; archive coverage cannot be presumed |
+| Startup `CHANGELOG.md` | READ | Project changes and historical verification/limitations; chronology must be kept distinct from current status |
+| Startup `Startup_AI_Conversation_Log.txt` | READ | CI/toolchain investigation, explicit working rules, source verification ordering and cloud workflow history |
+| Startup `XR_GAME_SYSTEM_CONSOLIDATED_CHAT_RECORD.txt` | READ | Broad construction, vehicle, avatar, inventory/Hero Module, progression and AI-autonomy requirements; explicitly a consolidated context record, not necessarily a verbatim transcript |
+| XrGpt root `README.md` | READ | Extensive chronological worklog, continuity protocol, signed append-only rule, pre-Quest checklist, known historical false-positive regression and CI evidence boundaries |
+| XrGpt `XRGPT handoff 2026-09-28 17-48:00.md` | READ | Full project snapshot, item lifecycle, attachment transactions, CI runs, world foundation, deferred systems and open diagnostics |
+| XrGpt `docs/PRODUCTION_GAME_ARCHITECTURE.md` | READ | Ten proposed implementation gates from locomotion through cross-play, with platform/architecture acceptance boundaries |
+| XrGpt `admin/vector_conversation_log.txt` | READ | 39-area conceptual AI-native architecture, user STOP rule, memory/library/model separation, message contract; explicitly NOT IMPLEMENTED |
+| XrGpt `SECURITY.md` | READ | Generic security-reporting template; reporting route and response expectations are not fully specified in this snapshot |
+| XrGpt `THIRD_PARTY_NOTICES.md` | READ | Records Godot XR Tools MIT notice location; not blanket clearance for all bundled files |
+
+### Additional source evidence
+
+- Startup `docs/VALIDATION.md` and `docs/REPOSITORY_AUDIT.md` both report that an exploratory Quest 3S session showed hands/controller buttons but a very dark or invisible lobby/menu and no usable player area. They explicitly do not treat this as physical acceptance.
+- Startup's `docs/IMPLEMENTATION_CHECKLIST.md` has checked items while the validation report and next plan still contain unresolved runtime/platform work. The checkboxes are historical assertions scoped to their own acceptance language; current status must not be derived from checkboxes alone.
+- XrGpt README records a prior false-positive regression situation: PASS_1/PASS_2/PASS_3 had been printed despite an audit instantiation/parse error. The recorded corrective direction is to fail-fast on parse/runtime errors and require actual completed evidence, not just pass-marker text.
+- XrGpt's historical CI runs #80, #82 and #123 are recorded as successes in the README/handoff. Those are historical claims for specific commits; they do not establish CI status for the inspected later snapshot or current main.
+- XrGpt's project baseline in the pinned snapshot is Godot feature target 4.6 / Godot 4.6.1 validation, while Startup's pinned snapshot targets Godot 4.7.2. These remain distinct project baselines.
+- Startup root has no root LICENSE file in the inspected tree snapshot; this does not mean bundled third-party components lack their own licenses. XrGpt has a root Apache-2.0 LICENSE and a separate third-party notices file. Rights conclusions remain assigned to the asset/license workstream.
+
+### Remaining catalog work
+
+- [ ] Read the entire Startup `README.md`, `docs/NEXT_IMPLEMENTATION_PLAN.md`, `docs/IMPLEMENTATION_CHECKLIST.md`, `docs/FIRST_SLICE_ARCHITECTURE.md`, `docs/ARCHITECTURE.md`, and all active agent worklogs end to end.
+- [ ] Extract every chronological entry in Startup GPT/Copilot worklogs and compare duplicates.
+- [ ] Inventory and review every historical Startup handoff in the pinned tree (two handoffs were present).
+- [ ] Review the full XrGpt README as a chronological sequence and map every unique design requirement, correction, and verification claim to ledger IDs. The README has been read, but exhaustive entry-by-entry extraction is still pending.
+- [ ] Review the XrGpt Android static-core research document and any remaining Markdown/text files and per-asset manifests.
+- [ ] Include root and path-specific license/notice files in the separate asset-rights cross-reference without treating their presence as clearance.
