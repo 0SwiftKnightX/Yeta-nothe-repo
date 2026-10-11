@@ -34,13 +34,13 @@ Proposed destination: AI session history / implementation chronology
 
 | Index | Date / timestamp as written | Source entry or section title | Mapping state |
 |---|---|---|---|
-| 1 | 2026-09-22 | 2026-09-22 - Documentation Foundation | INDEXED — ledger mapping pending |
-| 2 | 2026-09-22T04:00:17Z | 2026-09-22T04:00:17Z - Android Export Preparation | INDEXED — ledger mapping pending |
-| 3 | 2026-09-22T03:58:23Z | 2026-09-22T03:58:23Z - Godot and XR Addon Installation | INDEXED — ledger mapping pending |
-| 4 | 2026-09-22 | 2026-09-22 - Godot Foundation Slice | INDEXED — ledger mapping pending |
-| 5 | 2026-09-22T03:42:08Z | 2026-09-22T03:42:08Z - XR Reference Repository Set | INDEXED — ledger mapping pending |
-| 6 | 2026-09-26 | 2026-09-26 - Sentry production instrumentation target | INDEXED — ledger mapping pending |
-| 7 | 2026-09-27T17:38:05Z | 2026-09-27T17:38:05Z - Startup continuity v1.1 and XR baseline | INDEXED — ledger mapping pending |
+| 1 | 2026-09-22 | 2026-09-22 - Documentation Foundation | EXTRACTED — SRC-STARTUP-WL-001; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 2 | 2026-09-22T04:00:17Z | 2026-09-22T04:00:17Z - Android Export Preparation | EXTRACTED — SRC-STARTUP-WL-002; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 3 | 2026-09-22T03:58:23Z | 2026-09-22T03:58:23Z - Godot and XR Addon Installation | EXTRACTED — SRC-STARTUP-WL-003; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 4 | 2026-09-22 | 2026-09-22 - Godot Foundation Slice | EXTRACTED — SRC-STARTUP-WL-004; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 5 | 2026-09-22T03:42:08Z | 2026-09-22T03:42:08Z - XR Reference Repository Set | EXTRACTED — SRC-STARTUP-WL-005; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 6 | 2026-09-26 | 2026-09-26 - Sentry production instrumentation target | EXTRACTED — SRC-STARTUP-WL-006; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 7 | 2026-09-27T17:38:05Z | 2026-09-27T17:38:05Z - Startup continuity v1.1 and XR baseline | EXTRACTED — SRC-STARTUP-WL-007; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
 
 ### Startup — `ai/COPILOT_WORKLOG.md`
 
@@ -50,16 +50,16 @@ Proposed destination: AI session history / implementation chronology
 
 | Index | Date / timestamp as written | Source entry or section title | Mapping state |
 |---|---|---|---|
-| 1 | 2026-09-22 | 2026-09-22 - Documentation Foundation | INDEXED — ledger mapping pending |
-| 2 | 2026-09-22T04:00:17Z | 2026-09-22T04:00:17Z - Android Export Preparation | INDEXED — ledger mapping pending |
-| 3 | 2026-09-22T03:58:23Z | 2026-09-22T03:58:23Z - Godot and XR Addon Installation | INDEXED — ledger mapping pending |
-| 4 | 2026-09-22 | 2026-09-22 - Godot Foundation Slice | INDEXED — ledger mapping pending |
-| 5 | 2026-09-22T03:42:08Z | 2026-09-22T03:42:08Z - XR Reference Repository Set | INDEXED — ledger mapping pending |
-| 6 | 2026-09-22 | 2026-09-22 - First Playable Slice and Verification Expansion | INDEXED — ledger mapping pending |
-| 7 | 2026-09-22 | 2026-09-22 - Android Workflow Audit | INDEXED — ledger mapping pending |
-| 8 | 2026-09-22 | 2026-09-22 - Repository Documentation Organization | INDEXED — ledger mapping pending |
-| 9 | 2026-09-27T06:07:27Z | 2026-09-27T06:07:27Z - Quest XR First-Slice Integration | INDEXED — ledger mapping pending |
-| 10 | 2026-09-27T06:08:45Z | 2026-09-27T06:08:45Z - Quest XR First-Slice Stop Point | INDEXED — ledger mapping pending |
+| 1 | 2026-09-22 | 2026-09-22 - Documentation Foundation | EXTRACTED — SRC-STARTUP-WL-001; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 2 | 2026-09-22T04:00:17Z | 2026-09-22T04:00:17Z - Android Export Preparation | EXTRACTED — SRC-STARTUP-WL-002; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 3 | 2026-09-22T03:58:23Z | 2026-09-22T03:58:23Z - Godot and XR Addon Installation | EXTRACTED — SRC-STARTUP-WL-003; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 4 | 2026-09-22 | 2026-09-22 - Godot Foundation Slice | EXTRACTED — SRC-STARTUP-WL-004; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 5 | 2026-09-22T03:42:08Z | 2026-09-22T03:42:08Z - XR Reference Repository Set | EXTRACTED — SRC-STARTUP-WL-005; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 6 | 2026-09-22 | 2026-09-22 - First Playable Slice and Verification Expansion | EXTRACTED — SRC-STARTUP-CWL-006; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 7 | 2026-09-22 | 2026-09-22 - Android Workflow Audit | EXTRACTED — SRC-STARTUP-CWL-007; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 8 | 2026-09-22 | 2026-09-22 - Repository Documentation Organization | EXTRACTED — SRC-STARTUP-CWL-008; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 9 | 2026-09-27T06:07:27Z | 2026-09-27T06:07:27Z - Quest XR First-Slice Integration | EXTRACTED — SRC-STARTUP-CWL-009; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
+| 10 | 2026-09-27T06:08:45Z | 2026-09-27T06:08:45Z - Quest XR First-Slice Stop Point | EXTRACTED — SRC-STARTUP-CWL-010; see [entry-by-entry extraction](ENTRY_BY_ENTRY_STARTUP_WORKLOG_EXTRACTION.md) |
 
 ### Startup — `Startup Logs/AI logs/Conversation Logs/Startup_AI_Conversation_Log.txt`
 
