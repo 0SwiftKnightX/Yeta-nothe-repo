@@ -277,3 +277,28 @@ The GitHub update operations returned commit/blob identifiers. Read-back verific
 ### Evidence boundary and next action
 
 All records are initial/partial. No source files were copied, no other project repository was modified, and no legal review, full dependency/license scan, automated test run, Android build, or Quest 3S runtime test was performed. Next, inspect Startup's reuse policy and actual project/plugin configuration, then compare one named component against XrGpt at an immutable commit.
+
+
+## Follow-through record — component-level XR comparison — 2026-10-11 (America/New_York)
+
+### Exact source files fetched at immutable references
+
+- Startup reuse policy at commit 6f56ad308fcf8d6f15d40a03beddfefdf8201f2a: blob SHA 7f8e957a6167c2d34e4a0e8f4f5f8d9c80ad1e76. It says no root LICENSE exists, forbids inferring permission from public visibility, and requires source-specific license, notice, provenance, compatibility, and verification checks before copying.
+- Startup project.godot at the same commit: blob SHA 7f8e957a6167c2d34e4a0e8f4f5f8d9c80ad1e76? NOTE: this hash is the reuse-policy blob, not the project.godot blob; project.godot was fetched successfully, but its blob SHA was not retained in this record. The project declares Godot feature 4.7.
+- Startup scripts/xr_player.gd at the same commit: blob SHA cecf673cce6f04f70e0926b20326c96e116adb96. Source sets runtime status to xr_active only if OpenXR is initialized, otherwise desktop_fallback; this was not runtime-executed in this task.
+- Startup scenes/interaction_lab.tscn at the same commit: blob SHA 0f415266701454b38fd4c486911f2be4eb1c5f75. Its SoulBlock references the vendored XR Tools pickable script.
+- Startup addons/godot-xr-tools/plugin.cfg: blob SHA ca0310f0a30e7740986b70a2feb39029c02796d1; manifest version 4.5.1.
+- XrGpt project.godot at commit 3a11c719224ed8619fd48f13071ff4423edab15f: blob SHA 385b09df9816d5027a3de6f448eeebd45c5e4459; declares Godot feature 4.6 and GL Compatibility.
+- XrGpt gameplay/items/procedural_pickable.gd at that commit: blob SHA 32d00f0695b43bcba10925c09e477ab1ec49f28d; extends XRToolsPickable, binds XRGptItemInstance, connects lifecycle signals, and supports returning the authoritative instance to inventory.
+- XrGpt addons/godot-xr-tools/plugin.cfg declares version 4.5.1. XrGpt root LICENSE is Apache License 2.0 (blob SHA 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64).
+
+### New findings and documentation updates
+
+- Added GAP-023 through GAP-026 for Startup licensing posture, engine-version mismatch, component-purpose mismatch, and bundled third-party license scope.
+- Added DEC-018 selecting a targeted comparison workstream, explicitly not approving code reuse.
+- Appended source-level comparison to XR_COMPONENT_EVIDENCE_MATRIX.md and license/provenance notes to ASSET_RIGHTS_INVENTORY.md.
+- Existing project repositories were not modified. No code was copied. No legal review, automated test, Godot import/build, or Quest 3S runtime test was run.
+
+### Correction and provenance note
+
+The Startup project.godot blob SHA was not captured in this action's output, so this log does not invent it. The reuse-policy blob SHA is recorded separately above. The matrix links the exact source path and commit; the next update should capture the project.godot blob SHA cleanly if it is needed as a distinct artifact identifier.
