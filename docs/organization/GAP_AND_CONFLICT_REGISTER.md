@@ -116,3 +116,10 @@ The XR Component Evidence Matrix now contains a source-level comparison of Start
 
 ### GAP-028 evidence refinement — 2026-10-11
 The prior targeted code search was followed by a recursive Git tree request for Startup `main`. It returned commit `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a`, `truncated=false`, matching the previously inspected commit. No project-owned general inventory controller, item-instance, item-definition, or item-catalog implementation was present in the returned tree. The interaction lab uses a single XR Tools pickable SoulBlock and quest-specific HeroState transitions. This makes a reusable inventory/catalog subsystem **not present in the inspected Startup tree**, while the need for that subsystem remains a product decision. This refinement does not assert that every possible historical branch or untracked local file was inspected.
+
+### GAP-029 — Inventory feature scope and acceptance criteria not approved
+- **Priority:** P1
+- **Status:** OPEN / PROPOSED CONTRACT AVAILABLE
+- **Evidence:** Draft `docs/organization/XR_INVENTORY_CAPABILITY_CONTRACT.md` separates a minimal identity/transfer stage from inventory UI, capacity, persistence, equipment, multiplayer, and other deferred systems.
+- **Impact:** Implementing the entire XrGpt dependency slice without a scoped requirement risks unnecessary architecture, engine-version incompatibility, and expanded rights review.
+- **Next action:** Select the smallest required first-stage behavior and approve explicit acceptance criteria before any code modification. No code reuse or implementation is authorized by this gap entry.
