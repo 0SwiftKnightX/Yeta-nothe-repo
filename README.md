@@ -2,6 +2,12 @@
 
 Current documentation source of truth for the work being developed in this repository. The repository contains planning and early tooling; a document or schema being present does not by itself mean the related product is complete or verified.
 
+## Organizational continuity
+
+- [Continuity Map](docs/organization/CONTINUITY_MAP.md) — central map of repositories, project relationships, and work routing.
+- [Repository Inventory](docs/organization/REPOSITORY_INVENTORY.md) — point-in-time inventory of repositories visible through the connected GitHub integration.
+- [Gap and Conflict Register](docs/organization/GAP_AND_CONFLICT_REGISTER.md) — targeted open gaps, superseded assumptions, and next actions.
+
 ## Workstreams
 
 ### 1. Game concept — The Living Continuum
@@ -36,6 +42,6 @@ Status: **PARTIAL**. Repository writes and read-backs succeeded; structural chec
 ## Current boundaries
 
 - The game concept and organization initiative are deliberately separated by folder.
-- Whether this repository remains a long-term umbrella for both workstreams is still an open decision.
+- This repository is the confirmed organizational umbrella and documentation source of truth. Existing project repositories remain in place; code migration is a separate, explicitly reviewed decision.
 - No legal entity, tax-exempt status, fundraiser, partnership, or deployed platform is claimed to exist.
 - The historical “ORGANIZATION MASTER USE, ATTRIBUTION, AND RIGHTS LICENSE” draft has not been recovered verbatim; see the decision register and research memo.
