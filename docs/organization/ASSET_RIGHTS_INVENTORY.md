@@ -70,3 +70,11 @@ Append new rows and status changes; do not delete prior entries. For each resolu
 ## Next action
 
 Complete ASSET-0002 and ASSET-0003 targeted notice/provenance checks, then inventory the actual creative assets before selecting asset-specific terms. This is a scoped first pass, not a complete audit.
+
+
+## Targeted license/provenance addendum — 2026-10-11
+
+- Startup's [Reference and Code Reuse Rules](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/ai/REFERENCE_AND_REUSE_RULES.md) explicitly states that Startup has no root LICENSE file and that source material must not be copied until the applicable license/permission is clear. It records MIT licenses for four upstream XR references as checked on 2026-09-27; those claims are a dated project record and have not been re-verified against current upstream commits in this pass.
+- Startup's vendored XR Tools plugin manifest declares version 4.5.1. XrGpt's vendored plugin manifest also declares 4.5.1. This does not by itself establish that all vendored files are identical or that the two projects are fully compatible.
+- XrGpt's project.godot at commit 3a11c719224ed8619fd48f13071ff4423edab15f declares Godot feature 4.6 and GL Compatibility. Startup's project.godot at commit 6f56ad308fcf8d6f15d40a03beddfefdf8201f2a declares feature 4.7. This is a concrete compatibility review requirement before porting XrGpt code.
+- XrGpt's gameplay/items/procedural_pickable.gd at that immutable commit extends XRToolsPickable and connects pickup/drop/grab/release events to a catalog-backed item instance and inventory return. This is candidate code, not yet cleared for reuse. Record it as ASSET-0007 for future rights review; its parent repository LICENSE is Apache-2.0, but file-specific scope and third-party boundaries must still be confirmed.
