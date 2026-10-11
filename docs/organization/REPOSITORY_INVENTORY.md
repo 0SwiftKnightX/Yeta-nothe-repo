@@ -77,3 +77,5 @@ Append newly discovered repositories rather than silently removing historical en
 - [Asset and Rights Inventory](ASSET_RIGHTS_INVENTORY.md) — initial rights/provenance rows for Yeta-nothe-repo, Startup, XrGpt, generated creature assets, and upstream XR references. This is partial and does not clear assets for copying.
 - [XR Component Evidence Matrix](XR_COMPONENT_EVIDENCE_MATRIX.md) — initial date comparison and evidence gaps for Startup, XrGpt, and upstream XR references. It does not approve any component for reuse.
 - User direction: compare XR candidates per component; retain older, better-tested alternatives; centralize docs/references; require project-specific approval for code migrations.
+
+- [XR Inventory Capability Contract](organization/XR_INVENTORY_CAPABILITY_CONTRACT.md) — proposed requirements-first contract for a minimal item identity and inventory lifecycle. It is a draft and does not authorize code changes or reuse.
