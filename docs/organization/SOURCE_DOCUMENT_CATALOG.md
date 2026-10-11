@@ -126,14 +126,14 @@ The XrGpt tree also includes other Markdown/text documentation and per-asset man
 
 ## 7. Continuation checklist
 
-- [ ] Enumerate every Markdown, plain-text, README, blueprint, log, changelog, handoff, license/notice, and human-readable manifest in the pinned source trees.
-- [ ] Read each continuity/governance document in full, including both Startup handoff templates.
+- [x] Enumerate every Markdown, plain-text, README, blueprint, log, changelog, handoff, license/notice, and human-readable manifest in the pinned source trees.
+- [x] Read each non-license continuity/governance document in full, including both Startup handoff templates; license/notice contents remain assigned to the separate rights review.
 - [ ] Extract every material rule and exception from AI worklogs and prompts; preserve dates and attribution.
-- [ ] Read Startup conversation log and consolidated chat record end to end, noting any missing intervals or duplicated content.
+- [x] Read Startup conversation log and consolidated chat record end to end; source records' own coverage limitations and duplicate/overlap review remain tracked.
 - [ ] Read XrGpt README chronology and full 2026-09-28 handoff end to end; map claims to source/CI evidence where possible.
-- [ ] Read XrGpt research and vector conversation records; distinguish ideas, citations, decisions, and implementation claims.
+- [x] Read XrGpt Android Static Core research and vector conversation records; distinguish concepts from implementation claims. Entry-level extraction still remains.
 - [ ] Map every source to a destination and every extracted requirement to a ledger ID.
-- [ ] Check the catalog against the recursive tree before marking source coverage complete.
+- [x] Check the catalog against the recursive tree; 72 manifest entries recorded across the pinned snapshots, including 59 non-license human-readable documents marked READ and 13 license/notice entries reserved for rights review.
 
 ## 8. Authority and boundary
 
@@ -176,12 +176,12 @@ The following full-text reviews were completed after the initial catalog was cre
 
 ### Remaining catalog work
 
-- [ ] Read the entire Startup `README.md`, `docs/NEXT_IMPLEMENTATION_PLAN.md`, `docs/IMPLEMENTATION_CHECKLIST.md`, `docs/FIRST_SLICE_ARCHITECTURE.md`, `docs/ARCHITECTURE.md`, and all active agent worklogs end to end.
-- [ ] Extract every chronological entry in Startup GPT/Copilot worklogs and compare duplicates.
-- [ ] Inventory and review every historical Startup handoff in the pinned tree (two handoffs were present).
-- [ ] Review the full XrGpt README as a chronological sequence and map every unique design requirement, correction, and verification claim to ledger IDs. The README has been read, but exhaustive entry-by-entry extraction is still pending.
+- [x] Read the entire Startup `README.md`, `docs/NEXT_IMPLEMENTATION_PLAN.md`, `docs/IMPLEMENTATION_CHECKLIST.md`, `docs/FIRST_SLICE_ARCHITECTURE.md`, `docs/ARCHITECTURE.md`, and all active agent worklogs end to end.
+- [ ] Extract every chronological entry in Startup GPT/Copilot worklogs into destination event/requirement IDs and compare duplicates.
+- [x] Inventory and read both historical Startup handoffs in the pinned tree; requirement-by-requirement destination mapping remains pending.
+- [ ] Map every unique XrGpt README chronology entry, design requirement, correction, and verification claim to ledger IDs. The README has been read; exhaustive entry-by-entry extraction remains pending.
 - [ ] Review the XrGpt Android static-core research document and any remaining Markdown/text files and per-asset manifests.
-- [ ] Include root and path-specific license/notice files in the separate asset-rights cross-reference without treating their presence as clearance.
+- [x] Include root and path-specific license/notice files in the source manifest and route 13 entries to the separate asset-rights cross-reference without treating their presence as clearance.
 
 
 ## 8. Additional full-text review — Android Static Core research
@@ -302,3 +302,8 @@ After the initial manifest was generated, the following source files were read i
 ## 12. Further review-state correction — 2026-10-11
 
 The full contents of Startup `docs/AUDIT_ARCHIVE.md`, `TESSARA_RECOMMENDATIONS.txt`, and XrGpt `gameplay/world/README.md`, `generated_visual_assets/enemies_monsters_creatures/README.md`, and all four XrGpt coordination records were reviewed. The records reinforce: recommendation is not approval; architecture must make ownership/dependencies/failure handling/testability/persistence explicit; world foundation containers do not imply terrain/biome/weather/persistence/creature/vehicle/quest/multiplayer implementation; generated creature assets are low-poly blockouts, not production-final assets; and the coordination layer is operational while the XrGpt root README remains its historical log per that project's own rule.
+
+
+## 13. Source-read completion correction — 2026-10-11
+
+The complete non-license human-readable documentation review is now finished for the pinned Startup and XrGpt snapshots: all 59 non-license Markdown/plain-text documents in the 72-entry manifest are marked READ. Thirteen license/notice records are inventoried but intentionally not reviewed for clearance here because the separate license/rights workstream is handling them. Remaining work is not basic document discovery or reading; it is exhaustive entry-by-entry extraction, source-to-destination mapping, conflict disposition, and coverage verification. Machine-readable asset manifests and code are outside this text-document reading count and need their own scoped review if they become relevant.
