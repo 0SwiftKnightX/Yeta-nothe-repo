@@ -7,6 +7,7 @@ Current documentation source of truth for the work being developed in this repos
 - [Continuity Map](docs/organization/CONTINUITY_MAP.md) — central map of repositories, project relationships, and work routing.
 - [Repository Inventory](docs/organization/REPOSITORY_INVENTORY.md) — point-in-time inventory of repositories visible through the connected GitHub integration.
 - [Source Document Catalog](docs/organization/SOURCE_DOCUMENT_CATALOG.md) — pinned source-file inventory, blob SHAs, review states, and coverage limitations.
+- [Historical Source Event Crosswalk](docs/organization/SOURCE_EVENT_CROSSWALK.md) — chronological/section index of source worklogs, handoffs, and research records.
 - [Document Restructure Map](docs/organization/DOCUMENT_RESTRUCTURE_MAP.md) — proposed destination architecture for consolidated documentation.
 - [Requirements and Provenance Ledger](docs/organization/REQUIREMENTS_PROVENANCE_LEDGER.md) — extracted invariants and source-traceable requirements; currently partial.
 - [Domain Requirements Extraction](docs/organization/DOMAIN_REQUIREMENTS_EXTRACTION.md) — game, XR, construction, vehicle, avatar, inventory, world and validation intent.
