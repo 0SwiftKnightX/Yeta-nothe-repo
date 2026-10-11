@@ -393,3 +393,10 @@ The earlier component-comparison note correctly warned that the Startup project.
 - Readback identities: source catalog blob `1048fd6cd979faa6976b7025b8f4ab0849eba9c7` (72 manifest rows); restructure map blob `514d2270a74ac2d7d3815dda2b2ea26cc583c972`; requirements ledger blob `fe9bab2744bf35ed4c6277a6f3ad94839b687e4d`; domain extraction blob `649c1c491a4d411a5176c532612db394d03f4a0f`; AI-native requirements blob `ae88d3e5b66eb53ce172015fd36a45f3b2001209`; Android Static Core requirements blob `3aead29abbb790a3f512233fed8953db22b36237`; AI work protocol blob `d61295be32481c21fceadedd70577d6acfe0df9e`; handoff standard blob `c40c8408f7e90d9d82d2063f17c24cb6e584709f`; archive standard blob `f4cc79ff8a7ef9bad0b80fd2b219e46b10a64016`; verification standard blob `588456f5e96f3b753ef57151d290a4375792072b`.
 - Source repository ref check: Startup main still resolves to pinned commit `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a`; XrGpt main still resolves to pinned commit `3a11c719224ed8619fd48f13071ff4423edab15f`. Both match the inspected commits.
 - Result: destination document writes and readbacks succeeded; key internal links resolve. Source-to-destination requirement coverage remains PARTIAL by design until remaining source files and individual historical log entries are mapped.
+
+
+### Coverage-state correction — 2026-10-11
+
+- Final catalog review confirms 72 human-readable/license-notice manifest entries: 59 non-license Markdown/plain-text documents marked READ and 13 license/notice entries inventoried but reserved for the separate rights workstream. This supersedes earlier notes that described basic reading of some non-license documents as still pending.
+- Remaining work is exhaustive extraction and cross-checking, not initial source discovery: map each distinct historical event/requirement/decision/claim/test to ledger/destination IDs, resolve duplicates and conflicts, and inspect machine-readable per-asset manifests only if included in the declared scope.
+- Documentation-consolidation role and license-workstream boundary are recorded in `DOCUMENT_RESTRUCTURE_MAP.md`. The license draft and rights decisions were not modified.
