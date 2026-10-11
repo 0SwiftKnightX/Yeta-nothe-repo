@@ -307,3 +307,14 @@ The Startup project.godot blob SHA was not captured in this action's output, so 
 ### Provenance correction — project configuration blob SHA — 2026-10-11
 
 The earlier component-comparison note correctly warned that the Startup project.godot blob SHA had not been captured, but included the reuse-policy SHA in the same bullet as a warning example. To eliminate ambiguity: Startup project.godot at commit 6f56ad308fcf8d6f15d40a03beddfefdf8201f2a was fetched and its actual blob SHA is **7d46ae73e8868c1b539ec1ee685c5bbe50c4056e**. The reuse-policy file remains **7f8e957a6167c2d34e4a0e8f4f5f8d9c80ad1e76**. The two hashes identify different files.
+
+
+## 2026-10-11 — XR inventory dependency-chain inspection
+- **AI identity:** GPT-6.
+- **Organization repository:** `0SwiftKnightX/Yeta-nothe-repo`.
+- **Source boundary:** read-only inspection of `0SwiftKnightX/XrGpt` at immutable commit `3a11c719224ed8619fd48f13071ff4423edab15f`; Startup inspected only at `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a`. Neither source repository was modified.
+- **Files and blob SHAs:** `gameplay/items/item_definition.gd` — `3acd1695069852a1f46668f1aea2508a08f64cb4`; `item_catalog.gd` — `a152f4eedb74d2da237ae2ce7e6b5f57fc5d92ac`; `item_instance.gd` — `97b84cf96ee57bbf3c4dbbb838cbd220d8241cce`; `item_procedural_factory.gd` — `c356e8fca656e6f851a26e92688ce1a51f32ac56`; `item_runtime.gd` — `c4696b38e1ae8c4c01b87351a7dc07da307303d1`; `procedural_pickable.gd` — `32d00f0695b43bcba10925c09e477ab1ec49f28d`; `gameplay/inventory/inventory_controller.gd` — `9dbd74bd053d3bda15add4e43fe9d4bc388f9ed2`.
+- **Finding:** the identity-preserving pickup/return behavior is a cross-file dependency slice (definition → catalog → instance → factory/runtime → XR pickable → inventory controller/slots and interaction flow), not a standalone script. Targeted Startup search did not determine whether a complete current inventory implementation exists; do not infer missing implementation from search failure.
+- **Compatibility and rights:** inspected project feature declarations differ (Startup 4.7; XrGpt 4.6); both inspected XR Tools manifests declare 4.5.1. Compatibility remains unverified. XrGpt's root Apache-2.0 license is evidence but file-level provenance/third-party boundaries remain unaudited. No code reuse approved.
+- **Verification:** GitHub source contents and blob SHAs were returned for the listed paths. No Godot import/build, automated tests, Android export, or Quest 3S runtime test was run in this task.
+- **Disposition / next action:** keep XrGpt reference-only. Inspect Startup's current tree and inventory-related implementation at a fixed commit; compare actual requirements and APIs before choosing any minimum migration. Preserve both source repositories.
