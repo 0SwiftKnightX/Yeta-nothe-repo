@@ -51,3 +51,31 @@ The latest commit returned for XrGpt (2026-09-28T21:49:52Z) is later than the la
 6. Search returned recent commits, not an independently audited complete history.
 
 Next: inspect Startup reuse rules, project configuration, add-on versions and workflow evidence; then compare one specific XrGpt component with its Startup counterpart. Keep both source repositories unchanged.
+
+
+## Targeted component comparison — pickup wrapper and inventory identity — 2026-10-11
+
+### Exact files inspected
+
+- Startup reference rule: [ai/REFERENCE_AND_REUSE_RULES.md](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/ai/REFERENCE_AND_REUSE_RULES.md), blob SHA `7f8e957a6167c2d34e4a0e8f4f5f8d9c80ad1e76`. It explicitly requires checking the source license, preserving notices, recording exact provenance, verifying compatibility, and running Startup verification before reuse. It says Startup has no root LICENSE and that public visibility is not permission.
+- Startup project configuration: [project.godot](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/project.godot). It declares Godot feature 4.7 and enables the vendored XR Tools plugin.
+- Startup XR Tools plugin manifest: [addons/godot-xr-tools/plugin.cfg](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/addons/godot-xr-tools/plugin.cfg), blob SHA `ca0310f0a30e7740986b70a2feb39029c02796d1`, declares version 4.5.1.
+- Startup interaction scene: [scenes/interaction_lab.tscn](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/scenes/interaction_lab.tscn), blob SHA `0f415266701454b38fd4c486911f2be4eb1c5f75`. The SoulBlock is a RigidBody3D that references the vendored XR Tools pickable script directly.
+- Startup XR player script: [scripts/xr_player.gd](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/scripts/xr_player.gd), blob SHA `cecf673cce6f04f70e0926b20326c96e116adb96`. It reports `xr_active` only when OpenXR is initialized; otherwise it uses `desktop_fallback`. This is a source observation, not a runtime test.
+- XrGpt project configuration: [project.godot](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/project.godot), blob SHA `385b09df9816d5027a3de6f448eeebd45c5e4459`. It declares Godot feature 4.6 and GL Compatibility.
+- XrGpt procedural pickup wrapper: [gameplay/items/procedural_pickable.gd](https://github.com/0SwiftKnightX/XrGpt/blob/3a11c719224ed8619fd48f13071ff4423edab15f/gameplay/items/procedural_pickable.gd), blob SHA `32d00f0695b43bcba10925c09e477ab1ec49f28d`. It extends XRToolsPickable, tracks pickup lifecycle signals, binds an authoritative XRGptItemInstance, resolves catalog-backed item identity, and offers a return-to-inventory path.
+- XrGpt XR Tools plugin manifest at the same immutable commit declares version 4.5.1. XrGpt root LICENSE contains Apache License 2.0; individual file scope and third-party content still require review.
+
+### Comparison result
+
+| Dimension | Startup | XrGpt | Consequence |
+|---|---|---|---|
+| Intended role | Active Quest-first project; simple pickable interaction scene | Reusable procedural-pickup bridge preserving inventory item identity | Related but not interchangeable implementations. |
+| Godot target | project.godot feature 4.7; README declares Godot 4.7.2-stable | project.godot feature 4.6 / GL Compatibility | **Compatibility conflict:** do not transplant the XrGpt script without targeted API/import checks and validation under Startup's actual editor version. |
+| XR Tools plugin manifest | 4.5.1 | 4.5.1 | Matching manifest version is useful evidence but does not establish all API/runtime compatibility. |
+| Rights | Startup has no root LICENSE according to its reuse policy; the project-specific licensing/acceptance position needs an explicit decision | Root Apache-2.0 license observed; check path scope, third-party notices and source ownership | Do not copy yet. If considered, preserve Apache notice/license obligations and verify rights for every dependency/source portion. |
+| Test evidence | README reports local checks; physical Quest acceptance still open | Historical README describes structural/static audits but multiple runtime/Quest stages remain unverified | Neither repository's general status substitutes for component-specific integration and device tests. |
+
+### Current disposition
+
+**Use XrGpt as a design/reference candidate only; no code-copy or migration decision is made.** The potentially useful design is its explicit bridge between XR pickable lifecycle and authoritative inventory identity. First decide whether Startup actually needs procedural inventory return; then define acceptance criteria, check ownership/Apache obligations and exact dependency scope, port only the minimum required concept/code if authorized, and run Startup source checks, Godot import/build, and Quest 3S feature tests. No source repository was changed.
