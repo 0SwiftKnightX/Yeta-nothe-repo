@@ -102,3 +102,17 @@ The procedural pickup wrapper is not a standalone feature. Its observed dependen
 - Startup's reuse policy explicitly requires source-license and notice review, provenance, version compatibility, and post-integration verification. The targeted Startup search surfaced inventory/catalog concepts in its consolidated chat record, but did **not** establish whether a complete current inventory implementation exists. This search was not exhaustive.
 - The inspected XrGpt project declares Godot feature 4.6, while the inspected Startup project declares feature 4.7. Both inspected XR Tools manifests say 4.5.1. This is not proof of compatibility.
 - **Disposition:** design reference only; no code or assets cleared for copying. Before implementation, define whether Startup needs instance identity, inventory return, ownership checks, or only simple pick/drop. Then inspect Startup's current inventory-related files and CI before selecting a minimum migration slice.
+
+
+## Startup tree cross-check — 2026-10-11
+
+The repository tree endpoint was queried recursively for `0SwiftKnightX/Startup` at `main`; it returned commit `6f56ad308fcf8d6f15d40a03beddfefdf8201f2a` with `truncated=false`. The default branch resolved to the same commit already under review.
+
+Within that complete returned tree, no project-owned inventory controller, item instance, item definition, or item catalog implementation file was found. The observed interaction implementation is narrower:
+
+- [`scenes/interaction_lab.tscn`](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/scenes/interaction_lab.tscn), blob `0f415266701454b38fd4c486911f2be4eb1c5f75`, creates one `SoulBlock` rigid body using the vendored `addons/godot-xr-tools/objects/pickable.gd` script.
+- [`scripts/interaction_lab.gd`](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/scripts/interaction_lab.gd), blob `0c84f821df9828b1f193f48c7dd5353b2cca4460`, handles pickup/drop and a quest-specific soul-selection → scan → transform → arena loop. It does not implement a general item catalog or inventory container.
+- [`scripts/hero_state.gd`](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/scripts/hero_state.gd), blob `226397eb06e043374cedf6fd4c5913b3026d1780`, is a small quest state machine, not an item inventory.
+- [`docs/INTERACTION_CONTRACTS.md`](https://github.com/0SwiftKnightX/Startup/blob/6f56ad308fcf8d6f15d40a03beddfefdf8201f2a/docs/INTERACTION_CONTRACTS.md), blob `afae89135c154521861af0851310d20699347a04`, defines general grab/throw and UI interaction expectations but does not supply a catalog/inventory implementation.
+
+**Updated comparison result:** At this exact Startup commit, the inspected game implements direct XR pick/drop for a specific interaction object, not XrGpt's reusable definition/catalog/instance/inventory round trip. That establishes an implementation difference at this commit; it does not by itself establish that the game needs an inventory feature. Keep XrGpt reference-only until the intended feature and acceptance criteria are explicitly scoped. Rights, Godot-version compatibility, and runtime/Quest verification remain unresolved.
