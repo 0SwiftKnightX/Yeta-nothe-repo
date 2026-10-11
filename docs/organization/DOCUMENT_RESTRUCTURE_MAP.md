@@ -128,3 +128,16 @@ This map governs documentation work in Yeta-nothe-repo. It does not:
 ## Addendum — domain extraction records (2026-10-11)
 
 Two source-specific companion documents were added: [DOMAIN_REQUIREMENTS_EXTRACTION.md](DOMAIN_REQUIREMENTS_EXTRACTION.md) preserves detailed game/XR requirements, and [AI_NATIVE_COMPUTING_REQUIREMENTS.md](AI_NATIVE_COMPUTING_REQUIREMENTS.md) preserves the distinct AI-native computing concept. Both are partial extractions and explicitly distinguish design intent from implementation.
+
+
+## Addendum — canonical process standards created 2026-10-11
+
+New draft destination standards now separate four shared concerns that were previously mixed across the source files:
+
+- [AI_WORK_PROTOCOL.md](AI_WORK_PROTOCOL.md) — agent conduct, scope, identity, validation proportionality, data safety and reporting.
+- [HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md](HANDOFF_AND_SESSION_CONTINUITY_STANDARD.md) — compact state-transfer handoff and entry procedure.
+- [ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md](ARCHIVE_AND_CONVERSATION_PROVENANCE_STANDARD.md) — distinguishes verbatim transcripts, consolidated records, summaries, worklogs and migration records.
+- [VERIFICATION_EVIDENCE_STANDARD.md](VERIFICATION_EVIDENCE_STANDARD.md) — common evidence levels, status vocabulary, failure handling and platform acceptance.
+- [ANDROID_STATIC_CORE_REQUIREMENTS.md](ANDROID_STATIC_CORE_REQUIREMENTS.md) — keeps the Android Static Core concept distinct from both game repositories and the AI-native cognition concept.
+
+All five are drafts or concept extractions. They preserve the source intent while changing the destination method; they do not automatically supersede the original project-local rules.
