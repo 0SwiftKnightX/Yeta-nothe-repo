@@ -9,7 +9,7 @@ This is a deliberately isolated **WebXR browser** archery prototype for Meta Que
 
 ## Local development
 1. Install Node.js 20.19+ or 22.12+ and npm. Keep the Vite development server bound to localhost; publish the built output on a trusted HTTPS host for Quest tests.
-2. In this directory, run `npm install`. This should create a package lockfile; commit it to pin transitive versions.
+2. In this directory, run `npm ci` to install the dependencies exactly as recorded in `package-lock.json`.
 3. Run `npm test` to test pure score/physics/collision logic.
 4. Run `npm run dev` and visit the printed local address on a desktop browser.
 5. Desktop debug mode: click the viewport to shoot toward the reticle and use Reset score to clear the display. This is *not* proof of XR input quality.
