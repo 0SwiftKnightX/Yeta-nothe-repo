@@ -1,0 +1,29 @@
+name: WebXR Archery Spike Checks
+
+on:
+  push:
+    paths:
+      - 'projects/webxr-archery-spike/**'
+      - '.github/workflows/webxr-archery-spike.yml'
+  pull_request:
+    paths:
+      - 'projects/webxr-archery-spike/**'
+      - '.github/workflows/webxr-archery-spike.yml'
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/webxr-archery-spike
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies (lockfile not yet committed)
+        run: npm install
+      - name: Run pure logic unit tests
+        run: npm test
+      - name: Bundle the static app
+        run: npm run build
