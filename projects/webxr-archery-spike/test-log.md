@@ -27,9 +27,9 @@ Files and code may exist in a feature branch, but at creation time no runtime co
 - Next action:
 
 ## Pending checks
-- `npm install` and generated dependency lockfile: NOT TESTED.
-- `npm test`: NOT TESTED.
-- `npm run build`: NOT TESTED.
+- Generated and committed npm lockfile: SOURCE PRESENT, produced by GitHub Actions run 40613311285; final `npm ci` CI recheck pending.
+- `npm test`: PASS in GitHub Actions run [40613176793](https://github.com/0SwiftKnightX/Yeta-nothe-repo/actions/runs/40613176793) at source SHA `e442ef4f6314a76b825e700a658e323726a13c97`; final branch retest pending.
+- `npm run build`: PASS in GitHub Actions run [40613176793](https://github.com/0SwiftKnightX/Yeta-nothe-repo/actions/runs/40613176793) at source SHA `e442ef4f6314a76b825e700a658e323726a13c97`; final branch retest pending.
 - Desktop browser rendering/click fallback: NOT TESTED.
 - Physical Quest 3S immersive XR: NOT TESTED.
 
