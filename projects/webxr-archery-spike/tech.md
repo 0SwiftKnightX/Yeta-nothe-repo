@@ -11,9 +11,9 @@
 ## Boundaries
 - Browser-delivered **WebXR immersive-vr** experiment, not an Android APK or a substitute for Godot 4.7.2 / OpenXR.
 - Physical target device: Meta Quest 3S; browser version and support **NOT TESTED**.
-- Engine/library: Three.js 0.180.0; local development/build: Vite 7.1.7; pure logic tests: Node built-in test runner.
+- Engine/library: Three.js 0.186.1; local development/build: Vite 7.3.7; pure logic tests: Node built-in test runner.
 - Exact dependency versions are declared in `package.json`. `npm install` generates a lockfile; commit the generated lockfile before calling this a reproducible dependency build.
-- Runtime requires a WebXR-capable browser and a secure context (HTTPS or localhost, as supported). A private network HTTP URL may not satisfy the XR secure-context requirement.
+- Local tooling: Node.js 20.19+ or 22.12+ per Vite 7. Do not expose the development server to untrusted networks.\n- Runtime requires a WebXR-capable browser and a secure context (HTTPS or localhost, as supported). A private network HTTP URL may not satisfy the XR secure-context requirement.
 - Desktop fallback is a debugging approximation, not controller or headset verification.
 - One visual moving target, two tracked controllers (bow left/draw right), projectile physics, scoreboard. No multiplayer, persistence, music, MR passthrough, hand tracking, paid APIs or existing project imports.
 - No third-party art/audio assets. The Three.js dependency has its own license; preserve attribution and comply with license requirements.
