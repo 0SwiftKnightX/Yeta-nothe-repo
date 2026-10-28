@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10151c" />
+  <title>WebXR Archery Spike</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; font-family: system-ui, sans-serif; background: #10151c; color: #fff; }
+    #hud { position: fixed; top: 16px; left: 16px; z-index: 10; background: rgba(10, 16, 22, .82); padding: 14px 16px; border-radius: 10px; max-width: min(390px, 90vw); pointer-events: none; }
+    #hud h1 { font-size: 1.1rem; margin: 0 0 8px; }
+    #hud p { margin: 6px 0; font-size: .86rem; }
+    #hud .value { font-weight: 700; font-variant-numeric: tabular-nums; }
+    #controls { position: fixed; right: 16px; top: 16px; z-index: 11; }
+    #controls button { border: 1px solid #b6d4fc; color: white; background: #193854; cursor: pointer; padding: 10px; border-radius: 6px; }
+    #status { color: #b9e7fd; }
+    #xrStatus { color: #e6d3a5; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <section id="hud" aria-label="Archery status">
+    <h1>WebXR Archery Spike</h1>
+    <p>Shots: <span id="shots" class="value">0</span> · Hits: <span id="hits" class="value">0</span> · Accuracy: <span id="accuracy" class="value">0%</span></p>
+    <p id="status" role="status">Ready</p>
+    <p id="xrStatus">Detecting WebXR availability…</p>
+    <p>Quest: bow in left hand, hold right trigger to draw; release to shoot. Desktop: click to fire toward the reticle. Reset button clears score.</p>
+  </section>
+  <div id="controls"><button id="reset" type="button">Reset score</button></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
