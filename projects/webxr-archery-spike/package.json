@@ -1,0 +1,19 @@
+{
+  "name": "webxr-archery-spike",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated experimental browser WebXR archery interaction for Quest 3S evaluation",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "vite": "7.1.7"
+  }
+}
