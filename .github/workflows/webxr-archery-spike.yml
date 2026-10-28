@@ -21,14 +21,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install dependencies (lockfile not yet committed)
-        run: npm install
-      - name: Show generated dependency lockfile for pinning
-        run: |
-          echo 'LOCKFILE_BASE64_START'
-          base64 -w 0 package-lock.json
-          echo
-          echo 'LOCKFILE_BASE64_END'
+      - name: Install locked dependencies
+        run: npm ci
       - name: Run pure logic unit tests
         run: npm test
       - name: Bundle the static app
