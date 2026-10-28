@@ -5,15 +5,15 @@
   "type": "module",
   "description": "Isolated experimental browser WebXR archery interaction for Quest 3S evaluation",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
+    "preview": "vite preview",
     "test": "node --test"
   },
   "dependencies": {
-    "three": "0.180.0"
+    "three": "0.186.1"
   },
   "devDependencies": {
-    "vite": "7.1.7"
+    "vite": "7.3.7"
   }
 }
