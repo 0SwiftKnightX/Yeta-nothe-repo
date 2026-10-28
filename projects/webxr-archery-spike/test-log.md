@@ -34,3 +34,23 @@ Files and code may exist in a feature branch, but at creation time no runtime co
 - Physical Quest 3S immersive XR: NOT TESTED.
 
 Related: [technical contract](tech.md) · [criteria](acceptance-criteria.md).
+
+
+## Audit addendum — 2026-10-27 (America/New_York)
+
+**This addendum supersedes only the pending-check status statements above.** It does not change the historical content or assert that the physical headset was tested.
+
+**Evidence ID:** XR-WEB-EVID-20261027-CI-001  
+**Tested source SHA:** `2785e65d302336afa60abdfb77bfa2aa3a92b768`  
+**Execution:** [GitHub Actions run 40620335115](https://github.com/0SwiftKnightX/Yeta-nothe-repo/actions/runs/40620335115), Ubuntu GitHub-hosted runner; Node 22; Google Chrome 155.0.8059.39 headless software rendering; recorded 2026-10-28T02:20Z (2026-10-27 America/New_York).  
+**Tester:** GitHub Actions automation, source authored by ChatGPT GPT-6.
+
+- `npm ci`: **PASS**, locked dependencies installed.
+- `npm test`: **PASS**, 3 tests/0 failures.
+- `npm run build`: **PASS**, with a 533.26 kB (134.85 kB gzip) JavaScript chunk warning.
+- npm audit message in installation logs: **0 vulnerabilities reported at this run**. This is time-scoped and not a general security guarantee.
+- `node tests/desktop-smoke.mjs`: **PASS**, created canvas, resolved WebXR support message, registered a desktop click as one shot, successfully reset the score, and observed no uncaught page errors.
+- Screenshot captured but **not visually reviewed**: run artifact `webxr-desktop-smoke-40620335115`, artifact ID `12786468295`.
+- XR session entry/exit, physical controller tracking, in-headset reset, haptics, performance and Quest 3S behavior: **NOT TESTED**.
+
+**Open blockers and audit reasoning:** [Critical audit](CRITICAL_AUDIT_2026-10-27.md). **Decision:** merge hold. This evidence applies only to the tested SHA; any later source changes require a fresh run to verify equivalence.
