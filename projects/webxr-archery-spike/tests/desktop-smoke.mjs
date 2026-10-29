@@ -39,6 +39,10 @@ try {
   assert.equal(await page.locator("#accuracy").innerText(), "0%");
   assert.notEqual(await page.locator("#xrStatus").innerText(), "Detecting WebXR availability…", "WebXR support status must settle");
 
+  assert.equal(await page.locator("#reticle").isVisible(), true);
+  const reticle = await page.locator("#reticle").boundingBox();
+  assert.ok(Math.abs(reticle.x + reticle.width / 2 - 550) < 1);
+  assert.ok(Math.abs(reticle.y + reticle.height / 2 - 360) < 1);
   await page.locator("canvas").click({ position: { x: 600, y: 360 } });
   assert.equal(await page.locator("#shots").innerText(), "1", "Desktop pointer action must fire exactly once");
   assert.equal(await page.locator("#hits").innerText(), "0", "No immediate hit before projectile update");
@@ -48,6 +52,10 @@ try {
   assert.equal(await page.locator("#shots").innerText(), "0");
   assert.equal(await page.locator("#hits").innerText(), "0");
   assert.equal(await page.locator("#accuracy").innerText(), "0%");
+  // Reset must also remove in-flight arrows; they cannot score after a reset.
+  await page.waitForTimeout(1000);
+  assert.equal(await page.locator("#shots").innerText(), "0");
+  assert.equal(await page.locator("#hits").innerText(), "0");
   assert.deepEqual(errors, [], "Browser JavaScript must have no uncaught page errors");
   console.log("DESKTOP SMOKE PASSED: 3D canvas, XR support message, pointer shot, score reset, no uncaught page errors.");
   console.log("NOT VERIFIED: WebXR session, tracked controllers, haptics or Quest 3S performance.");

@@ -17,7 +17,7 @@ Each criterion must have result **PASS, FAIL, BLOCKED, or NOT TESTED**, with com
 | WEB-05 | Quest 3S immersive VR session launches in suitable secure browser origin | NOT TESTED |
 | WEB-06 | Tracked left bow and right trigger draw/release work repeatedly; invalid/missing tracking is handled | NOT TESTED |
 | WEB-07 | Projectile aim, speed, gravity, moving target and swept hit registration behave consistently | NOT TESTED |
-| WEB-08 | Shots and hits update once, accuracy is hits/shots*100, reset clears scoreboard | NOT TESTED |
+| WEB-08 | Shots and hits update once, accuracy is hits/shots*100, reset clears scoreboard and in-flight arrows (desktop button / left squeeze in VR) | NOT TESTED |
 | WEB-09 | Haptics work where exposed or degrade harmlessly with visible feedback | NOT TESTED |
 | WEB-10 | Ten-shot Quest 3S sequence is responsive, exits cleanly, and records comfort/stability issues | NOT TESTED |
 

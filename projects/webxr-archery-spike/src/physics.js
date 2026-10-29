@@ -36,3 +36,10 @@ export function segmentHitsSphere(start, end, center, radius) {
   }, 0);
   return distanceSquared <= radius * radius;
 }
+
+/** Exact for linear motion of both point arrow and sphere center over this step.
+ * Curved target/projectile paths remain discretized by the clamped simulation step. */
+export function movingSphereHit(start, end, centerStart, centerEnd, radius) {
+  return segmentHitsSphere(start.map((v, i) => v - centerStart[i]),
+    end.map((v, i) => v - centerEnd[i]), [0, 0, 0], radius);
+}

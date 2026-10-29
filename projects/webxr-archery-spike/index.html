@@ -16,6 +16,7 @@
     #controls button { border: 1px solid #b6d4fc; color: white; background: #193854; cursor: pointer; padding: 10px; border-radius: 6px; }
     #status { color: #b9e7fd; }
     #xrStatus { color: #e6d3a5; }
+    #reticle { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); color: white; pointer-events: none; font-size: 24px; }
     canvas { display: block; }
   </style>
 </head>
@@ -25,8 +26,9 @@
     <p>Shots: <span id="shots" class="value">0</span> · Hits: <span id="hits" class="value">0</span> · Accuracy: <span id="accuracy" class="value">0%</span></p>
     <p id="status" role="status">Ready</p>
     <p id="xrStatus">Detecting WebXR availability…</p>
-    <p>Quest: bow in left hand, hold right trigger to draw; release to shoot. Desktop: click to fire toward the reticle. Reset button clears score.</p>
+    <p>Quest: bow in left hand, hold right trigger to draw; release to shoot. Left squeeze resets in VR. Desktop: click fires along the fixed center reticle; pointer position does not aim. Reset clears score and arrows.</p>
   </section>
+  <span id="reticle" aria-hidden="true">+</span>
   <div id="controls"><button id="reset" type="button">Reset score</button></div>
   <script type="module" src="/src/main.js"></script>
 </body>
