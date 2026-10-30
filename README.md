@@ -4,6 +4,9 @@ Current documentation source of truth for the work being developed in this repos
 
 ## Organizational continuity
 
+- [Portable AI Chronicle Template v0.1 (draft)](docs/organization/PORTABLE_AI_CHRONICLE_TEMPLATE_v0.1.md) — reusable cross-chat event, evidence, source-coverage and ingestion protocol; proposal, not a replacement for Startup handoff v1.1.
+- [2026-10-29 Chat Handoff — Plugin list summary](logs/handoffs/2026-10-29_2053_Plugin_List_Summary_HANDOFF.md) — timestamped partial-source record of this session, verified links, related projects, tools and next steps.
+
 - [Continuity Map](docs/organization/CONTINUITY_MAP.md) — central map of repositories, project relationships, and work routing.
 - [Repository Inventory](docs/organization/REPOSITORY_INVENTORY.md) — point-in-time inventory of repositories visible through the connected GitHub integration.
 - [Source Document Catalog](docs/organization/SOURCE_DOCUMENT_CATALOG.md) — pinned source-file inventory, blob SHAs, review states, and coverage limitations.
